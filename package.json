@@ -1,0 +1,41 @@
+{
+  "name": "justonetree",
+  "version": "1.0.0",
+  "description": "Team 51 strike project for justonetree.org.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a8cteam51/justonetree.git"
+  },
+  "keywords": [
+    "heathermeeker",
+    "team-51",
+    "strike"
+  ],
+  "author": "Automattic, Inc - Team 51 (http://automattic.com)",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/a8cteam51/justonetree/issues"
+  },
+  "homepage": "https://github.com/a8cteam51/justonetree#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-cache": "^0.3.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.0.6",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-svgstore": "^5.0.5",
+    "imagemin-pngquant": "^4.2.0"
+  }
+}

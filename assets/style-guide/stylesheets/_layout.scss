@@ -1,0 +1,92 @@
+@import "../../stylesheets/modules/structure";
+
+$max-width: 1024px;
+$gutter: 40px;
+
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+
+$sans: 'Hevetica Neue', Arial, sans-serif;
+
+body {
+	background: $white;
+	margin: 0;
+}
+
+#title {
+	background: $black;
+	color: $white;
+	padding: $gutter/4 $gutter/2;
+
+	h1 {
+		font-family: $sans;
+		font-size: 21px;
+		font-weight: normal;
+		margin: 0 auto;
+		max-width: $max-width;
+
+		span {
+			font-weight: bolder;
+		}
+	}
+}
+
+#page {
+	margin: 0 auto;
+	max-width: $max-width;
+	padding: $gutter 0;
+	overflow: auto;
+}
+
+@media (min-width: 768px) {
+	.patterns {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		width: 420px;
+	}
+
+	.content {
+		display: inline-block;
+		padding-left: $gutter;
+		width: calc(100% - 465px);
+	}
+}
+
+// For horizontal logo layout
+
+.horizontal-logo {
+
+	#logo {
+		border-bottom: 2px solid $grey;
+		padding: $gutter/4 0;
+		margin: 0 auto;
+		max-width: $max-width;
+		text-align: left;
+
+		img {
+			max-width: 600px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.patterns {
+			width: 200px;
+		}
+
+		.color-swatch {
+			height: 50px;
+			margin-bottom: 0;
+			width: 100%;
+		}
+
+		button {
+			margin-top: $gutter/4;
+		}
+
+		.content {
+			width: calc(100% - 245px);
+		}
+	}
+}

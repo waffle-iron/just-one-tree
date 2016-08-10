@@ -1,0 +1,266 @@
+body {
+	background: #fff;
+	color: $color__text;
+	font-size: 1.1rem;
+}
+
+// Header & nav
+.site-header {
+	padding-top: 0;
+	padding-bottom: 2.5em;
+}
+
+.site-title {
+	display: none;
+	font-size: 1.8rem;
+}
+
+.site-description {
+	display: none;
+	font-style: italic;
+	font-size: 1.125rem;
+	margin-top: 0.25em;
+}
+
+.site-branding,
+.site-header-menu,
+.header-image {
+	margin: 0;
+}
+
+.site-logo {
+	max-width: 500px;
+	margin: 0.5em 0 1em;
+}
+
+.wf-active .main-navigation {
+	font-family: $font__main;
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.site-header-menu {
+	width: 100%;
+}
+
+.menu-primary-menu-container {
+	margin-left: .875em;
+}
+
+.main-navigation .primary-menu {
+	border-top: 4px solid $color__tertiary;
+	border-bottom: 0;
+}
+
+.main-navigation ul:not(.sub-menu) > li:first-of-type a {
+	padding-left: 0;
+}
+
+.main-navigation .primary-menu > li {
+	border: 0;
+}
+
+.main-navigation a {
+	color: $color__tertiary;
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a{
+	color: $color__accent;
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a {
+	color: #5E6467;
+}
+
+.main-navigation ul ul a {
+	font-weight: 400;
+	letter-spacing: 0;
+	text-transform: none;
+	width: 16em;
+}
+
+.main-navigation .menu-item-has-children > a::after {
+	top: 0.613em;
+}
+
+// Links
+a {
+	transition: all ease-in-out 300ms;
+}
+
+.entry-content a {
+	color: $color__primary;
+}
+
+.entry-content a:hover {
+	color: $color__accent;
+}
+
+// Entry content
+.entry-content {
+  font-family: 'abril-text', 'Abril Text';
+}
+
+.site-main > article {
+	margin-bottom: 4em;
+}
+
+// Entry header
+.entry-header {
+	margin-bottom: 1.05em;
+}
+
+.entry-title {
+	color: $color__secondary;
+	display: inline;
+	font-size: 2rem;
+	font-weight: 200;
+	letter-spacing: -.5px;
+
+	a {
+		color: $color__secondary;
+
+		&:hover {
+			background: $color__highlight;
+			color: $color__tertiary;
+		}
+	}
+}
+
+// Buttons!
+button {
+	background-color: $color__highlight;
+	border-radius: 5px;
+	border-bottom: 4px solid $color__accent;
+	color: $color__text;
+	font-weight: 200;
+	padding-left: 1.75em;
+	padding-right: 1.75em;
+	letter-spacing: 0;
+	text-transform: none;
+	transition: all ease-in-out 50ms;
+
+	&:hover {
+		background-color: $color__accent;
+		border-color: darken($color__accent, 10%);
+	}
+}
+
+button.secondary {
+	background-color: $color__secondary;
+	border-bottom-color: $color__primary;
+	color: $color__white;
+
+	&:hover {
+		background-color: $color__primary;
+		border-color: darken($color__primary, 10%);
+	}
+}
+
+// Entry footer
+.entry-footer {
+	margin-top: 0;
+}
+
+body:not(.search-results) article:not(.type-page) .entry-footer {
+	border-bottom: 4px solid $color__tertiary;
+	float: none;
+	font-family: $font__main;
+	letter-spacing: 1px;
+	padding: 2em 0 0.5em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.entry-footer a:hover,
+.entry-footer a:focus {
+	box-shadow: none;
+	color: $color__accent;
+}
+
+.single .byline, .full-size-link, body.group-blog:not(.search-results) .byline, body:not(.search-results) .entry-format, body:not(.search-results) .cat-links, body:not(.search-results) .tags-links, body:not(.search-results) article:not(.sticky) .posted-on, body:not(.search-results) article:not(.type-page) .comments-link, body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
+	display: inline-block;
+}
+
+.entry-footer > span:not(:first-child)::before {
+	display: none;
+}
+
+.entry-footer > span:not(:last-child)::after {
+	content: '·';
+	display: inline-block;
+	padding: 0 .2em 0 .4em;
+}
+
+.entry-footer a {
+	color: $color__tertiary;
+}
+
+// Widgets
+.widget {
+	border-color: $color__tertiary;
+	font-size: 0.9rem;
+
+	.widget-title {
+		color: $color__tertiary;
+		font-weight: 500;
+	}
+}
+
+.widget input.search-field[type="search"] {
+	background-color: #fff;
+	border-right: 0;
+	border-left: 1px solid $color__highlight;
+	border-top: 1px solid $color__highlight;
+	border-bottom: 4px solid $color__accent;
+}
+
+.widget ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+	a {
+		border-bottom: 1px solid $color__tertiary;
+		color: $color__tertiary;
+		display: block;
+		padding: 10px 0;
+		text-decoration: none;
+
+		&:hover {
+			background-color: $color__highlight;
+			color: $color__tertiary;
+		}
+	}
+
+	li:last-of-type a {
+		border-bottom: none;
+	}
+
+	.sub-menu {
+		margin-left: 1em;
+		padding: 0;
+	}
+} // .widget ul
+
+// Other stylistic bits
+.entry-content h2 {
+	color: $color__primary;
+	font-family: $font__main;
+	font-size: 1.4rem;
+	font-weight: 400 !important; // Custom fonts is applying styles because I am guessing it feels like it.
+}
+
+body:not(.search-results) article:not(.type-page) .entry-content {
+	float: none;
+	width: 100%;
+}
+
+dt {
+	font-weight: normal;
+	margin-top: 0.5em;
+}

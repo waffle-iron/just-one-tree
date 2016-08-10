@@ -1,0 +1,4 @@
+body:not(.custom-background-image)::before,
+body:not(.custom-background-image)::after {
+	display: none;
+}
