@@ -3,7 +3,7 @@ Style guide
 */
 @import "layout";
 @import "colors";
-@import "../../stylesheets/modules/typography";
+@import "../../stylesheets/variables/typography";
 
 @import "theme-overrides";
-@import "customizations";
+// @import "customizations"; Only used for .com sites.

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Style guide
 */
@@ -91,249 +90,43 @@ body {
 
 /* Mixin to output classes */
 .color-text-main {
-  background: #364144; }
+  background: #404040; }
   .color-text-main .hex-code {
     color: #fff; }
     .color-text-main .hex-code::before {
-      content: "#364144"; }
+      content: "#404040"; }
 
 .color-primary {
-  background: #4D7293; }
+  background: #5F9A4A; }
   .color-primary .hex-code {
     color: #fff; }
     .color-primary .hex-code::before {
-      content: "#4D7293"; }
+      content: "#5F9A4A"; }
 
 .color-secondary {
-  background: #658cae; }
+  background: #78b463; }
   .color-secondary .hex-code {
     color: #fff; }
     .color-secondary .hex-code::before {
-      content: "#658cae"; }
+      content: "#78b463"; }
 
 .color-tertiary {
-  background: #5E6467; }
+  background: #4a7839; }
   .color-tertiary .hex-code {
     color: #fff; }
     .color-tertiary .hex-code::before {
-      content: "#5E6467"; }
+      content: "#4a7839"; }
 
 .color-accent {
-  background: #FDDE6D; }
+  background: #F5D740; }
   .color-accent .hex-code {
     color: #000; }
     .color-accent .hex-code::before {
-      content: "#FDDE6D"; }
+      content: "#F5D740"; }
 
 .color-highlight {
-  background: #fef5d2; }
+  background: #faeba1; }
   .color-highlight .hex-code {
     color: #000; }
     .color-highlight .hex-code::before {
-      content: "#fef5d2"; }
-
-body:not(.custom-background-image)::before,
-body:not(.custom-background-image)::after {
-  display: none; }
-
-body {
-  background: #fff;
-  color: #364144;
-  font-size: 1.1rem; }
-
-.site-header {
-  padding-top: 0;
-  padding-bottom: 2.5em; }
-
-.site-title {
-  display: none;
-  font-size: 1.8rem; }
-
-.site-description {
-  display: none;
-  font-style: italic;
-  font-size: 1.125rem;
-  margin-top: 0.25em; }
-
-.site-branding,
-.site-header-menu,
-.header-image {
-  margin: 0; }
-
-.site-logo {
-  max-width: 500px;
-  margin: 0.5em 0 1em; }
-
-.wf-active .main-navigation {
-  font-family: Montserrat, "Helvetica Neue", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.site-header-menu {
-  width: 100%; }
-
-.menu-primary-menu-container {
-  margin-left: .875em; }
-
-.main-navigation .primary-menu {
-  border-top: 4px solid #5E6467;
-  border-bottom: 0; }
-
-.main-navigation ul:not(.sub-menu) > li:first-of-type a {
-  padding-left: 0; }
-
-.main-navigation .primary-menu > li {
-  border: 0; }
-
-.main-navigation a {
-  color: #5E6467; }
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-  color: #FDDE6D; }
-
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
-  color: #5E6467; }
-
-.main-navigation ul ul a {
-  font-weight: 400;
-  letter-spacing: 0;
-  text-transform: none;
-  width: 16em; }
-
-.main-navigation .menu-item-has-children > a::after {
-  top: 0.613em; }
-
-a {
-  transition: all ease-in-out 300ms; }
-
-.entry-content a {
-  color: #4D7293; }
-
-.entry-content a:hover {
-  color: #FDDE6D; }
-
-.entry-content {
-  font-family: 'abril-text', 'Abril Text'; }
-
-.site-main > article {
-  margin-bottom: 4em; }
-
-.entry-header {
-  margin-bottom: 1.05em; }
-
-.entry-title {
-  color: #658cae;
-  display: inline;
-  font-size: 2rem;
-  font-weight: 200;
-  letter-spacing: -.5px; }
-  .entry-title a {
-    color: #658cae; }
-    .entry-title a:hover {
-      background: #fef5d2;
-      color: #5E6467; }
-
-button {
-  background-color: #fef5d2;
-  border-radius: 5px;
-  border-bottom: 4px solid #FDDE6D;
-  color: #364144;
-  font-weight: 200;
-  padding-left: 1.75em;
-  padding-right: 1.75em;
-  letter-spacing: 0;
-  text-transform: none;
-  transition: all ease-in-out 50ms; }
-  button:hover {
-    background-color: #FDDE6D;
-    border-color: #fcd33b; }
-
-button.secondary {
-  background-color: #658cae;
-  border-bottom-color: #4D7293;
-  color: #EEF4F6; }
-  button.secondary:hover {
-    background-color: #4D7293;
-    border-color: #3b5872; }
-
-.entry-footer {
-  margin-top: 0; }
-
-body:not(.search-results) article:not(.type-page) .entry-footer {
-  border-bottom: 4px solid #5E6467;
-  float: none;
-  font-family: Montserrat, "Helvetica Neue", sans-serif;
-  letter-spacing: 1px;
-  padding: 2em 0 0.5em;
-  text-transform: uppercase;
-  width: 100%; }
-
-.entry-footer a:hover,
-.entry-footer a:focus {
-  box-shadow: none;
-  color: #FDDE6D; }
-
-.single .byline, .full-size-link, body.group-blog:not(.search-results) .byline, body:not(.search-results) .entry-format, body:not(.search-results) .cat-links, body:not(.search-results) .tags-links, body:not(.search-results) article:not(.sticky) .posted-on, body:not(.search-results) article:not(.type-page) .comments-link, body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
-  display: inline-block; }
-
-.entry-footer > span:not(:first-child)::before {
-  display: none; }
-
-.entry-footer > span:not(:last-child)::after {
-  content: '·';
-  display: inline-block;
-  padding: 0 .2em 0 .4em; }
-
-.entry-footer a {
-  color: #5E6467; }
-
-.widget {
-  border-color: #5E6467;
-  font-size: 0.9rem; }
-  .widget .widget-title {
-    color: #5E6467;
-    font-weight: 500; }
-
-.widget input.search-field[type="search"] {
-  background-color: #fff;
-  border-right: 0;
-  border-left: 1px solid #fef5d2;
-  border-top: 1px solid #fef5d2;
-  border-bottom: 4px solid #FDDE6D; }
-
-.widget ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  .widget ul a {
-    border-bottom: 1px solid #5E6467;
-    color: #5E6467;
-    display: block;
-    padding: 10px 0;
-    text-decoration: none; }
-    .widget ul a:hover {
-      background-color: #fef5d2;
-      color: #5E6467; }
-  .widget ul li:last-of-type a {
-    border-bottom: none; }
-  .widget ul .sub-menu {
-    margin-left: 1em;
-    padding: 0; }
-
-.entry-content h2 {
-  color: #4D7293;
-  font-family: Montserrat, "Helvetica Neue", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400 !important; }
-
-body:not(.search-results) article:not(.type-page) .entry-content {
-  float: none;
-  width: 100%; }
-
-dt {
-  font-weight: normal;
-  margin-top: 0.5em; }
+      content: "#faeba1"; }
