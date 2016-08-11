@@ -233,7 +233,7 @@ th {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #EEF4F6;
+    background-color: #faf6f1;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -342,7 +342,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #EEF4F6;
+  background: #faf6f1;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -625,8 +625,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #EEF4F6;
-  /* Fallback for when there is no custom background color defined. */ }
+  background: #faf6f1 url("assets/images/background.png") repeat-x center -50px;
+  background-size: contain; }
 
 .content-area {
   float: left;

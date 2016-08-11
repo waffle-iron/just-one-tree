@@ -2,7 +2,6 @@
 Style guide
 */
 body {
-  background: #fff;
   margin: 0; }
 
 #title {
@@ -130,3 +129,6 @@ body {
     color: #000; }
     .color-highlight .hex-code::before {
       content: "#faeba1"; }
+
+#page {
+  padding-top: 110px; }
