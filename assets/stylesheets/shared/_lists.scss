@@ -1,5 +1,6 @@
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
+	padding: 0;
 }
 
 ul {
@@ -10,10 +11,27 @@ ol {
 	list-style: decimal;
 }
 
+li {
+	margin-bottom: 0.75em;
+}
+
+.entry-content ul li {
+	list-style: none;
+	position: relative;
+}
+
+.entry-content ul li::before {
+	content: '\2022';
+	font-size: 0.75em;
+	line-height: 2;
+	position: absolute;
+	right: 100.5%;
+}
+
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 1em;
 }
 
 dt {
