@@ -1,29 +1,30 @@
 @import "../../stylesheets/variables/structure";
 
-$max-width: 1024px;
-$gutter: 40px;
+$this_max-width: 1024px;
+$this_gutter: 40px;
 
-$black: #000;
-$white: #fff;
-$grey: #ccc;
+$this_black: #000;
+$this_white: #fff;
+$this_grey: #ccc;
 
-$sans: 'Hevetica Neue', Arial, sans-serif;
+$this_sans: 'Hevetica Neue', Arial, sans-serif;
 
 body {
 	margin: 0;
 }
 
+// Page title/header.
 #title {
-	background: $black;
-	color: $white;
-	padding: $gutter/4 $gutter/2;
+	background: $this_black;
+	color: $this_white;
+	padding: $this_gutter/4 $this_gutter/2;
 
 	h1 {
-		font-family: $sans;
+		font-family: $this_sans;
 		font-size: 21px;
 		font-weight: normal;
 		margin: 0 auto;
-		max-width: $max-width;
+		max-width: $this_max-width;
 
 		span {
 			font-weight: bolder;
@@ -31,10 +32,11 @@ body {
 	}
 }
 
+// Page structure.
 #page {
 	margin: 0 auto;
-	max-width: $max-width;
-	padding: $gutter 0;
+	max-width: $this_max-width;
+	padding: $this_gutter 0;
 	overflow: auto;
 }
 
@@ -48,26 +50,24 @@ body {
 
 	.content {
 		display: inline-block;
-		padding-left: $gutter;
+		padding-left: $this_gutter;
 		width: calc(100% - 465px);
 	}
 }
 
-// For horizontal logo layout
-
+// Adjust layout for horizontal logo layout.
 .horizontal-logo {
-
 	#logo {
-		border-bottom: 2px solid $grey;
-		padding: $gutter/4 0;
+		border-bottom: 2px solid $this_grey;
+		padding: $this_gutter/4 0;
 		margin: 0 auto;
-		max-width: $max-width;
+		max-width: $this_max-width;
 		text-align: left;
 
 		img {
 			max-width: 600px;
 		}
-	}
+	} // #logo
 
 	@media (min-width: 768px) {
 		.patterns {
@@ -81,11 +81,11 @@ body {
 		}
 
 		button {
-			margin-top: $gutter/4;
+			margin-top: $this_gutter/4;
 		}
 
 		.content {
 			width: calc(100% - 245px);
 		}
-	}
-}
+	} // @media (min-width: 768px)
+} // .horizontal-logo
