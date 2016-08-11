@@ -8,8 +8,12 @@ html {
 	box-sizing: inherit;
 }
 
+html {
+  background: $color__background-body url('assets/images/tile-me.png');
+}
+
 body {
-	background: $color__background-body url('assets/images/background.png') repeat-x center -50px;
+	background: url('assets/images/background.png') repeat-x center -50px;
 	background-size: contain;
 }
 
