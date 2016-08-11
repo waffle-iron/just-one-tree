@@ -317,10 +317,10 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #78b463;
+  color: #96c585;
   font-family: museo-sans-rounded, sans-serif; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #78b463;
+    color: #96c585;
     text-decoration: none; }
 
 h1 {
@@ -411,7 +411,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #5F9A4A; }
+    color: #78b463; }
 
 select {
   border: 1px solid #ccc; }
@@ -602,9 +602,9 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: #5F9A4A; }
+  color: #78b463; }
   a:visited {
-    color: #4a7839; }
+    color: #5f9a4a; }
   a:hover, a:focus, a:active {
     color: #F5D740; }
   a:focus {

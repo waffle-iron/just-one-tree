@@ -97,25 +97,25 @@ body {
       content: "#364144"; }
 
 .color-primary {
-  background: #5F9A4A; }
+  background: #78b463; }
   .color-primary .hex-code {
     color: #fff; }
     .color-primary .hex-code::before {
-      content: "#5F9A4A"; }
+      content: "#78b463"; }
 
 .color-secondary {
-  background: #78b463; }
+  background: #96c585; }
   .color-secondary .hex-code {
     color: #fff; }
     .color-secondary .hex-code::before {
-      content: "#78b463"; }
+      content: "#96c585"; }
 
 .color-tertiary {
-  background: #4a7839; }
+  background: #5f9a4a; }
   .color-tertiary .hex-code {
     color: #fff; }
     .color-tertiary .hex-code::before {
-      content: "#4a7839"; }
+      content: "#5f9a4a"; }
 
 .color-accent {
   background: #F5D740; }
