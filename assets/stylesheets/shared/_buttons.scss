@@ -1,26 +1,47 @@
 button,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
+	background: $color__accent;
+	border: 0;
+	border-bottom: 4px solid darken($color__accent, 10%);
+	border-radius: 5px;
+	box-shadow: none;
+	color: $color__white;
+	@include font-size(1);
+	font-family: $font__headings;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: 0.7rem 2rem;
+	text-decoration: none;
+	text-shadow: 1px 1px darken($color__accent, 10%);
+	transition: all ease-in-out 50ms;
 
 	&:hover {
-		border-color: $color__border-button-hover;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+		background-color: darken($color__accent, 10%);
+		border-color: darken($color__accent, 20%);
+		color: darken($color__accent, 20%);
+		text-shadow: 1px 1px transparentize($color__white, 0.5);
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+		background-color: $color__accent;
+		border-color: darken($color__accent, 10%);
+	}
+}
+
+
+button.secondary,
+.button.secondary {
+	background-color: $color__secondary;
+	border-bottom-color: $color__primary;
+	text-shadow: 1px 1px $color__primary;
+
+	&:hover {
+		background-color: $color__primary;
+		border-color: darken($color__primary, 10%);
+		color: darken($color__primary, 10%);
+		text-shadow: 1px 1px transparentize($color__white, 0.6);
 	}
 }
