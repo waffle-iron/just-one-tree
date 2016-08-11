@@ -1,6 +1,9 @@
 /*
 Style guide
 */
+#page {
+  padding-top: 110px; }
+
 body {
   margin: 0; }
 
@@ -130,5 +133,12 @@ body {
     .color-highlight .hex-code::before {
       content: "#faeba1"; }
 
-#page {
-  padding-top: 110px; }
+.adjectives h3 {
+  display: inline;
+  color: #78b463;
+  font-family: spumante, sans-serif;
+  font-size: 2.1rem;
+  padding-right: 0.2em; }
+
+.adjectives h3:nth-of-type(odd) {
+  color: #F5D740; }
