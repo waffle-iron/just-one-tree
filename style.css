@@ -311,13 +311,23 @@ input,
 select,
 textarea {
   color: #364144;
-  font-family: sans-serif;
+  font-family: museo-sans, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  color: #78b463;
+  font-family: museo-sans-rounded, sans-serif; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #78b463;
+    text-decoration: none; }
+
+h1 {
+  font-size: 2.1rem; }
+
+h2 {
+  font-size: 1.9rem; }
 
 p {
   margin-bottom: 1.5em; }

@@ -90,11 +90,11 @@ body {
 
 /* Mixin to output classes */
 .color-text-main {
-  background: #404040; }
+  background: #364144; }
   .color-text-main .hex-code {
     color: #fff; }
     .color-text-main .hex-code::before {
-      content: "#404040"; }
+      content: "#364144"; }
 
 .color-primary {
   background: #5F9A4A; }

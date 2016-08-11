@@ -10,7 +10,7 @@ $color__white: #EEF4F6;
 $color__background-body: $color__white;
 $color__background-screen: $color__white;
 $color__background-hr: $color__accent;
-$color__background-button: $color__accent;
+
 $color__background-pre: $color__white;
 $color__background-ins: $color__highlight;
 
@@ -25,5 +25,7 @@ $color__text-main: $color__text;
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
+$color__background-button: $color__accent;
+
 $color__border-input: #ccc;
 $color__border-abbr: #666;
