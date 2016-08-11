@@ -10,11 +10,12 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $color__secondary;
+	color: $color__primary;
 	font-family: $font__headings;
+	margin: 2rem 0 0.25rem;
 
   a {
-    color: $color__secondary;
+    color: $color__primary;
     text-decoration: none;
   }
 }
