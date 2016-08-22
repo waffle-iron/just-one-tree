@@ -19,11 +19,16 @@
 
 /* Header */
 .entry-meta {
-  a {
-    text-decoration: none;
+	a {
+		border-bottom: 2px solid $color__tertiary;
+		color: $color__tertiary;
+		font-weight: 500;
+		font-size: 0.9rem;
+		padding-bottom: $size_site-gutter/4;
+		text-decoration: none;
   }
 }
 
 .entry-title {
-  margin-top: $size-site-gutter/4;
+  margin-top: $size-site-gutter/2;
 }

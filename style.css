@@ -312,6 +312,7 @@ select,
 textarea {
   color: #364144;
   font-family: museo-sans, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -715,10 +716,15 @@ body {
 
 /* Header */
 .entry-meta a {
+  border-bottom: 2px solid #5f9a4a;
+  color: #5f9a4a;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-bottom: 5px;
   text-decoration: none; }
 
 .entry-title {
-  margin-top: 5px; }
+  margin-top: 10px; }
 
 /*--------------------------------------------------------------
 ## Pages

@@ -154,6 +154,31 @@ function justonetree_scripts() {
 add_action( 'wp_enqueue_scripts', 'justonetree_scripts' );
 
 /**
+ * Enqueue Typekit fonts for local development.
+ *
+ * @action wp_head
+ * @return string
+ */
+function justonetree_local_fonts() {
+	$kit = 'ytg2bsw';
+	?>
+	<script>
+	    // try{!function(t,e,n,r,a,s,i,l)
+	</script>
+	<script>
+	(function(d) {
+	var config = {
+		kitId: '<?php echo $kit; ?>',
+		scriptTimeout: 3000
+	},
+	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+	</script>
+	<?php
+}
+add_action( 'wp_head', 'justonetree_local_fonts', 20 );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
