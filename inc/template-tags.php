@@ -25,7 +25,7 @@ function justonetree_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'justonetree' ),
+		esc_html_x( '%s', 'post date', 'justonetree' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -71,7 +71,7 @@ function justonetree_entry_footer() {
 			esc_html__( 'Edit %s', 'justonetree' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
-		'<span class="edit-link">',
+		'<span class="edit-link"> ',
 		'</span>'
 	);
 }

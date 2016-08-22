@@ -11,13 +11,19 @@
 	display: none;
 }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 0 0;
+}
+
+/* Header */
+.entry-meta {
+  a {
+    text-decoration: none;
+  }
+}
+
+.entry-title {
+  margin-top: $size-site-gutter/4;
 }
