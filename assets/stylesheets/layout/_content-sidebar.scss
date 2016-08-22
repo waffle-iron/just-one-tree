@@ -1,3 +1,9 @@
+.site {
+  padding: $size_site-gutter/2;
+  margin: 0 auto;
+  max-width: $size_site-width;
+}
+
 .content-area {
 	float: left;
 	margin: 0 (-$size_site-sidebar) 0 0;
