@@ -4,20 +4,22 @@
   max-width: $size_site-width;
 }
 
-.content-area {
-	float: left;
-	margin: 0 (-$size_site-sidebar) 0 0;
-	width: $size_site-main;
-}
+@include tablet {
+  .content-area {
+  	float: left;
+  	margin: 0 (-$size_site-sidebar) 0 0;
+  	width: $size_site-main;
+  }
 
-.site-main {
-	margin: 0 $size_site-sidebar 0 0;
-}
+  .site-main {
+  	margin: 0 $size_site-sidebar 0 0;
+  }
 
-.site-content .widget-area {
-	float: right;
-	overflow: hidden;
-	width: $size_site-sidebar;
+  .site-content .widget-area {
+  	float: right;
+  	overflow: hidden;
+  	width: $size_site-sidebar;
+  }
 }
 
 .site-footer {
