@@ -653,6 +653,15 @@ body {
   background: url("assets/images/background.png") repeat-x center -50px;
   background-size: contain; }
 
+#masthead {
+  text-align: center; }
+
+.site-branding {
+  display: none; }
+
+.site-logo-link {
+  margin: 0 auto; }
+
 .content-area {
   float: left;
   margin: 0 -25% 0 0;
