@@ -197,3 +197,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Use SVG for icons.
+ */
+require get_template_directory() . '/inc/svg-icons.php';

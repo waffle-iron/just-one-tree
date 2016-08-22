@@ -377,6 +377,45 @@ blockquote, q {
     content: ""; }
 
 /*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+/* Make sure to hide your sprite! */
+.hide {
+  display: none; }
+
+/* Default colouration & size */
+.easy-as-svg-icon {
+  fill: #78b463;
+  height: 28px;
+  width: 28px; }
+
+/* Social menu */
+.menu-social-menu-container ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menu-social-menu-container ul li {
+  display: inline-block; }
+
+.menu-social-menu-container ul a {
+  display: inline-block;
+  line-height: 1;
+  padding: 4px; }
+
+.menu-social-menu-container ul svg {
+  fill: #78b463;
+  height: 28px;
+  speak: none;
+  transition: fill .1s ease-in 0;
+  width: 28px; }
+
+.menu-social-menu-container ul a:hover {
+  background: none; }
+  .menu-social-menu-container ul a:hover svg {
+    fill: #F5D740; }
+
+/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 input[type="text"],
