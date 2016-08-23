@@ -36,20 +36,31 @@ add_action( 'after_setup_theme', 'justonetree_jetpack_setup' );
  * Custom render function for Infinite Scroll.
  */
 function justonetree_infinite_scroll_render() {
-	while ( have_posts() ) {
+	while ( have_posts() ) :
 		the_post();
 		if ( is_search() ) :
 		    get_template_part( 'components/post/content', 'search' );
 		else :
 		    get_template_part( 'components/post/content', get_post_format() );
 		endif;
-	}
+	endwhile;
 }
 
 function justonetree_social_menu() {
-	if ( ! function_exists( 'jetpack_social_menu' ) ) {
+	if ( ! function_exists( 'jetpack_social_menu' ) ) :
 		return;
-	} else {
-		jetpack_social_menu();
-	}
+	else :
+		if ( has_nav_menu( 'jetpack-social-menu' ) ) : ?>
+			<nav class="jetpack-social-navigation" role="navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location'  => 'jetpack-social-menu',
+						'link_before'     => '',
+						'link_after'      => '',
+						'depth'           => 1,
+					) );
+				?>
+			</nav><!-- .jetpack-social-navigation -->
+		<?php endif;
+	endif;
 }

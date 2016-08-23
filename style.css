@@ -415,6 +415,10 @@ blockquote, q {
   .menu-social-menu-container ul a:hover svg {
     fill: #F5D740; }
 
+/* Jetpack social menus */
+.jetpack-social-navigation a::before {
+  display: none !important; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

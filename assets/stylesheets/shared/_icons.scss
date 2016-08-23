@@ -45,3 +45,8 @@
 		}
 	}
 }
+
+/* Jetpack social menus */
+.jetpack-social-navigation a::before {
+  display: none !important;
+}
