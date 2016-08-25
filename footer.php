@@ -13,12 +13,12 @@
 	</div><!-- #content -->
 </div><!-- #page -->
 
-	</div>
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<?php justonetree_social_menu(); ?>
-		<?php get_template_part( 'components/footer/site', 'info' ); ?>
-		<?php get_template_part( 'components/navigation/navigation', 'footer' ); ?>
-	</footer>
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<?php justonetree_social_menu(); ?>
+	<?php get_template_part( 'components/footer/site', 'info' ); ?>
+	<?php get_template_part( 'components/navigation/navigation', 'footer' ); ?>
+</footer>
+
 <?php wp_footer(); ?>
 
 </body>
