@@ -23,7 +23,7 @@ function justonetree_body_classes( $classes ) {
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
-	
+
 	// Add a class of no-sidebar when there is no sidebar present
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
@@ -32,3 +32,16 @@ function justonetree_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'justonetree_body_classes' );
+
+/*
+ * Add an extra li to our nav for our priority+ navigation to use
+ */
+function justonetree_add_more_to_nav( $items, $args ) {
+	if ( 'menu-1' === $args->theme_location ) :
+		$items .= '<li id="more-menu" class="menu-item menu-item-has-children"><a href="#">';
+		$items .= easy_as_svg_get_icon( 'more' );
+		$items .= '<span class="screen-reader-text">'. esc_html( 'More') . '</span></a><ul class="sub-menu"></ul></li>';
+	endif;
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'justonetree_add_more_to_nav', 10, 2 );

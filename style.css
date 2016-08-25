@@ -595,56 +595,58 @@ table {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
+.main-navigation ul {
   display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul li {
+    display: inline-block;
     position: relative; }
-  .main-navigation a {
+  .main-navigation ul a {
     display: block;
-    text-decoration: none; }
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px 11px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
+.main-navigation ul ul {
+  background: #faf6f1;
+  border-bottom: 2px solid #F5D740;
+  border-top: 1px solid #F5D740;
+  float: left;
+  font-size: 0.8em;
+  line-height: 1.2;
+  position: absolute;
+  text-align: left;
+  top: 1.75em;
+  left: -999em;
+  z-index: 99999; }
+  .main-navigation ul ul ul {
+    left: -999em;
+    top: 0; }
+  .main-navigation ul ul li:hover > ul,
+  .main-navigation ul ul li.focus > ul {
+    left: 100%; }
+  .main-navigation ul ul a {
+    border-bottom: 1px solid #F5D740;
+    width: 200px; }
+  .main-navigation ul ul li:last-of-type a {
+    border-bottom: 0; }
 
-.menu-toggle:before {
-  content: "\2630";
-  display: inline-block;
-  margin-right: 5px; }
+#more-menu {
+  display: none; }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+#more-menu.visible {
+  display: inline-block; }
+
+#more-menu .easy-as-svg-icon-more {
+  height: 16px;
+  vertical-align: -3px;
+  width: 16px; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
