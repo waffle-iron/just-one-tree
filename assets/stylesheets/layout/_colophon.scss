@@ -1,0 +1,11 @@
+#colophon {
+  background: $color__text;
+  color: $color__white;
+  @include font-size(0.9);
+  padding: $size_site-gutter 0;
+  text-align: center;
+
+  a {
+    color: $color__white;
+  }
+}

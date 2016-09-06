@@ -32,7 +32,5 @@
 
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
-		<?php justonetree_social_menu(); ?>
-
 	</header>
 	<div id="content" class="site-content">

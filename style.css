@@ -730,6 +730,19 @@ body {
 .site-footer {
   clear: both;
   width: 100%; }
+  .site-footer div {
+    margin: 0 auto;
+    max-width: 1200px; }
+
+#colophon {
+  background: #364144;
+  color: #faf6f1;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  padding: 20px 0;
+  text-align: center; }
+  #colophon a {
+    color: #faf6f1; }
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
