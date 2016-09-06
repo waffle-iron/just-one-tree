@@ -9,3 +9,13 @@
     color: $color__white;
   }
 }
+
+#footer-menu {
+  ul {
+    display: inline;
+  }
+  
+  li {
+    display: inline-block;
+  }
+}

@@ -744,6 +744,12 @@ body {
   #colophon a {
     color: #faf6f1; }
 
+#footer-menu ul {
+  display: inline; }
+
+#footer-menu li {
+  display: inline-block; }
+
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/

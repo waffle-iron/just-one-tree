@@ -30,7 +30,7 @@
 
 		<?php justonetree_the_custom_logo(); ?>
 
-		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
+		<?php get_template_part( 'components/navigation/navigation', 'header' ); ?>
 
 	</header>
 	<div id="content" class="site-content">
