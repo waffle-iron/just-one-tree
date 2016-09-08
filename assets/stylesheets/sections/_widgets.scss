@@ -7,6 +7,34 @@
 	}
 }
 
+/* Lists in widgets (pages, categories, comments, etc) */
+.widget ul {
+		list-style-type: none;
+		margin: -$size_site-gutter/2 0 0 0;
+		padding: 0;
+
+		li {
+			margin: 0;
+		}
+
+		a {
+			border-bottom: 1px solid $color__highlight;
+			display: block;
+			padding: 10px 0;
+			text-decoration: none;
+
+			&:hover {
+				background-color: $color__highlight;
+				color: $color__text;
+			}
+		}
+
+	.sub-menu {
+		margin-left: 1em;
+		padding: 0;
+	}
+} // .widget ul
+
 /* Archive widgets */
 .widget_archive,
 .widget_categories {

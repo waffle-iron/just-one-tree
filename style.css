@@ -796,6 +796,25 @@ body {
   .widget select {
     max-width: 100%; }
 
+/* Lists in widgets (pages, categories, comments, etc) */
+.widget ul {
+  list-style-type: none;
+  margin: -10px 0 0 0;
+  padding: 0; }
+  .widget ul li {
+    margin: 0; }
+  .widget ul a {
+    border-bottom: 1px solid #faeba1;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none; }
+    .widget ul a:hover {
+      background-color: #faeba1;
+      color: #364144; }
+  .widget ul .sub-menu {
+    margin-left: 1em;
+    padding: 0; }
+
 /* Archive widgets */
 .widget_archive ul li,
 .widget_categories ul li {
