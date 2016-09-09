@@ -24,5 +24,10 @@
 
 .site-footer {
 	clear: both;
-	width: $size_site-main;
+	width: 100%;
+
+  div {
+    margin: 0 auto;
+    max-width: $size_site-width;
+  }
 }

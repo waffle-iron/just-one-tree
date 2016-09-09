@@ -10,43 +10,82 @@
 	width: 28px;
 }
 
-/* Social menu */
-.menu-social-menu-container ul {
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	li {
-		display: inline-block;
-	}
-
-	a {
-		display: inline-block;
-		line-height: 1;
-		padding: 4px;
-	}
-
-	svg {
-		fill: $color__link;
-		height: 28px;
-		speak: none;
-		transition: fill .1s ease-in 0;
-		width: 28px;
-	}
-
-	a:hover {
-		background: none;
-
-		svg {
-			fill: $color__link-hover;
-		}
-	}
-}
 
 /* Jetpack social menus */
 .jetpack-social-navigation a::before {
   display: none !important;
+}
+
+.jetpack-social-navigation a {
+		background: $color__primary;
+		border-radius: 50%;
+		display: inline-block;
+		height: 40px !important;
+		padding: 8px;
+		width: 40px !important;
+
+		svg {
+			fill: $color__white;
+			height: 24px;
+			width: 24px;
+		}
+}
+
+.jetpack-social-navigation {
+	a[href*="wordpress.org"]:before,
+	a[href*="wordpress.com"]:before {
+		background-color: $color__wordpress;
+	}
+
+	a[href*="facebook.com"] {
+		background-color: $color__facebook;
+	}
+
+	a[href*="twitter.com"] {
+		background-color: $color__twitter;
+	}
+
+	a[href*="dribbble.com"] {
+		background-color: $color__dribbble;
+	}
+
+	a[href*="plus.google.com"] {
+		background-color: $color__googleplus;
+	}
+
+	a[href*="pinterest.com"] {
+		background-color: $color__pinterest;
+	}
+
+	a[href*="github.com"] {
+		background-color: $color__github;
+	}
+
+	a[href*="tumblr.com"] {
+		background-color: $color__tumblr;
+	}
+
+	a[href*="youtube.com"] {
+		background-color: $color__youtube;
+	}
+
+	a[href*="flickr.com"] {
+		background-color: $color__flickr;
+	}
+
+	a[href*="vimeo.com"] {
+		background-color: $color__vimeo;
+	}
+
+	a[href*="instagram.com"] {
+		background-color: $color__instagram;
+	}
+
+	a[href*="codepen.io"] {
+		background-color: $color__codepen;
+	}
+
+	a[href*="linkedin.com"] {
+		background-color: $color__linkedin;
+	}
 }
