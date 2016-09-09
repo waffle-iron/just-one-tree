@@ -318,13 +318,13 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: pink;
+  color: #78b463;
   font-family: museo-sans-rounded, "Museo Sans Rounded", sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 2rem 0 0.25rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: pink;
+    color: #78b463;
     text-decoration: none; }
 
 h1 {
@@ -366,7 +366,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #6666ff;
+  background: #faeba1;
   text-decoration: none; }
 
 big {
@@ -386,7 +386,7 @@ blockquote, q {
 
 /* Default colouration & size */
 .easy-as-svg-icon {
-  fill: pink;
+  fill: #78b463;
   height: 28px;
   width: 28px; }
 
@@ -395,7 +395,7 @@ blockquote, q {
   display: none !important; }
 
 .jetpack-social-navigation a {
-  background: pink;
+  background: #78b463;
   border-radius: 50%;
   display: inline-block;
   height: 40px !important;
@@ -487,7 +487,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: pink; }
+    color: #78b463; }
 
 select {
   border: 1px solid #364144; }
@@ -521,9 +521,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: blue;
+  background: #F5D740;
   border: 0;
-  border-bottom: 4px solid #0000cc;
+  border-bottom: 4px solid #f2cd10;
   border-radius: 5px;
   box-shadow: none;
   color: #faf6f1;
@@ -533,16 +533,16 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.7rem 2rem;
   text-decoration: none;
-  text-shadow: 1px 1px #0000cc;
+  text-shadow: 1px 1px #f2cd10;
   transition: all ease-in-out 50ms; }
   button:hover,
   .button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background-color: #0000cc;
-    border-color: #000099;
-    color: #000099;
+    background-color: #f2cd10;
+    border-color: #c5a60a;
+    color: #c5a60a;
     text-shadow: 1px 1px rgba(250, 246, 241, 0.5); }
   button:active, button:focus,
   .button:active,
@@ -553,26 +553,26 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    background-color: blue;
-    border-color: #0000cc; }
+    background-color: #F5D740;
+    border-color: #f2cd10; }
 
 button.secondary,
 .button.secondary {
-  background-color: #fff3f5;
-  border-bottom-color: pink;
-  text-shadow: 1px 1px pink; }
+  background-color: #96c585;
+  border-bottom-color: #78b463;
+  text-shadow: 1px 1px #78b463; }
   button.secondary:hover,
   .button.secondary:hover {
-    background-color: pink;
-    border-color: #ff8da1;
-    color: #ff8da1;
+    background-color: #78b463;
+    border-color: #5f9a4a;
+    color: #5f9a4a;
     text-shadow: 1px 1px rgba(250, 246, 241, 0.4); }
 
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
 hr {
-  background-color: blue;
+  background-color: #F5D740;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -645,8 +645,8 @@ table {
 
 .main-navigation ul ul {
   background: #faf6f1;
-  border-bottom: 2px solid blue;
-  border-top: 1px solid blue;
+  border-bottom: 2px solid #F5D740;
+  border-top: 1px solid #F5D740;
   float: left;
   font-size: 0.8em;
   line-height: 1.2;
@@ -662,7 +662,7 @@ table {
   .main-navigation ul ul li.focus > ul {
     left: 100%; }
   .main-navigation ul ul a {
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #F5D740;
     width: 200px; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
@@ -701,11 +701,11 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: pink; }
+  color: #78b463; }
   a:visited {
-    color: #ff8da1; }
+    color: #5f9a4a; }
   a:hover, a:focus, a:active {
-    color: blue; }
+    color: #F5D740; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -810,8 +810,8 @@ body {
 
 /* Header */
 .entry-meta a {
-  border-bottom: 2px solid #ff8da1;
-  color: #ff8da1;
+  border-bottom: 2px solid #5f9a4a;
+  color: #5f9a4a;
   font-weight: 500;
   font-size: 0.9rem;
   padding-bottom: 5px;
@@ -853,12 +853,12 @@ body {
   .widget ul li {
     margin: 0; }
   .widget ul a {
-    border-bottom: 1px solid #6666ff;
+    border-bottom: 1px solid #faeba1;
     display: block;
     padding: 10px 0;
     text-decoration: none; }
     .widget ul a:hover {
-      background-color: #6666ff;
+      background-color: #faeba1;
       color: #364144; }
   .widget ul .sub-menu {
     margin-left: 1em;
