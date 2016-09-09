@@ -1,8 +1,8 @@
-$color__primary: #78b463;
+$color__primary: pink;
 $color__secondary: lighten($color__primary, 10%);
 $color__tertiary: darken($color__primary, 10%);
 // $color__accent: complement($color__primary);
-$color__accent: #F5D740;
+$color__accent: blue;
 $color__highlight: lighten($color__accent, 20%);
 $color__text: #364144;
 $color__white: #faf6f1;
