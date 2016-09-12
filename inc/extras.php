@@ -25,7 +25,7 @@ function justonetree_body_classes( $classes ) {
 	}
 
 	// Add a class of no-sidebar when there is no sidebar present
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if ( ! is_active_sidebar( 'sidebar' ) || is_front_page () ) {
 		$classes[] = 'no-sidebar';
 	}
 
