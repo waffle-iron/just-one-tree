@@ -9,5 +9,6 @@
 <?php if ( has_post_thumbnail() ) : ?>
 	<div class="justonetree-hero">
 		<?php the_post_thumbnail( 'justonetree-hero' ); ?>
+		<?php the_excerpt(); ?>
 	</div>
 <?php endif; ?>

@@ -128,17 +128,7 @@ function justonetree_the_custom_logo() {
 function justonetree_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'justonetree' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Homepage', 'justonetree' ),
-		'id'            => 'sidebar-2',
+		'id'            => 'sidebar',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

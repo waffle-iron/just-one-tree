@@ -17,14 +17,13 @@ get_header(); ?>
 	<?php // Show the selected frontpage content
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post();
-			get_template_part( 'components/content', 'hero' );
+			get_template_part( 'components/features/hero-image/content', 'hero' );
+			the_content();
 		endwhile;
 	else : // I'm not sure it's possible to have no posts when this page is shown, but WTH
 		get_template_part( 'components/content', 'none' );
 	endif;
 	?>
-
-	<?php get_sidebar( 'frontpage' ); ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
