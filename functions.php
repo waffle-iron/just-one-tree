@@ -43,7 +43,7 @@ function justonetree_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'justonetree-featured-image', 640, 9999 );
-	add_image_size( 'justonetree-hero', 1280, 1000, true );
+	add_image_size( 'justonetree-hero', 2400, 600, true );
 	add_image_size( 'justonetree-thumbnail-avatar', 100, 100, true );
 
 	// This theme uses wp_nav_menu() in one location.

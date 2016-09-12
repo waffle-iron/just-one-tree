@@ -1,0 +1,28 @@
+.justonetree-hero {
+	background: $color__primary;
+	border-bottom: 8px solid $color__primary;
+	border-top: 8px solid $color__accent;
+	line-height: 1;
+	margin-left: -$size_site-gutter/2;
+	margin-right: -$size_site-gutter/2;
+	text-align: center;
+	transform: skewY(-1deg);
+	width: 100%;
+	width: calc(100% + #{$size_site-gutter});
+}
+
+.hero-text {
+	color: $color__white;
+	margin: -200px 0 100px 0; // todo: Calculate this maybe with JS, or use JS to move inside the hero-text div.
+	max-width: 350px;
+	position: relative;
+	z-index: 5;
+
+	h2 {
+		color: $color__highlight;
+	}
+}
+
+.script {
+	font-family: $font__display;
+}
