@@ -1,12 +1,13 @@
 .justonetree-hero {
 	background: $color__primary;
-	border-bottom: 8px solid $color__accent;
-	border-top: 8px solid $color__primary;
-	line-height: 0;
+	border-bottom: 8px solid $color__primary;
+	border-top: 8px solid $color__accent;
+	line-height: 1;
 	margin-left: -$size_site-gutter/2;
 	margin-right: -$size_site-gutter/2;
 	text-align: center;
 	transform: skewY(-1deg);
+	width: 100%;
 	width: calc(100% + #{$size_site-gutter});
 }
 
@@ -24,12 +25,4 @@
 
 .script {
 	font-family: $font__display;
-}
-
-#site-navigation {
-	background: $color__text;
-	margin: 0 -#{$size_site-gutter/2} -1px;
-	transform: skewY(-1deg);
-	width: calc(100% + #{$size_site-gutter});
-	z-index: 10;
 }

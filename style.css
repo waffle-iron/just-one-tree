@@ -632,15 +632,13 @@ table {
   padding-left: 0; }
   .main-navigation ul li {
     display: inline-block;
-    margin: 0;
     position: relative; }
   .main-navigation ul a {
     display: block;
-    color: #faeba1;
     font-size: 1.05rem;
     font-weight: 400;
     text-decoration: none;
-    padding: 10px 11px; }
+    padding: 5px 11px; }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto; }
@@ -741,9 +739,6 @@ body {
 .site-logo-link {
   margin: 0 auto; }
 
-.custom-logo {
-  max-width: 600px; }
-
 .site {
   padding: 10px;
   margin: 0 auto; }
@@ -834,14 +829,15 @@ body {
 
 .justonetree-hero {
   background: #78b463;
-  border-bottom: 8px solid #F5D740;
-  border-top: 8px solid #78b463;
-  line-height: 0;
+  border-bottom: 8px solid #78b463;
+  border-top: 8px solid #F5D740;
+  line-height: 1;
   margin-left: -10px;
   margin-right: -10px;
   text-align: center;
   -ms-transform: skewY(-1deg);
   transform: skewY(-1deg);
+  width: 100%;
   width: calc(100% + 20px); }
 
 .hero-text {
@@ -855,14 +851,6 @@ body {
 
 .script {
   font-family: spumante, sans-serif; }
-
-#site-navigation {
-  background: #364144;
-  margin: 0 -10px -1px;
-  -ms-transform: skewY(-1deg);
-  transform: skewY(-1deg);
-  width: calc(100% + 20px);
-  z-index: 10; }
 
 /*--------------------------------------------------------------
 # Comments
