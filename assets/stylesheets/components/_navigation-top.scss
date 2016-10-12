@@ -2,8 +2,7 @@
   background: url('assets/images/ribbon.png') repeat-x;
   min-height: 45px;
   position: relative;
-  margin-left: -$size_site-gutter/2;
-  margin-right: -$size_site-gutter/2;
+  margin: 0 #{-$size_site-gutter/2} 120px;
   width: 100%;
   width: calc(100% + #{$size_site-gutter});
   z-index: 5;
@@ -88,6 +87,23 @@
   a.focus {
   }
 }
+
+// Float navs around logo
+.justonetree-split-nav {
+  width: 50%;
+  display: inline-block;
+
+  &:first-of-type {
+    padding-right: 60px;
+    text-align: right;
+  }
+
+  &:last-of-type {
+    padding-left: 60px;
+    text-align: left;
+  }
+}
+
 
 
 // More menu (used for priority+ pattern)

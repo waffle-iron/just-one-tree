@@ -629,8 +629,7 @@ table {
   background: url("assets/images/ribbon.png") repeat-x;
   min-height: 45px;
   position: relative;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin: 0 -10px 120px;
   width: 100%;
   width: calc(100% + 20px);
   z-index: 5; }
@@ -676,6 +675,16 @@ table {
     width: 200px; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
+
+.justonetree-split-nav {
+  width: 50%;
+  display: inline-block; }
+  .justonetree-split-nav:first-of-type {
+    padding-right: 60px;
+    text-align: right; }
+  .justonetree-split-nav:last-of-type {
+    padding-left: 60px;
+    text-align: left; }
 
 #more-menu {
   display: none; }
@@ -746,8 +755,12 @@ body {
 .site-branding {
   display: none; }
 
-.site-logo-link {
-  margin: 0 auto; }
+.custom-logo-link {
+  display: block;
+  margin: 0 auto -120px;
+  max-width: 200px;
+  position: relative;
+  z-index: 6; }
 
 .site {
   padding: 10px;
