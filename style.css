@@ -625,23 +625,33 @@ table {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.main-navigation ul {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-  .main-navigation ul li {
-    display: inline-block;
-    position: relative; }
-  .main-navigation ul a {
+.main-navigation {
+  background: url("assets/images/ribbon.png") repeat-x;
+  min-height: 45px;
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 100%;
+  width: calc(100% + 20px);
+  z-index: 5; }
+  .main-navigation ul {
     display: block;
-    font-size: 1.05rem;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 5px 11px; }
-  .main-navigation ul li:hover > ul,
-  .main-navigation ul li.focus > ul {
-    left: auto; }
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul li {
+      display: inline-block;
+      position: relative; }
+    .main-navigation ul a {
+      display: block;
+      color: #364144;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-decoration: none;
+      padding: 8px 11px; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
 
 .main-navigation ul ul {
   background: #faf6f1;
@@ -830,15 +840,15 @@ body {
 .justonetree-hero {
   background: #78b463;
   border-bottom: 8px solid #78b463;
-  border-top: 8px solid #F5D740;
   line-height: 1;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin: -25px -10px;
+  position: relative;
   text-align: center;
   -ms-transform: skewY(-1deg);
   transform: skewY(-1deg);
   width: 100%;
-  width: calc(100% + 20px); }
+  width: calc(100% + 20px);
+  z-index: 1; }
 
 .hero-text {
   color: #faf6f1;

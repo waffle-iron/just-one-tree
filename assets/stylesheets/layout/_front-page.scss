@@ -1,14 +1,14 @@
 .justonetree-hero {
 	background: $color__primary;
 	border-bottom: 8px solid $color__primary;
-	border-top: 8px solid $color__accent;
 	line-height: 1;
-	margin-left: -$size_site-gutter/2;
-	margin-right: -$size_site-gutter/2;
+	margin: -15px -$size_site-gutter/2 0 -$size_site-gutter/2;
+	position: relative;
 	text-align: center;
 	transform: skewY(-1deg);
 	width: 100%;
 	width: calc(100% + #{$size_site-gutter});
+	z-index: 1;
 }
 
 .hero-text {
