@@ -874,7 +874,8 @@ body {
     color: #faeba1; }
 
 .script {
-  font-family: spumante, sans-serif; }
+  font-family: spumante, sans-serif;
+  font-size: 126%; }
 
 /*--------------------------------------------------------------
 # Comments
