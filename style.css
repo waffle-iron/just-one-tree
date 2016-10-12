@@ -237,7 +237,7 @@ th {
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #364144;
+    color: #332F25;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -310,7 +310,7 @@ button,
 input,
 select,
 textarea {
-  color: #364144;
+  color: #332F25;
   font-family: museo-sans, "Museo Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -468,8 +468,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #364144;
-  border: 1px solid #364144;
+  color: #332F25;
+  border: 1px solid #332F25;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -490,7 +490,7 @@ textarea {
     color: #78b463; }
 
 select {
-  border: 1px solid #364144; }
+  border: 1px solid #332F25; }
 
 input[type="text"],
 input[type="email"],
@@ -644,7 +644,7 @@ table {
       position: relative; }
     .main-navigation ul a {
       display: block;
-      color: #364144;
+      color: #332F25;
       font-size: 0.9rem;
       font-weight: 400;
       text-decoration: none;
@@ -774,7 +774,7 @@ body {
     max-width: 1040px; }
 
 #colophon {
-  background: #364144;
+  background: #332F25;
   color: #faf6f1;
   font-size: 14.4px;
   font-size: 0.9rem;
@@ -894,7 +894,7 @@ body {
     text-decoration: none; }
     .widget ul a:hover {
       background-color: #faeba1;
-      color: #364144; }
+      color: #332F25; }
   .widget ul .sub-menu {
     margin-left: 1em;
     padding: 0; }
@@ -918,7 +918,7 @@ body {
       background-color: transparent; }
   .widget_archive ul li::before,
   .widget_categories ul li::before {
-    border-bottom: 1px dotted #364144;
+    border-bottom: 1px dotted #332F25;
     content: "";
     -ms-flex-positive: 1;
     flex-grow: 1;
