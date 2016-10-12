@@ -1,6 +1,6 @@
 .main-navigation {
   background: url('assets/images/ribbon.png') repeat-x;
-  min-height: 45px;
+  min-height: 61px;
   position: relative;
   margin: 0 #{-$size_site-gutter/2} 120px;
   width: 100%;
@@ -28,7 +28,7 @@
   		font-size: 0.9rem;
   		font-weight: 400;
   		text-decoration: none;
-  		padding: 8px 11px;
+  		padding: 3px 11px;
   	}
 
   	.current_page_item > a,
@@ -90,8 +90,9 @@
 
 // Float navs around logo
 .justonetree-split-nav {
-  width: 50%;
   display: inline-block;
+  margin-top: 16px;
+  width: 50%;
 
   &:first-of-type {
     padding-right: 60px;

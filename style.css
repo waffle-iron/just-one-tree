@@ -627,7 +627,7 @@ table {
 --------------------------------------------------------------*/
 .main-navigation {
   background: url("assets/images/ribbon.png") repeat-x;
-  min-height: 45px;
+  min-height: 61px;
   position: relative;
   margin: 0 -10px 120px;
   width: 100%;
@@ -647,7 +647,7 @@ table {
       font-size: 0.9rem;
       font-weight: 400;
       text-decoration: none;
-      padding: 8px 11px; }
+      padding: 3px 11px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -677,8 +677,9 @@ table {
     border-bottom: 0; }
 
 .justonetree-split-nav {
-  width: 50%;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 16px;
+  width: 50%; }
   .justonetree-split-nav:first-of-type {
     padding-right: 60px;
     text-align: right; }
@@ -854,7 +855,7 @@ body {
   background: #78b463;
   border-bottom: 8px solid #78b463;
   line-height: 1;
-  margin: -25px -10px;
+  margin: -160px -10px;
   position: relative;
   text-align: center;
   -ms-transform: skewY(-1deg);
