@@ -877,6 +877,22 @@ body {
   font-family: spumante, sans-serif;
   font-size: 126%; }
 
+.take-action {
+  text-align: center; }
+
+.action-widget {
+  margin-right: -4px;
+  padding: 20px;
+  vertical-align: top;
+  width: 100%; }
+  @media (min-width: 640px) {
+    .action-widget {
+      display: inline-block;
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .action-widget {
+      width: 25%; } }
+
 /*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
