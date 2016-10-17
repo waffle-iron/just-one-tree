@@ -31,6 +31,13 @@
 
 .take-action {
 	text-align: center;
+
+  h2 {
+    .script {
+      color: lighten($color__text, 25%);
+      display: block;
+    }
+  }
 }
 
 .action-widget {
@@ -38,6 +45,16 @@
 	padding: $size_site-gutter;
 	vertical-align: top;
 	width: 100%;
+
+	h3 {
+		font-family: $font__display;
+		font-size: 200%;
+		margin: 0;
+	}
+
+	img {
+		max-width: 150px;
+	}
 
 	@include tablet {
 		display: inline-block;
