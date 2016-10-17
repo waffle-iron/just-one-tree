@@ -758,7 +758,7 @@ body {
 
 .custom-logo-link {
   display: block;
-  margin: 0 auto -120px;
+  margin: 0 auto -140px;
   max-width: 200px;
   position: relative;
   z-index: 6; }
@@ -809,13 +809,17 @@ body {
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/
-.no-sidebar .site-main {
-  margin: 0; }
+.no-sidebar .site-content {
+  max-width: none;
+  text-align: center;
+  width: 100%; }
 
 .no-sidebar .content-area {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: 1040px;
+  text-align: left;
+  width: auto; }
 
 /*--------------------------------------------------------------
 ## Posts
@@ -869,7 +873,7 @@ body {
 
 .hero-text {
   color: #faf6f1;
-  margin: -200px 0 100px 0;
+  margin: -70px 0 100px 0;
   max-width: 350px;
   position: relative;
   z-index: 5; }
@@ -888,7 +892,7 @@ body {
 
 .action-widget {
   margin-right: -4px;
-  padding: 20px;
+  padding: 10px;
   vertical-align: top;
   width: 100%; }
   .action-widget h3 {

@@ -13,7 +13,7 @@
 
 .hero-text {
 	color: $color__white;
-	margin: -200px 0 100px 0; // todo: Calculate this maybe with JS, or use JS to move inside the hero-text div.
+	margin: -70px 0 100px 0; // todo: Calculate this maybe with JS, or use JS to move inside the hero-text div.
 	max-width: 350px;
 	position: relative;
 	z-index: 5;
@@ -42,7 +42,7 @@
 
 .action-widget {
 	margin-right: -4px;
-	padding: $size_site-gutter;
+	padding: $size_site-gutter/2;
 	vertical-align: top;
 	width: 100%;
 

@@ -24,14 +24,18 @@ body {
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/
-.no-sidebar .site-main {
-  margin: 0;
+.no-sidebar .site-content {
+	max-width: none;
+	text-align: center;
+	width: 100%;
 }
 
 .no-sidebar .content-area {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
+	padding-right: 0;
+	margin: 0 auto;
+	max-width: $size_site-width;
+	text-align: left;
+	width: auto;
 }
 
 /*--------------------------------------------------------------
