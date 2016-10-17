@@ -1,4 +1,11 @@
 .main-navigation {
+  background: url('assets/images/ribbon.png') repeat-x;
+  min-height: 61px;
+  position: relative;
+  margin: 0 #{-$size_site-gutter/2} 120px;
+  width: 100%;
+  width: calc(100% + #{$size_site-gutter});
+  z-index: 5;
 
 	ul {
 		display: block;
@@ -17,10 +24,11 @@
 
   	a {
   		display: block;
-  		font-size: 1.05rem;
+  		color: $color__text-main;
+  		font-size: 0.9rem;
   		font-weight: 400;
   		text-decoration: none;
-  		padding: 5px 11px;
+  		padding: 3px 11px;
   	}
 
   	.current_page_item > a,
@@ -79,6 +87,24 @@
   a.focus {
   }
 }
+
+// Float navs around logo
+.justonetree-split-nav {
+  display: inline-block;
+  margin-top: 16px;
+  width: 50%;
+
+  &:first-of-type {
+    padding-right: 60px;
+    text-align: right;
+  }
+
+  &:last-of-type {
+    padding-left: 60px;
+    text-align: left;
+  }
+}
+
 
 
 // More menu (used for priority+ pattern)

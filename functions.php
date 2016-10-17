@@ -43,7 +43,7 @@ function justonetree_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'justonetree-featured-image', 640, 9999 );
-	add_image_size( 'justonetree-hero', 1280, 1000, true );
+	add_image_size( 'justonetree-hero', 2400, 600, true );
 	add_image_size( 'justonetree-thumbnail-avatar', 100, 100, true );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -128,7 +128,7 @@ function justonetree_the_custom_logo() {
 function justonetree_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'justonetree' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -179,6 +179,15 @@ function justonetree_local_fonts() {
 	<?php
 }
 add_action( 'wp_head', 'justonetree_local_fonts', 20 );
+
+/**
+ * Filter the front page template so it's bypassed entirely if the user selects
+ * to display blog posts on their homepage instead of a static page.
+ */
+function justonetree_filter_front_page_template( $template ) {
+	return is_home() ? '' : $template;
+}
+add_filter( 'frontpage_template', 'justonetree_filter_front_page_template' );
 
 /**
  * Custom template tags for this theme.

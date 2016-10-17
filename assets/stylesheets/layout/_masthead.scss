@@ -6,6 +6,10 @@
 	display: none;
 }
 
-.site-logo-link {
-	margin: 0 auto;
+.custom-logo-link {
+	display: block;
+	margin: 0 auto -120px;
+	max-width: 200px;
+	position: relative;
+	z-index: 6;
 }
