@@ -26,9 +26,6 @@ function justonetree_jetpack_setup() {
 
 	// Add theme support for Social Menus
 	add_theme_support( 'jetpack-social-menu' );
-
-	// Add theme support for testimonials
-	add_theme_support( 'jetpack-testimonial' );
 }
 add_action( 'after_setup_theme', 'justonetree_jetpack_setup' );
 
