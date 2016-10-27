@@ -102,19 +102,6 @@ function justonetree_content_width() {
 add_action( 'after_setup_theme', 'justonetree_content_width', 0 );
 
 /**
- * Return early if Custom Logos are not available.
- *
- * @todo Remove after WP 4.7
- */
-function justonetree_the_custom_logo() {
-	if ( ! function_exists( 'the_custom_logo' ) ) {
-		return;
-	} else {
-		the_custom_logo();
-	}
-}
-
-/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar

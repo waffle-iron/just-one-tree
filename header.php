@@ -26,11 +26,21 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/header/site', 'branding' ); ?>
+		<?php
+			get_template_part( 'components/header/site', 'branding' );
 
-		<?php justonetree_the_custom_logo(); ?>
+			if ( get_custom_logo() ) :
+				// Show the custom logo if one's been uploaded via wp-admin.
+				the_custom_logo();
+			else :
+				// Otherwise, show our logo in SVG format.
+				?>
+				<a class="custom-logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents( esc_url( get_template_directory_uri() ) . '/assets/svg/just-one-tree.svg' ); ?></a>
+		<?php
+			endif;
 
-		<?php get_template_part( 'components/navigation/navigation', 'header' ); ?>
+			get_template_part( 'components/navigation/navigation', 'header' );
+		?>
 
 	</header>
 	<div id="content" class="site-content">
