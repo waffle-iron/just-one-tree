@@ -2,9 +2,9 @@
   background: url('assets/images/ribbon.png') repeat-x;
   min-height: 61px;
   position: relative;
-  margin: 0 #{-$size_site-gutter/2} 120px;
+  margin: 0 #{-$size__site-gutter/2} 120px;
   width: 100%;
-  width: calc(100% + #{$size_site-gutter});
+  width: calc(100% + #{$size__site-gutter});
   z-index: 5;
 
 	ul {

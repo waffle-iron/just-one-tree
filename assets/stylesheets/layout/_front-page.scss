@@ -2,12 +2,12 @@
 	background: $color__primary;
 	border-bottom: 8px solid $color__primary;
 	line-height: 1;
-	margin: -150px -$size_site-gutter/2 0 -$size_site-gutter/2;
+	margin: -150px -$size__site-gutter/2 0 -$size__site-gutter/2;
 	position: relative;
 	text-align: center;
 	transform: skewY(-1deg);
 	width: 100%;
-	width: calc(100% + #{$size_site-gutter});
+	width: calc(100% + #{$size__site-gutter});
 	z-index: 1;
 }
 
@@ -42,7 +42,7 @@
 
 .action-widget {
 	margin-right: -4px;
-	padding: $size_site-gutter/2;
+	padding: $size__site-gutter/2;
 	vertical-align: top;
 	width: 100%;
 
