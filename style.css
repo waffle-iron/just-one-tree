@@ -318,13 +318,13 @@ textarea {
   line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #78b463;
+  color: #729b65;
   font-family: museo-sans-rounded, "Museo Sans Rounded", sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 2rem 0 0.25rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #78b463;
+    color: #729b65;
     text-decoration: none; }
 
 h1 {
@@ -366,7 +366,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #faeba1;
+  background: #f9f0cc;
   text-decoration: none; }
 
 big {
@@ -386,7 +386,7 @@ blockquote, q {
 
 /* Default colouration & size */
 .easy-as-svg-icon {
-  fill: #78b463;
+  fill: #729b65;
   height: 28px;
   width: 28px; }
 
@@ -395,7 +395,7 @@ blockquote, q {
   display: none !important; }
 
 .jetpack-social-navigation a {
-  background: #78b463;
+  background: #729b65;
   border-radius: 50%;
   display: inline-block;
   height: 40px !important;
@@ -487,7 +487,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #78b463; }
+    color: #729b65; }
 
 select {
   border: 1px solid #332F25; }
@@ -521,9 +521,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #F5D740;
+  background: #edd672;
   border: 0;
-  border-bottom: 4px solid #f2cd10;
+  border-bottom: 4px solid #e7c945;
   border-radius: 5px;
   box-shadow: none;
   color: #faf6f1;
@@ -533,16 +533,16 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.7rem 2rem;
   text-decoration: none;
-  text-shadow: 1px 1px #f2cd10;
+  text-shadow: 1px 1px #e7c945;
   transition: all ease-in-out 50ms; }
   button:hover,
   .button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background-color: #f2cd10;
-    border-color: #c5a60a;
-    color: #c5a60a;
+    background-color: #e7c945;
+    border-color: #ddb91c;
+    color: #ddb91c;
     text-shadow: 1px 1px rgba(250, 246, 241, 0.5); }
   button:active, button:focus,
   .button:active,
@@ -553,26 +553,26 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    background-color: #F5D740;
-    border-color: #f2cd10; }
+    background-color: #edd672;
+    border-color: #e7c945; }
 
 button.secondary,
 .button.secondary {
-  background-color: #96c585;
-  border-bottom-color: #78b463;
-  text-shadow: 1px 1px #78b463; }
+  background-color: #8eaf84;
+  border-bottom-color: #729b65;
+  text-shadow: 1px 1px #729b65; }
   button.secondary:hover,
   .button.secondary:hover {
-    background-color: #78b463;
-    border-color: #5f9a4a;
-    color: #5f9a4a;
+    background-color: #729b65;
+    border-color: #5b7c51;
+    color: #5b7c51;
     text-shadow: 1px 1px rgba(250, 246, 241, 0.4); }
 
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
 hr {
-  background-color: #F5D740;
+  background-color: #edd672;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -654,8 +654,8 @@ table {
 
 .main-navigation ul ul {
   background: #faf6f1;
-  border-bottom: 2px solid #F5D740;
-  border-top: 1px solid #F5D740;
+  border-bottom: 2px solid #edd672;
+  border-top: 1px solid #edd672;
   float: left;
   font-size: 0.8em;
   line-height: 1.2;
@@ -671,7 +671,7 @@ table {
   .main-navigation ul ul li.focus > ul {
     left: 100%; }
   .main-navigation ul ul a {
-    border-bottom: 1px solid #F5D740;
+    border-bottom: 1px solid #edd672;
     width: 200px; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
@@ -721,11 +721,11 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: #78b463; }
+  color: #729b65; }
   a:visited {
-    color: #5f9a4a; }
+    color: #5b7c51; }
   a:hover, a:focus, a:active {
-    color: #F5D740; }
+    color: #edd672; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -841,8 +841,8 @@ body {
 
 /* Header */
 .entry-meta a {
-  border-bottom: 2px solid #5f9a4a;
-  color: #5f9a4a;
+  border-bottom: 2px solid #5b7c51;
+  color: #5b7c51;
   font-weight: 500;
   font-size: 0.9rem;
   padding-bottom: 5px;
@@ -859,8 +859,8 @@ body {
   margin: 0 0 1.5em; }
 
 .justonetree-hero {
-  background: #78b463;
-  border-bottom: 8px solid #78b463;
+  background: #729b65;
+  border-bottom: 8px solid #729b65;
   line-height: 1;
   margin: -160px -10px;
   position: relative;
@@ -878,7 +878,7 @@ body {
   position: relative;
   z-index: 5; }
   .hero-text h2 {
-    color: #faeba1; }
+    color: #f9f0cc; }
 
 .script {
   font-family: spumante, sans-serif;
@@ -935,12 +935,12 @@ body {
   .widget ul li {
     margin: 0; }
   .widget ul a {
-    border-bottom: 1px solid #faeba1;
+    border-bottom: 1px solid #f9f0cc;
     display: block;
     padding: 10px 0;
     text-decoration: none; }
     .widget ul a:hover {
-      background-color: #faeba1;
+      background-color: #f9f0cc;
       color: #332F25; }
   .widget ul .sub-menu {
     margin-left: 1em;
