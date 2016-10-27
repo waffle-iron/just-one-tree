@@ -14,6 +14,8 @@
 </div><!-- #page -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<?php get_template_part( 'components/footer/sponsors' ); ?>
+
 	<?php justonetree_social_menu(); ?>
 	<?php get_template_part( 'components/footer/site', 'info' ); ?>
 	<?php get_template_part( 'components/navigation/navigation', 'footer' ); ?>
