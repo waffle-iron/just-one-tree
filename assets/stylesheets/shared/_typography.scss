@@ -6,7 +6,7 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	font-weight: 300;
-	@include font-size(1);
+	@include font-size(1.2);
 	line-height: $font__line-height-body;
 }
 
