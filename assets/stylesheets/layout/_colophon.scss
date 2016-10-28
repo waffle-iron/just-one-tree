@@ -1,21 +1,41 @@
-#colophon {
-  background: $color__text;
-  color: $color__white;
-  @include font-size(0.9);
-  padding: $size__site-gutter 0;
-  text-align: center;
+.site-footer {
+	background: $color__text;
+	color: $color__white;
+	@include font-size(0.9);
+	padding: $size__site-gutter 0;
+	//text-align: center;
 
-  a {
-    color: $color__white;
-  }
+	a {
+		color: $color__white;
+	}
 }
 
-#footer-menu {
-  ul {
-    display: inline;
-  }
+// Footer widgets
+@include tablet {
+	.site-footer .widget-area {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: $size__site-width;
 
-  li {
-    display: inline-block;
-  }
+		.widget {
+			flex: 2;
+			margin-left: $size__site-gutter;
+		}
+		.widget:first-of-type {
+			flex: 3;
+			margin-left: 0;
+		}
+	}
+}
+
+// Footer menu
+#footer-menu {
+	ul {
+		display: inline;
+	}
+
+	li {
+		display: inline-block;
+	}
 }

@@ -790,15 +790,31 @@ body {
     margin: 0 auto;
     max-width: 1040px; }
 
-#colophon {
+.site-footer {
   background: #332F25;
   color: #faf6f1;
   font-size: 14.4px;
   font-size: 0.9rem;
-  padding: 20px 0;
-  text-align: center; }
-  #colophon a {
+  padding: 20px 0; }
+  .site-footer a {
     color: #faf6f1; }
+
+@media (min-width: 640px) {
+  .site-footer .widget-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1040px; }
+    .site-footer .widget-area .widget {
+      -ms-flex: 2;
+      flex: 2;
+      margin-left: 20px; }
+    .site-footer .widget-area .widget:first-of-type {
+      -ms-flex: 3;
+      flex: 3;
+      margin-left: 0; } }
 
 #footer-menu ul {
   display: inline; }
