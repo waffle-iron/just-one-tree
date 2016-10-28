@@ -1,27 +1,27 @@
 .site {
-	padding: $size_site-gutter/2;
+	padding: $size__site-gutter/2;
 	margin: 0 auto;
 }
 
 @include tablet {
 	.site-content {
 		margin: 0 auto;
-		max-width: $size_site-width;
+		max-width: $size__site-width;
 	}
 
 	.site-content .content-area {
 		display: inline-block;
-		padding-right: $size_site-gutter;
+		padding-right: $size__site-gutter;
 		vertical-align: top;
-		width: $size_site-main - $size_site-sidebar;
+		width: $size__site-main - $size__site-sidebar;
 	}
 
 	.site-content .widget-area {
 		display: inline-block;
 		margin-left: -5px;
-		padding-left: $size_site-gutter;
+		padding-left: $size__site-gutter;
 		vertical-align: top;
-		width: $size_site-sidebar;
+		width: $size__site-sidebar;
 	}
 }
 
@@ -31,6 +31,6 @@
 
 	div {
 		margin: 0 auto;
-		max-width: $size_site-width;
+		max-width: $size__site-width;
 	}
 }

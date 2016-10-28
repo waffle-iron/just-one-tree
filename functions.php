@@ -194,3 +194,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Use SVG for icons.
  */
 require get_template_directory() . '/inc/svg-icons.php';
+
+/**
+ * Load custom post type setup.
+ */
+require get_template_directory() . '/inc/cpt/sponsors.php';

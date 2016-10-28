@@ -806,6 +806,18 @@ body {
 #footer-menu li {
   display: inline-block; }
 
+.justonetree-sponsor-logos {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1040px; }
+  .justonetree-sponsor-logos .sponsor {
+    margin: 10px; }
+
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/

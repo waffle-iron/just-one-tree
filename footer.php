@@ -19,7 +19,8 @@
 	<?php get_template_part( 'components/navigation/navigation', 'footer' ); ?>
 </footer>
 
-<?php wp_footer(); ?>
+<?php get_template_part( 'components/footer/sponsors' ); ?>
 
+<?php wp_footer(); ?>
 </body>
 </html>
