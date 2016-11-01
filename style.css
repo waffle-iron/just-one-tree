@@ -856,7 +856,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 1040px; }
   .justonetree-sponsor-logos .sponsor {
     margin: 10px; }
