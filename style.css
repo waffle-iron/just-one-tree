@@ -827,6 +827,10 @@ body {
       flex: 3;
       margin-left: 0; } }
 
+.site-footer .widget-area h2 {
+  color: #f9f0cc;
+  font-family: spumante, sans-serif; }
+
 #footer-menu ul {
   display: inline; }
 
