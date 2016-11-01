@@ -452,6 +452,12 @@ blockquote, q {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+label {
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -470,7 +476,8 @@ input[type="color"],
 textarea {
   color: #332F25;
   border: 1px solid #332F25;
-  border-radius: 3px; }
+  border-radius: 0;
+  font-size: 1em; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -507,10 +514,10 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"] {
-  padding: 3px; }
+  padding: 8px; }
 
 textarea {
-  padding-left: 3px;
+  padding-left: 10px;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -526,14 +533,15 @@ input[type="submit"] {
   border-bottom: 4px solid #e7c945;
   border-radius: 5px;
   box-shadow: none;
-  color: #faf6f1;
+  color: #514a3a;
   font-size: 16px;
   font-size: 1rem;
   font-family: museo-sans-rounded, "Museo Sans Rounded", sans-serif;
+  font-weight: 400;
   line-height: 1;
   padding: 0.7rem 2rem;
   text-decoration: none;
-  text-shadow: 1px 1px #e7c945;
+  text-shadow: 1px 1px #f9f0cc;
   transition: all ease-in-out 50ms; }
   button:hover,
   .button:hover,
@@ -976,6 +984,9 @@ body {
     max-width: 100%; }
   .widget input {
     width: 100%; }
+  .widget input[type=submit] {
+    margin: 0 15%;
+    width: 70%; }
 
 /* Lists in widgets (pages, categories, comments, etc) */
 .widget ul {
@@ -1039,6 +1050,9 @@ body {
 
 .widget_text {
   font-size: 1.2em; }
+
+.widget_mc4wp_form_widget p {
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

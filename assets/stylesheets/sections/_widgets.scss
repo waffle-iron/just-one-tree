@@ -11,6 +11,11 @@
 		width: 100%;
 	}
 
+  input[type=submit] {
+    margin: 0 15%;
+    width: 70%;
+  }
+
 }
 
 /* Lists in widgets (pages, categories, comments, etc) */
@@ -83,4 +88,11 @@
 // Text widget
 .widget_text {
   font-size: 1.2em;
+}
+
+// Mailchimp widget
+.widget_mc4wp_form_widget {
+  p {
+    margin-bottom: 0;
+  }
 }

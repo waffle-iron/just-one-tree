@@ -8,13 +8,14 @@ input[type="submit"] {
 	border-bottom: 4px solid darken($color__accent, 10%);
 	border-radius: 5px;
 	box-shadow: none;
-	color: $color__white;
+	color: lighten($color__text-input, 10%);
 	@include font-size(1);
 	font-family: $font__headings;
+	font-weight: 400;
 	line-height: 1;
 	padding: 0.7rem 2rem;
 	text-decoration: none;
-	text-shadow: 1px 1px darken($color__accent, 10%);
+	text-shadow: 1px 1px darken($color__highlight, 0%);
 	transition: all ease-in-out 50ms;
 
 	&:hover {
