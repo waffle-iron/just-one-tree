@@ -5,12 +5,18 @@
 	select {
 		max-width: 100%;
 	}
+
+	/* And make inputs span the full width. */
+	input {
+		width: 100%;
+	}
+
 }
 
 /* Lists in widgets (pages, categories, comments, etc) */
 .widget ul {
 		list-style-type: none;
-		margin: -$size__site-gutter/2 0 0 0;
+		margin: 0;
 		padding: 0;
 
 		li {
@@ -73,3 +79,8 @@
 		}
 	} // ul li
 } // .widget_archive, .widget_categories
+
+// Text widget
+.widget_text {
+  font-size: 1.2em;
+}

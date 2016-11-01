@@ -36,7 +36,7 @@
 
 		.widget {
 			flex: 2;
-			margin-left: $size__site-gutter;
+			margin-left: $size__site-gutter*2;
 		}
 		.widget:first-of-type {
 			flex: 3;
@@ -48,6 +48,13 @@
 .site-footer .widget-area h2 {
 	color: $color__highlight;
 	font-family: $font__display;
+}
+
+// Pull extra
+@include tablet {
+	.jetpack-social-navigation {
+		margin-top: -100px;
+	}
 }
 
 // Footer menu

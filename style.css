@@ -821,7 +821,7 @@ body {
     .site-footer .widget-area .widget {
       -ms-flex: 2;
       flex: 2;
-      margin-left: 20px; }
+      margin-left: 40px; }
     .site-footer .widget-area .widget:first-of-type {
       -ms-flex: 3;
       flex: 3;
@@ -830,6 +830,10 @@ body {
 .site-footer .widget-area h2 {
   color: #f9f0cc;
   font-family: spumante, sans-serif; }
+
+@media (min-width: 640px) {
+  .jetpack-social-navigation {
+    margin-top: -100px; } }
 
 #footer-menu ul {
   display: inline; }
@@ -966,14 +970,17 @@ body {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
+  /* Make sure select elements fit in widgets. */
+  /* And make inputs span the full width. */ }
   .widget select {
     max-width: 100%; }
+  .widget input {
+    width: 100%; }
 
 /* Lists in widgets (pages, categories, comments, etc) */
 .widget ul {
   list-style-type: none;
-  margin: -10px 0 0 0;
+  margin: 0;
   padding: 0; }
   .widget ul li {
     margin: 0; }
@@ -1029,6 +1036,9 @@ body {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 1em; }
+
+.widget_text {
+  font-size: 1.2em; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
