@@ -96,49 +96,49 @@ body {
       content: "#332F25"; }
 
 .color-primary {
-  background: #78b463; }
+  background: #729b65; }
   .color-primary .hex-code {
     color: #fff; }
     .color-primary .hex-code::before {
-      content: "#78b463"; }
+      content: "#729b65"; }
 
 .color-secondary {
-  background: #96c585; }
+  background: #8eaf84; }
   .color-secondary .hex-code {
     color: #fff; }
     .color-secondary .hex-code::before {
-      content: "#96c585"; }
+      content: "#8eaf84"; }
 
 .color-tertiary {
-  background: #5f9a4a; }
+  background: #5b7c51; }
   .color-tertiary .hex-code {
     color: #fff; }
     .color-tertiary .hex-code::before {
-      content: "#5f9a4a"; }
+      content: "#5b7c51"; }
 
 .color-accent {
-  background: #F5D740; }
+  background: #edd672; }
   .color-accent .hex-code {
     color: #000; }
     .color-accent .hex-code::before {
-      content: "#F5D740"; }
+      content: "#edd672"; }
 
 .color-highlight {
-  background: #faeba1; }
+  background: #f9f0cc; }
   .color-highlight .hex-code {
     color: #000; }
     .color-highlight .hex-code::before {
-      content: "#faeba1"; }
+      content: "#f9f0cc"; }
 
 .adjectives h3 {
   display: inline;
-  color: #78b463;
+  color: #729b65;
   font-family: spumante, sans-serif;
   font-size: 2.1rem;
   padding-right: 0.2em; }
 
 .adjectives h3:nth-of-type(odd) {
-  color: #F5D740; }
+  color: #edd672; }
 
 #page {
   padding-top: 110px; }
