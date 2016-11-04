@@ -28,23 +28,26 @@
 	font-size: 126%;
 }
 
-
 .take-action {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
+	justify-content: space-between;
 
-  h2 {
-    .script {
-      color: lighten($color__text, 25%);
-      display: block;
-    }
-  }
+	h2 {
+		flex-basis: 100%;
+
+		.script {
+			color: lighten($color__text, 25%);
+			display: block;
+		}
+	}
 }
 
 .action-widget {
-	margin-right: -4px;
-	padding: $size__site-gutter/2;
-	vertical-align: top;
-	width: 100%;
+	flex-basis: 100%;
+	padding-bottom: 3em;
+	position: relative;
 
 	h3 {
 		font-family: $font__display;
@@ -56,12 +59,26 @@
 		max-width: 150px;
 	}
 
+	p:not(:last-of-type) {
+		text-align: left;
+	}
+
+	.button {
+		bottom: 2em;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 70%;
+	}
+
 	@include tablet {
-		display: inline-block;
+		flex-basis: calc(50% - #{$size__site-gutter/2});
 		width: 50%;
 	}
 
 	@include desktop {
+		flex-basis: calc(25% - #{$size__site-gutter/2});
 		width: 25%;
 	}
 }

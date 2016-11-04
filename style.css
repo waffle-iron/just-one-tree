@@ -940,28 +940,49 @@ body {
   font-size: 126%; }
 
 .take-action {
-  text-align: center; }
-  .take-action h2 .script {
-    color: #7d735b;
-    display: block; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .take-action h2 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .take-action h2 .script {
+      color: #7d735b;
+      display: block; }
 
 .action-widget {
-  margin-right: -4px;
-  padding: 10px;
-  vertical-align: top;
-  width: 100%; }
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding-bottom: 3em;
+  position: relative; }
   .action-widget h3 {
     font-family: spumante, sans-serif;
     font-size: 200%;
     margin: 0; }
   .action-widget img {
     max-width: 150px; }
+  .action-widget p:not(:last-of-type) {
+    text-align: left; }
+  .action-widget .button {
+    bottom: 2em;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 70%; }
   @media (min-width: 640px) {
     .action-widget {
-      display: inline-block;
+      -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
       width: 50%; } }
   @media (min-width: 1024px) {
     .action-widget {
+      -ms-flex-preferred-size: calc(25% - 10px);
+      flex-basis: calc(25% - 10px);
       width: 25%; } }
 
 /*--------------------------------------------------------------
