@@ -4,14 +4,14 @@
 
 	@include tablet {
 		border: 8px solid $color__white;
+		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
 		max-width: 82%;
 		margin-left: 9%;
-		margin-bottom: -106px;
+		margin-bottom: -78px;
 	}
 }
 
 .hero-text {
-	//color: $color__brown;
 	max-width: 350px;
 	position: relative;
 	z-index: 5;
