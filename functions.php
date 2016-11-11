@@ -191,6 +191,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';

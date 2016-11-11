@@ -1,123 +1,163 @@
+/* Ribbon effect. */
 .main-navigation {
-  background: url('assets/images/ribbon.png') repeat-x;
-  min-height: 61px;
-  position: relative;
-  margin: 0 #{-$size__site-gutter/2} 120px;
-  width: 100%;
-  width: calc(100% + #{$size__site-gutter});
-  z-index: 5;
+	background: url('assets/images/ribbon.png') repeat-x;
+	background-size: 16px;
+	min-height: 90px;
 
-	ul {
+	@include mobile {
+		margin-left: -#{$size__site-gutter/2};
+		width: 100%;
+		width: calc(100% + #{$size__site-gutter});
+	}
+
+	@include tablet {
+		margin: 0 5%;
+		max-width: 90%;
+		position: relative;
+
+		&::before,
+		&::after {
+			display: block;
+			content: '';
+			background: url('assets/images/ribbon-end.png') no-repeat;
+			background-size: 90px;
+			height: 90px;
+			position: absolute;
+			top: 0;
+			width: 90px;
+		}
+
+		&::before {
+			left: -90px;
+		}
+
+		&::after {
+			right: -90px;
+			transform: scaleX(-1);
+		}
+	}
+}
+
+/* Actual menu text */
+.main-navigation ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	} // li
+
+	a {
 		display: block;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+		color: $color__text-main;
+		@include font-size(0.85);
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 3px 11px;
+		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
+	}
 
-  	li {
-  		display: inline-block;
-  		position: relative;
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
 
-  		&:hover > a,
-  		&.focus > a {
-  		}
-  	} // li
-
-  	a {
-  		display: block;
-  		color: $color__text-main;
-  		font-size: 0.9rem;
-  		font-weight: 400;
-  		text-decoration: none;
-  		padding: 3px 11px;
-  	}
-
-  	.current_page_item > a,
-  	.current-menu-item > a,
-  	.current_page_ancestor > a,
-  	.current-menu-ancestor > a {
-  	}
-
-    li:hover > ul,
-    li.focus > ul {
-      left: auto;
-    }
-  }
+	li:hover > ul,
+	li.focus > ul {
+		left: auto;
+	}
 } // .main-navigation
 
 // Sub-menus
 .main-navigation ul ul {
-  background: $color__white;
-  border-bottom: 2px solid $color__accent;
-  border-top: 1px solid $color__accent;
-  float: left;
-  font-size: 0.8em;
-  line-height: 1.2;
-  position: absolute;
-  text-align: left;
-  top: 1.75em;
-  left: -999em;
-  z-index: 99999;
+	background: $color__white;
+	border-bottom: 2px solid $color__accent;
+	border-top: 1px solid $color__accent;
+	font-size: 0.8em;
+	line-height: 1.2;
+	position: absolute;
+	text-align: left;
+	top: 1.75em;
+	left: -999em;
+	z-index: 99999;
 
-  ul {
-    left: -999em;
-    top: 0;
-  }
+	ul {
+		left: -999em;
+		top: 0;
+	}
 
-  li {
-    &:hover > ul,
-    &.focus > ul {
-      left: 100%;
-    }
-  }
+	li {
+		margin-bottom: 0;
 
-  a {
-    border-bottom: 1px solid $color__accent;
-    width: 200px;
-  }
+		&:hover > ul,
+		&.focus > ul {
+			left: 100%;
+		}
+	}
 
-  li:last-of-type a {
-    border-bottom: 0;
-  }
+	a {
+		border-bottom: 1px solid $color__accent;
+		display: block;
+		letter-spacing: 0;
+		min-width: 200px;
+		padding: 10px;
+		text-shadow: none;
+		text-transform: none;
+	}
 
-  :hover > a,
-  .focus > a {
-  }
+	li:last-of-type a {
+		border-bottom: 0;
+	}
 
-  a:hover,
-  a.focus {
-  }
+	:hover > a,
+	.focus > a {
+	}
+
+	a:hover,
+	a.focus {
+	}
 }
 
 // Float navs around logo
-.justonetree-split-nav {
-  display: inline-block;
-  margin-top: 16px;
-  width: 50%;
+@include tablet {
+	.justonetree-split-nav {
+		display: inline-block;
+		margin-top: 12px;
+		width: 50%;
 
-  &:first-of-type {
-    padding-right: 60px;
-    text-align: right;
-  }
+		&:first-of-type {
+			padding-right: 60px;
+			text-align: right;
+		}
 
-  &:last-of-type {
-    padding-left: 60px;
-    text-align: left;
-  }
+		&:last-of-type {
+			padding-left: 60px;
+			text-align: left;
+		}
+	}
 }
-
-
 
 // More menu (used for priority+ pattern)
 #more-menu {
-  display: none;
+	display: none;
 }
 
 #more-menu.visible {
-  display: inline-block;
+	display: inline-block;
 }
 
 #more-menu .easy-as-svg-icon-more {
-  height: 16px;
-  vertical-align: -3px;
-  width: 16px;
+	height: 16px;
+	vertical-align: -3px;
+	width: 16px;
 }

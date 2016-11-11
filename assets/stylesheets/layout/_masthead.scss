@@ -1,5 +1,19 @@
 #masthead {
+	margin: 0 auto;
+	max-width: $size__site-width;
 	text-align: center;
+}
+
+.justonetree-hero {
+	width: 100%;
+	z-index: 1;
+
+	@include tablet {
+		border: 8px solid $color__white;
+		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
+		max-width: 90%;
+		margin: 2em 5% -78px;
+	}
 }
 
 .site-branding {
@@ -8,8 +22,12 @@
 
 .custom-logo-link {
 	display: block;
-	margin: 0 auto -140px;
+	margin: 0 auto;
 	max-width: 200px;
 	position: relative;
 	z-index: 6;
+
+	@include tablet {
+		margin-bottom: -140px;
+	}
 }
