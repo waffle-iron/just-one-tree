@@ -1,3 +1,4 @@
+/* Ribbon effect. */
 .main-navigation {
 	background: url('assets/images/ribbon.png') repeat-x;
 	background-size: 20px;
@@ -57,10 +58,13 @@
 	a {
 		display: block;
 		color: $color__text-main;
-		font-size: 0.9rem;
+		@include font-size(0.85);
 		font-weight: 400;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
 		text-decoration: none;
 		padding: 3px 11px;
+		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	}
 
 	.current_page_item > a,

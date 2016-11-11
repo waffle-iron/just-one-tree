@@ -633,6 +633,7 @@ table {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* Ribbon effect. */
 .main-navigation {
   background: url("assets/images/ribbon.png") repeat-x;
   background-size: 20px;
@@ -676,10 +677,14 @@ table {
   .main-navigation ul a {
     display: block;
     color: #332F25;
-    font-size: 0.9rem;
+    font-size: 13.6px;
+    font-size: 0.85rem;
     font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 3px 11px; }
+    padding: 3px 11px;
+    text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto; }
