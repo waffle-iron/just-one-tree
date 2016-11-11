@@ -637,7 +637,7 @@ table {
 .main-navigation {
   background: url("assets/images/ribbon.png") repeat-x;
   background-size: 20px;
-  min-height: 89px;
+  min-height: 90px;
   z-index: 5; }
   @media (max-width: 639px) {
     .main-navigation {
@@ -646,22 +646,22 @@ table {
       width: calc(100% + 20px); } }
   @media (min-width: 640px) {
     .main-navigation {
-      margin: 0 10%;
-      max-width: 80%;
+      margin: 0 5%;
+      max-width: 90%;
       position: relative; }
       .main-navigation::before, .main-navigation::after {
         display: block;
         content: '';
         background: url("assets/images/ribbon-end.png") no-repeat;
-        background-size: 105px;
+        background-size: 90px;
         height: 90px;
         position: absolute;
         top: 0;
-        width: 105px; }
+        width: 90px; }
       .main-navigation::before {
-        left: -105px; }
+        left: -90px; }
       .main-navigation::after {
-        right: -105px;
+        right: -90px;
         -ms-transform: scaleX(-1);
         transform: scaleX(-1); } }
 
