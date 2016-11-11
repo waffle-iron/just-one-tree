@@ -635,12 +635,25 @@ table {
 --------------------------------------------------------------*/
 .main-navigation {
   background: url("assets/images/ribbon.png") repeat-x;
-  min-height: 61px;
+  background-size: 20px;
+  min-height: 89px;
   position: relative;
-  margin: 0 -10px 120px;
-  width: 100%;
-  width: calc(100% + 20px);
   z-index: 5; }
+  .main-navigation::before, .main-navigation::after {
+    display: block;
+    content: '';
+    background: url("assets/images/ribbon-end.png") no-repeat;
+    background-size: 105px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    width: 105px; }
+  .main-navigation::before {
+    left: -105px; }
+  .main-navigation::after {
+    right: -105px;
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1); }
   .main-navigation ul {
     display: block;
     list-style: none;
@@ -686,7 +699,7 @@ table {
 
 .justonetree-split-nav {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 12px;
   width: 50%; }
   .justonetree-split-nav:first-of-type {
     padding-right: 60px;
@@ -759,6 +772,8 @@ body {
   background-size: contain; }
 
 #masthead {
+  margin: 0 auto;
+  max-width: 1040px;
   text-align: center; }
 
 .site-branding {
@@ -865,14 +880,12 @@ body {
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/
 .no-sidebar .site-content {
-  max-width: none;
-  text-align: center;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 1040px; }
 
 .no-sidebar .content-area {
   padding-right: 0;
   margin: 0 auto;
-  max-width: 1040px;
   text-align: left;
   width: auto; }
 

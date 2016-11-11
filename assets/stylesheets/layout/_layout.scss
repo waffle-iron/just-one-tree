@@ -26,15 +26,13 @@ body {
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/
 .no-sidebar .site-content {
-	max-width: none;
-	text-align: center;
-	width: 100%;
+	margin: 0 auto;
+	max-width: $size__site-width;
 }
 
 .no-sidebar .content-area {
 	padding-right: 0;
 	margin: 0 auto;
-	max-width: $size__site-width;
 	text-align: left;
 	width: auto;
 }

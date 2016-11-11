@@ -1,11 +1,30 @@
 .main-navigation {
-  background: url('assets/images/ribbon.png') repeat-x;
-  min-height: 61px;
-  position: relative;
-  margin: 0 #{-$size__site-gutter/2} 120px;
-  width: 100%;
-  width: calc(100% + #{$size__site-gutter});
-  z-index: 5;
+	background: url('assets/images/ribbon.png') repeat-x;
+	background-size: 20px;
+	min-height: 89px;
+	position: relative;
+	z-index: 5;
+
+	&::before,
+	&::after {
+		display: block;
+		content: '';
+		background: url('assets/images/ribbon-end.png') no-repeat;
+		background-size: 105px;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		width: 105px;
+	}
+
+	&::before {
+		left: -105px;
+	}
+
+	&::after {
+		right: -105px;
+		transform: scaleX(-1);
+	}
 
 	ul {
 		display: block;
@@ -91,7 +110,7 @@
 // Float navs around logo
 .justonetree-split-nav {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 12px;
   width: 50%;
 
   &:first-of-type {
