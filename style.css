@@ -942,26 +942,19 @@ body {
   margin: 0 0 1.5em; }
 
 .justonetree-hero {
-  background: #729b65;
-  border-bottom: 8px solid #729b65;
-  line-height: 1;
-  margin: -160px -10px;
-  position: relative;
-  text-align: center;
-  -ms-transform: skewY(-1deg);
-  transform: skewY(-1deg);
   width: 100%;
-  width: calc(100% + 20px);
   z-index: 1; }
+  @media (min-width: 640px) {
+    .justonetree-hero {
+      border: 8px solid #faf6f1;
+      max-width: 82%;
+      margin-left: 9%;
+      margin-bottom: -106px; } }
 
 .hero-text {
-  color: #faf6f1;
-  margin: -70px 0 100px 0;
   max-width: 350px;
   position: relative;
   z-index: 5; }
-  .hero-text h2 {
-    color: #f9f0cc; }
 
 .script {
   font-family: spumante, sans-serif;
