@@ -1,16 +1,3 @@
-.justonetree-hero {
-	width: 100%;
-	z-index: 1;
-
-	@include tablet {
-		border: 8px solid $color__white;
-		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
-		max-width: 82%;
-		margin-left: 9%;
-		margin-bottom: -78px;
-	}
-}
-
 .hero-text {
 	max-width: 350px;
 	position: relative;

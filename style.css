@@ -793,6 +793,16 @@ body {
   max-width: 1040px;
   text-align: center; }
 
+.justonetree-hero {
+  width: 100%;
+  z-index: 1; }
+  @media (min-width: 640px) {
+    .justonetree-hero {
+      border: 8px solid #faf6f1;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
+      max-width: 90%;
+      margin: 2em 5% -78px; } }
+
 .site-branding {
   display: none; }
 
@@ -945,17 +955,6 @@ body {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
-
-.justonetree-hero {
-  width: 100%;
-  z-index: 1; }
-  @media (min-width: 640px) {
-    .justonetree-hero {
-      border: 8px solid #faf6f1;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
-      max-width: 82%;
-      margin-left: 9%;
-      margin-bottom: -78px; } }
 
 .hero-text {
   max-width: 350px;
