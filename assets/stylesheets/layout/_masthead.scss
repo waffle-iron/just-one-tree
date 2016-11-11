@@ -10,8 +10,12 @@
 
 .custom-logo-link {
 	display: block;
-	margin: 0 auto -140px;
+	margin: 0 auto;
 	max-width: 200px;
 	position: relative;
 	z-index: 6;
+
+	@include tablet {
+		margin-bottom: -140px;
+	}
 }

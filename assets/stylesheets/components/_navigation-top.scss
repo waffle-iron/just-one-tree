@@ -2,65 +2,77 @@
 	background: url('assets/images/ribbon.png') repeat-x;
 	background-size: 20px;
 	min-height: 89px;
-	position: relative;
 	z-index: 5;
 
-	&::before,
-	&::after {
+	@include mobile {
+		margin-left: -#{$size__site-gutter/2};
+		width: 100%;
+		width: calc(100% + #{$size__site-gutter});
+	}
+
+	@include tablet {
+		margin: 0 10%;
+		max-width: 80%;
+		position: relative;
+
+		&::before,
+		&::after {
+			display: block;
+			content: '';
+			background: url('assets/images/ribbon-end.png') no-repeat;
+			background-size: 105px;
+			height: 90px;
+			position: absolute;
+			top: 0;
+			width: 105px;
+		}
+
+		&::before {
+			left: -105px;
+		}
+
+		&::after {
+			right: -105px;
+			transform: scaleX(-1);
+		}
+	}
+}
+
+/* Actual menu text */
+.main-navigation ul{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	} // li
+
+	a {
 		display: block;
-		content: '';
-		background: url('assets/images/ribbon-end.png') no-repeat;
-		background-size: 105px;
-		height: 90px;
-		position: absolute;
-		top: 0;
-		width: 105px;
+		color: $color__text-main;
+		font-size: 0.9rem;
+		font-weight: 400;
+		text-decoration: none;
+		padding: 3px 11px;
 	}
 
-	&::before {
-		left: -105px;
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
 	}
 
-	&::after {
-		right: -105px;
-		transform: scaleX(-1);
+	li:hover > ul,
+	li.focus > ul {
+		left: auto;
 	}
-
-	ul {
-		display: block;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-  	li {
-  		display: inline-block;
-  		position: relative;
-
-  		&:hover > a,
-  		&.focus > a {
-  		}
-  	} // li
-
-  	a {
-  		display: block;
-  		color: $color__text-main;
-  		font-size: 0.9rem;
-  		font-weight: 400;
-  		text-decoration: none;
-  		padding: 3px 11px;
-  	}
-
-  	.current_page_item > a,
-  	.current-menu-item > a,
-  	.current_page_ancestor > a,
-  	.current-menu-ancestor > a {
-  	}
-
-    li:hover > ul,
-    li.focus > ul {
-      left: auto;
-    }
-  }
 } // .main-navigation
 
 // Sub-menus
@@ -108,23 +120,23 @@
 }
 
 // Float navs around logo
-.justonetree-split-nav {
-  display: inline-block;
-  margin-top: 12px;
-  width: 50%;
+@include tablet {
+	.justonetree-split-nav {
+		display: inline-block;
+		margin-top: 12px;
+		width: 50%;
 
-  &:first-of-type {
-    padding-right: 60px;
-    text-align: right;
-  }
+		&:first-of-type {
+			padding-right: 60px;
+			text-align: right;
+		}
 
-  &:last-of-type {
-    padding-left: 60px;
-    text-align: left;
-  }
+		&:last-of-type {
+			padding-left: 60px;
+			text-align: left;
+		}
+	}
 }
-
-
 
 // More menu (used for priority+ pattern)
 #more-menu {
