@@ -637,8 +637,7 @@ table {
 .main-navigation {
   background: url("assets/images/ribbon.png") repeat-x;
   background-size: 16px;
-  min-height: 90px;
-  z-index: 5; }
+  min-height: 90px; }
   @media (max-width: 639px) {
     .main-navigation {
       margin-left: -10px;
@@ -693,7 +692,6 @@ table {
   background: #faf6f1;
   border-bottom: 2px solid #edd672;
   border-top: 1px solid #edd672;
-  float: left;
   font-size: 0.8em;
   line-height: 1.2;
   position: absolute;
@@ -704,12 +702,19 @@ table {
   .main-navigation ul ul ul {
     left: -999em;
     top: 0; }
-  .main-navigation ul ul li:hover > ul,
-  .main-navigation ul ul li.focus > ul {
-    left: 100%; }
+  .main-navigation ul ul li {
+    margin-bottom: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
   .main-navigation ul ul a {
     border-bottom: 1px solid #edd672;
-    width: 200px; }
+    display: block;
+    letter-spacing: 0;
+    min-width: 200px;
+    padding: 10px;
+    text-shadow: none;
+    text-transform: none; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
 

@@ -3,7 +3,6 @@
 	background: url('assets/images/ribbon.png') repeat-x;
 	background-size: 16px;
 	min-height: 90px;
-	z-index: 5;
 
 	@include mobile {
 		margin-left: -#{$size__site-gutter/2};
@@ -40,7 +39,7 @@
 }
 
 /* Actual menu text */
-.main-navigation ul{
+.main-navigation ul {
 	display: block;
 	list-style: none;
 	margin: 0;
@@ -81,46 +80,52 @@
 
 // Sub-menus
 .main-navigation ul ul {
-  background: $color__white;
-  border-bottom: 2px solid $color__accent;
-  border-top: 1px solid $color__accent;
-  float: left;
-  font-size: 0.8em;
-  line-height: 1.2;
-  position: absolute;
-  text-align: left;
-  top: 1.75em;
-  left: -999em;
-  z-index: 99999;
+	background: $color__white;
+	border-bottom: 2px solid $color__accent;
+	border-top: 1px solid $color__accent;
+	font-size: 0.8em;
+	line-height: 1.2;
+	position: absolute;
+	text-align: left;
+	top: 1.75em;
+	left: -999em;
+	z-index: 99999;
 
-  ul {
-    left: -999em;
-    top: 0;
-  }
+	ul {
+		left: -999em;
+		top: 0;
+	}
 
-  li {
-    &:hover > ul,
-    &.focus > ul {
-      left: 100%;
-    }
-  }
+	li {
+		margin-bottom: 0;
 
-  a {
-    border-bottom: 1px solid $color__accent;
-    width: 200px;
-  }
+		&:hover > ul,
+		&.focus > ul {
+			left: 100%;
+		}
+	}
 
-  li:last-of-type a {
-    border-bottom: 0;
-  }
+	a {
+		border-bottom: 1px solid $color__accent;
+		display: block;
+		letter-spacing: 0;
+		min-width: 200px;
+		padding: 10px;
+		text-shadow: none;
+		text-transform: none;
+	}
 
-  :hover > a,
-  .focus > a {
-  }
+	li:last-of-type a {
+		border-bottom: 0;
+	}
 
-  a:hover,
-  a.focus {
-  }
+	:hover > a,
+	.focus > a {
+	}
+
+	a:hover,
+	a.focus {
+	}
 }
 
 // Float navs around logo
@@ -144,15 +149,15 @@
 
 // More menu (used for priority+ pattern)
 #more-menu {
-  display: none;
+	display: none;
 }
 
 #more-menu.visible {
-  display: inline-block;
+	display: inline-block;
 }
 
 #more-menu .easy-as-svg-icon-more {
-  height: 16px;
-  vertical-align: -3px;
-  width: 16px;
+	height: 16px;
+	vertical-align: -3px;
+	width: 16px;
 }
