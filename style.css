@@ -807,7 +807,7 @@ body {
 
 @media (min-width: 640px) {
   .site-content {
-    margin: 0 auto;
+    margin: 6em auto 0;
     max-width: 1040px; }
   .site-content .content-area {
     display: inline-block;
@@ -816,7 +816,7 @@ body {
     width: 67%; }
   .site-content .widget-area {
     display: inline-block;
-    margin-left: -5px;
+    margin-left: -6px;
     padding-left: 20px;
     vertical-align: top;
     width: 33%; } }

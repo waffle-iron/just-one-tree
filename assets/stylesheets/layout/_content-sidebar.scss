@@ -5,7 +5,7 @@
 
 @include tablet {
 	.site-content {
-		margin: 0 auto;
+		margin: 6em auto 0;
 		max-width: $size__site-width;
 	}
 
@@ -18,7 +18,7 @@
 
 	.site-content .widget-area {
 		display: inline-block;
-		margin-left: -5px;
+		margin-left: -6px;
 		padding-left: $size__site-gutter;
 		vertical-align: top;
 		width: $size__site-sidebar;
