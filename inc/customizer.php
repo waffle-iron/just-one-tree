@@ -15,18 +15,10 @@ function justonetree_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	/**
-	 * Add the Theme Options section
-	 */
-	$wp_customize->add_panel( 'justonetree_options_panel', array(
-		'title'          => __( 'Custom Options', 'justonetree' ),
-		'description'    => __( 'Options specific to your theme.', 'justonetree' ),
-	) );
 	// General settings
 	$wp_customize->add_section( 'justonetree_general_settings', array(
-		'title'           => esc_html__( 'Tree-o-meter Settings', 'justonetree' ),
-		'panel'           => 'justonetree_options_panel',
-		'description'     => __( 'Here, you can enter the number of trees currently registered, and the total number of tree registrations aimed for.', 'justonetree' ),
+		'title'           => esc_html__( 'Custom Options', 'justonetree' ),
+		'description'     => __( 'Custom options for your site.', 'justonetree' ),
 	) );
 	$wp_customize->add_setting( 'justonetree_trees_registered', array(
 		'type' => 'theme_mod', // or 'option'
