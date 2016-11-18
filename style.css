@@ -728,10 +728,10 @@ table {
     margin-top: 12px;
     width: 50%; }
     .justonetree-split-nav:first-of-type {
-      padding-right: 60px;
+      padding-right: 80px;
       text-align: right; }
     .justonetree-split-nav:last-of-type {
-      padding-left: 60px;
+      padding-left: 80px;
       text-align: left; } }
 
 #more-menu {
@@ -800,7 +800,14 @@ body {
 #masthead {
   margin: 0 auto;
   max-width: 1040px;
+  position: relative;
   text-align: center; }
+
+.main-navigation {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0; }
 
 .justonetree-hero {
   width: 100%;
@@ -810,7 +817,7 @@ body {
       border: 8px solid #faf6f1;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
       max-width: 90%;
-      margin: 2em 5% -78px; } }
+      margin: 2em 5% 0; } }
 
 .site-branding {
   display: none; }
@@ -823,7 +830,9 @@ body {
   z-index: 6; }
   @media (min-width: 640px) {
     .custom-logo-link {
-      margin-bottom: -140px; } }
+      position: absolute;
+      bottom: -80px;
+      left: 40%; } }
 
 .site {
   padding: 10px;
@@ -1028,12 +1037,17 @@ progress[value] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 5%;
+    margin: 80px 5% 40px;
     max-width: 90%; }
   .hero-text {
-    max-width: 400px; }
+    max-width: 350px; }
   .justonetree-treeometer {
     max-width: 400px; } }
+
+.hero-text h2 {
+  color: #7d735b; }
+  .hero-text h2 .script {
+    color: #8eaf84; }
 
 /* Take action section */
 .take-action {

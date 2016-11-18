@@ -3,18 +3,27 @@
 	.intro {
 		display: flex;
 		justify-content: space-between;
-		margin: 0 5%;
+		margin: $size__site-gutter*4 5% $size__site-gutter*2;
 		max-width: 90%;
 	}
 
 	.hero-text {
-		max-width: 400px;
+		max-width: 350px;
 	}
 
 	.justonetree-treeometer {
 		max-width: 400px;
 	}
 
+}
+
+// Headline
+.hero-text h2 {
+	color: $color__neutral;
+
+	.script {
+		color: $color__secondary
+	}
 }
 
 /* Take action section */
@@ -28,7 +37,7 @@
 		flex-basis: 100%;
 
 		.script {
-			color: lighten($color__text, 25%);
+			color: $color__neutral;
 			display: block;
 		}
 	}

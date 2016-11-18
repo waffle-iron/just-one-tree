@@ -5,6 +5,7 @@ $color__tertiary: darken($color__primary, 10%);
 $color__accent: #edd672;
 $color__highlight: lighten($color__accent, 20%);
 $color__text: #332F25;
+$color__neutral: lighten($color__text, 25%);
 $color__white: #faf6f1;
 
 $color__background-body: $color__white;
