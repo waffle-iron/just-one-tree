@@ -1,7 +1,15 @@
 #masthead {
 	margin: 0 auto;
 	max-width: $size__site-width;
+	position: relative;
 	text-align: center;
+}
+
+.main-navigation {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	right: 0;
 }
 
 .justonetree-hero {
@@ -12,7 +20,7 @@
 		border: 8px solid $color__white;
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
 		max-width: 90%;
-		margin: 2em 5% -110px;
+		margin: 2em 5% 0;
 	}
 }
 
@@ -28,6 +36,8 @@
 	z-index: 6;
 
 	@include tablet {
-		margin-bottom: -140px;
+		position: absolute;
+		bottom: -80px;
+		left: 40%;
 	}
 }
