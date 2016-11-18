@@ -333,6 +333,10 @@ h1 {
 h2 {
   font-size: 1.9rem; }
 
+.script {
+  font-family: spumante, sans-serif;
+  font-size: 126%; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -961,15 +965,16 @@ body {
   clear: both;
   margin: 0 0 1.5em; }
 
-.hero-text {
-  max-width: 350px;
-  position: relative;
-  z-index: 5; }
+@media (min-width: 640px) {
+  .intro {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 5%;
+    max-width: 90%; }
+  .hero-text {
+    max-width: 400px; } }
 
-.script {
-  font-family: spumante, sans-serif;
-  font-size: 126%; }
-
+/* Take action section */
 .take-action {
   display: -ms-flexbox;
   display: flex;

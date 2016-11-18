@@ -1,18 +1,18 @@
-.hero-text {
-	max-width: 350px;
-	position: relative;
-	z-index: 5;
-
-	h2 {
-		//color: $color__highlight;
+// Arrange hero text and tree-o-meter side-by-side on larger screens.
+@include tablet {
+	.intro {
+		display: flex;
+		margin: 0 5%;
+		max-width: 90%;
 	}
+
+	.hero-text {
+		max-width: 400px;
+	}
+
 }
 
-.script {
-	font-family: $font__display;
-	font-size: 126%;
-}
-
+/* Take action section */
 .take-action {
 	display: flex;
 	flex-wrap: wrap;
