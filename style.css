@@ -915,6 +915,15 @@ body {
   .justonetree-sponsor-logos .sponsor {
     margin: 10px; }
 
+.justonetree-treeometer {
+  max-width: 300px; }
+
+progress,
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .progress-bar {
   background-color: #f9f0cc;
   border: 2px solid #332F25;
@@ -957,10 +966,11 @@ body {
   display: block;
   height: 0.3em; }
 
-.justonetree-treeometer dl {
-  margin: -200px 0 0 15px; }
-  .justonetree-treeometer dl dd {
-    margin-left: 0; }
+#justonetree-treeometer-text {
+  font-size: 0.8em;
+  text-align: center;
+  margin: -200px 0 0 10px;
+  max-width: 230px; }
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
@@ -1021,6 +1031,8 @@ body {
     margin: 0 5%;
     max-width: 90%; }
   .hero-text {
+    max-width: 400px; }
+  .justonetree-treeometer {
     max-width: 400px; } }
 
 /* Take action section */

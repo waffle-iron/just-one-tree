@@ -2,6 +2,16 @@ $progressBarColour: $color__highlight;
 $progressValueColour: $color__accent;
 $progressBarRadius: 15px;
 
+.justonetree-treeometer {
+	max-width: 300px;
+}
+
+// Remove default browser styling.
+progress,
+progress[value] {
+	appearance: none;
+}
+
 .progress-bar {
 	background-color: $progressBarColour;
 	border: 2px solid $color__text;
@@ -48,11 +58,10 @@ $progressBarRadius: 15px;
 	height: 0.3em;
 }
 
-
-.justonetree-treeometer dl {
-	margin: -200px 0 0 $progressBarRadius;
-
-	dd {
-		margin-left: 0;
-	}
+// Text
+#justonetree-treeometer-text {
+	font-size: 0.8em;
+	text-align: center;
+	margin: -200px 0 0 10px;
+	max-width: 230px;
 }
