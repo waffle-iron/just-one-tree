@@ -1037,12 +1037,17 @@ progress[value] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 40px 5%;
+    margin: 80px 5% 40px;
     max-width: 90%; }
   .hero-text {
-    max-width: 400px; }
+    max-width: 350px; }
   .justonetree-treeometer {
     max-width: 400px; } }
+
+.hero-text h2 {
+  color: #7d735b; }
+  .hero-text h2 .script {
+    color: #8eaf84; }
 
 /* Take action section */
 .take-action {
