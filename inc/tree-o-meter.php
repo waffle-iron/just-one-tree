@@ -41,7 +41,14 @@ function justonetree_treeometer_number( $request ) {
 function justonetree_treeometer_shortcode( $attr, $content = '', $shortcode_tag ) {
 	ob_start(); ?>
 	<div class="justonetree-treeometer">
-		<dl>
+		<progress max="<?php echo justonetree_treeometer_number( 'goal' ); ?>" value="<?php echo justonetree_treeometer_number( 'registered' ); ?>" class="progress-bar" aria-labelledby="justonetree-treeometer-progress">
+			<div class="fallback-progress-bar" role="presentation">
+				<span class="fallback-progress-value" style="width: <?php echo justonetree_treeometer_number( 'percent' ); ?>%;">&nbsp;</span>
+			</div>
+		</progress>
+
+
+		<dl id="justonetree-treeometer-progress">
 			<dt><?php esc_html_e( 'Our Goal:', 'justonetree' ); ?> <?php echo justonetree_treeometer_number( 'goal' ); ?> <?php esc_html_e( 'trees', 'justonetree' ); ?></dt>
 			<dd><?php esc_html_e( 'Current total:', 'justonetree' ); ?> <?php echo justonetree_treeometer_number( 'registered' ); ?> (<?php echo justonetree_treeometer_number( 'percent' ); ?>%)</dd>
 	</div>

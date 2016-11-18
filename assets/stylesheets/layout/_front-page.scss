@@ -2,6 +2,7 @@
 @include tablet {
 	.intro {
 		display: flex;
+		justify-content: space-between;
 		margin: 0 5%;
 		max-width: 90%;
 	}
