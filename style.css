@@ -831,8 +831,23 @@ body {
   @media (min-width: 640px) {
     .custom-logo-link {
       position: absolute;
-      bottom: -80px;
+      bottom: -120px;
       left: 40%; } }
+
+.justonetree-logo .title {
+  font-size: 51.2px;
+  font-size: 3.2rem;
+  fill: #729b65;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .justonetree-logo .title tspan {
+    fill: #e4c22e; }
+
+.justonetree-logo .subtitle {
+  fill: #7d735b;
+  font-size: 48px;
+  font-size: 3rem;
+  font-family: spumante, sans-serif; }
 
 .site {
   padding: 10px;

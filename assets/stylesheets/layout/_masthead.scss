@@ -37,7 +37,26 @@
 
 	@include tablet {
 		position: absolute;
-		bottom: -80px;
+		bottom: -120px;
 		left: 40%;
+	}
+}
+
+.justonetree-logo {
+	.title {
+		@include font-size(3.2);
+		fill: $color__primary;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		tspan {
+			fill: darken($color__accent, 15%);
+		}
+	}
+
+	.subtitle {
+		fill: $color__neutral;
+		@include font-size(3);
+		font-family: $font__display;
 	}
 }
