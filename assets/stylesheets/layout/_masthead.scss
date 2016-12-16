@@ -8,17 +8,11 @@
 	text-decoration: none;
 }
 
-.justonetree-logo {
-	display: inline-block;
-	max-height: 75px;
-	vertical-align: middle;
-}
-
 // Site title & subtitle.
-.site-branding {
-	display: inline-block;
-	vertical-align: middle;
-	width: calc(100% - 81px);
+.site-title,
+.site-description {
+	line-height: 1.2;
+	margin: 0;
 }
 
 .site-title {
@@ -42,10 +36,19 @@
 	font-family: $font__display;
 }
 
-.site-title,
-.site-description {
-	line-height: 1.2;
-	margin: 0;
+// Mobile only bits.
+@include mobile {
+	.justonetree-logo {
+		display: inline-block;
+		max-height: 75px;
+		vertical-align: middle;
+	}
+
+	.justonetree-title-text {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 81px);
+	}
 }
 
 // We're doing all the tablet and up bits in one block since the whole structure changes!
@@ -68,23 +71,27 @@
 		z-index: 1;
 	}
 
-	.custom-logo-link {
+	.site-branding {
 		display: block;
 		margin: 0 auto;
-		max-width: 200px;
+		max-width: 300px;
 		position: relative;
 		z-index: 6;
 		position: absolute;
-		bottom: -120px;
+		bottom: -140px;
 		left: 40%;
 	}
 
+	.justonetree-logo {
+		max-width: 150px;
+	}
+
 	.site-title {
-		@include font-size(3.2);
+		@include font-size(1.8);
 	}
 
 	.site-description {
-		@include font-size(3);
+		@include font-size(2.1);
 		font-family: $font__display;
 	}
 

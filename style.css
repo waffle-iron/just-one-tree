@@ -749,7 +749,7 @@ table {
 @media (min-width: 640px) {
   .justonetree-split-nav {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 10px;
     width: 50%; }
     .justonetree-split-nav:first-of-type {
       padding-right: 80px;
@@ -819,15 +819,10 @@ body {
 .custom-logo-link {
   text-decoration: none; }
 
-.justonetree-logo {
-  display: inline-block;
-  max-height: 75px;
-  vertical-align: middle; }
-
-.site-branding {
-  display: inline-block;
-  vertical-align: middle;
-  width: calc(100% - 81px); }
+.site-title,
+.site-description {
+  line-height: 1.2;
+  margin: 0; }
 
 .site-title {
   font-size: 25.6px;
@@ -846,10 +841,15 @@ body {
   font-size: 1.6rem;
   font-family: spumante, sans-serif; }
 
-.site-title,
-.site-description {
-  line-height: 1.2;
-  margin: 0; }
+@media (max-width: 639px) {
+  .justonetree-logo {
+    display: inline-block;
+    max-height: 75px;
+    vertical-align: middle; }
+  .justonetree-title-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 81px); } }
 
 @media (min-width: 640px) {
   #masthead {
@@ -865,21 +865,23 @@ body {
     margin: 2em 5% 0;
     width: 100%;
     z-index: 1; }
-  .custom-logo-link {
+  .site-branding {
     display: block;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 300px;
     position: relative;
     z-index: 6;
     position: absolute;
-    bottom: -120px;
+    bottom: -140px;
     left: 40%; }
+  .justonetree-logo {
+    max-width: 150px; }
   .site-title {
-    font-size: 51.2px;
-    font-size: 3.2rem; }
+    font-size: 28.8px;
+    font-size: 1.8rem; }
   .site-description {
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 33.6px;
+    font-size: 2.1rem;
     font-family: spumante, sans-serif; }
   .main-navigation {
     position: absolute;
