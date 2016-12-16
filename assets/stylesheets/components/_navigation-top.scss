@@ -3,39 +3,6 @@
 	background: url('assets/images/ribbon.png') repeat-x;
 	background-size: 16px;
 	min-height: 90px;
-
-	@include mobile {
-		margin-left: -#{$size__site-gutter/2};
-		width: 100%;
-		width: calc(100% + #{$size__site-gutter});
-	}
-
-	@include tablet {
-		margin: 0 5%;
-		max-width: 90%;
-		position: relative;
-
-		&::before,
-		&::after {
-			display: block;
-			content: '';
-			background: url('assets/images/ribbon-end.png') no-repeat;
-			background-size: 90px;
-			height: 90px;
-			position: absolute;
-			top: 0;
-			width: 90px;
-		}
-
-		&::before {
-			left: -90px;
-		}
-
-		&::after {
-			right: -90px;
-			transform: scaleX(-1);
-		}
-	}
 }
 
 /* Actual menu text */
@@ -47,6 +14,7 @@
 
 	li {
 		display: inline-block;
+		margin-bottom: 0;
 		position: relative;
 
 		&:hover > a,
@@ -62,7 +30,7 @@
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 3px 11px;
+		padding: 10px 6px;
 		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	}
 
@@ -85,25 +53,6 @@
 	border-top: 1px solid $color__accent;
 	font-size: 0.8em;
 	line-height: 1.2;
-	position: absolute;
-	text-align: left;
-	top: 1.75em;
-	left: -999em;
-	z-index: 99999;
-
-	ul {
-		left: -999em;
-		top: 0;
-	}
-
-	li {
-		margin-bottom: 0;
-
-		&:hover > ul,
-		&.focus > ul {
-			left: 100%;
-		}
-	}
 
 	a {
 		border-bottom: 1px solid $color__accent;
@@ -128,36 +77,153 @@
 	}
 }
 
-// Float navs around logo
+// Mobile
+@include mobile {
+	.main-navigation {
+		margin: $size__site-gutter/2 -#{$size__site-gutter/2};
+		padding: 8px 0;
+		width: 100%;
+		width: calc(100% + #{$size__site-gutter});
+
+		&::after {
+			display: block;
+			content: '';
+			background: url('assets/images/ribbon.png') bottom right repeat-x;
+			background-size: 16px;
+			height: 8px;
+		}
+
+		ul {
+			background-color: lighten($color__accent, 5%);
+		}
+
+		li {
+			border-bottom: 1px solid $color__highlight;
+			width: 100%;
+		}
+
+		.justonetree-split-nav:last-of-type li:last-of-type {
+			border-bottom: 0;
+		}
+	} // .main-navigation
+
+	// Sub-menus
+	.main-navigation ul {
+		ul {
+			border: 0;
+			height: 0px;
+			overflow: hidden;
+		}
+
+		li.focus > ul {
+			height: auto;
+		}
+	} // .main-navigation ul
+}
+
+// Tablet up
 @include tablet {
+	.site {
+		overflow-x: hidden; // Prevents horizontal navigation when the ribbon is off-screen.
+	}
+
+	.main-navigation {
+		margin: 0 4%;
+		max-width: 92%;
+		position: relative;
+
+		&::before,
+		&::after {
+			display: block;
+			content: '';
+			background: url('assets/images/ribbon-end.png') no-repeat;
+			background-size: 90px;
+			height: 90px;
+			position: absolute;
+			top: 0;
+			width: 90px;
+		}
+
+		&::before {
+			left: -90px;
+		}
+
+		&::after {
+			right: -90px;
+			transform: scaleX(-1);
+		}
+	}
+
+	// Sub-menu flyouts
+	.main-navigation ul ul {
+		position: absolute;
+		text-align: left;
+		top: 1.75em;
+		left: -999em;
+		z-index: 99999;
+
+		ul {
+			left: -999em;
+			top: 0;
+		}
+
+		li {
+			margin-bottom: 0;
+
+			&:hover > ul,
+			&.focus > ul {
+				left: 100%;
+			}
+		}
+	} // .main-navigation ul ul
+
+	// Split navigation into two sections, floated around logo.
+	.main-navigation .nav-menu {
+		margin: 0 -30px;
+	}
+
 	.justonetree-split-nav {
 		display: inline-block;
-		margin-top: 12px;
+		margin-top: 10px;
 		width: 50%;
 
 		&:first-of-type {
-			padding-right: 80px;
+			padding-right: 50px;
 			text-align: right;
 		}
 
 		&:last-of-type {
-			padding-left: 80px;
+			padding-left: 50px;
 			text-align: left;
 		}
+	} // .justonetree-split-nav
+
+} // tablet styles
+
+// Space things out a bit more for desktops
+@include desktop {
+
+	.main-navigation ul a {
+		padding: 10px 12px;
+
+		.hide {
+			display: inline;
+		}
 	}
+
+	.justonetree-split-nav {
+
+		&:first-of-type {
+			padding-right: 80px;
+		}
+
+		&:last-of-type {
+			padding-left: 80px;
+		}
+	} // .justonetree-split-nav
 }
 
-// More menu (used for priority+ pattern)
-#more-menu {
+// Hide menu toggle, at least for now.
+.menu-toggle {
 	display: none;
-}
-
-#more-menu.visible {
-	display: inline-block;
-}
-
-#more-menu .easy-as-svg-icon-more {
-	height: 16px;
-	vertical-align: -3px;
-	width: 16px;
 }

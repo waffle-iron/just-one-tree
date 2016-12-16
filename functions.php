@@ -134,10 +134,9 @@ add_action( 'widgets_init', 'justonetree_widgets_init' );
  */
 function justonetree_scripts() {
 	wp_enqueue_style( 'justonetree-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'justonetree-layout', get_template_directory_uri() . '/assets/js/layout.js', array(), '20161216', true );
 
 	wp_enqueue_script( 'justonetree-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'justonetree-priority-navigation', get_template_directory_uri() . '/assets/js/priority-navigation.js', array(), '20160824', true );
-
 	wp_enqueue_script( 'justonetree-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

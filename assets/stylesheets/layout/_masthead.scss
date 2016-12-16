@@ -1,64 +1,134 @@
-#masthead {
-	margin: 0 auto;
-	max-width: $size__site-width;
-	position: relative;
-	text-align: center;
-}
-
-.main-navigation {
-	position: absolute;
-	bottom: -50px;
-	left: 0;
-	right: 0;
-}
-
+// Hide hero image on small screens.
 .justonetree-hero {
 	display: none;
+}
 
-	@include tablet {
-		border: 8px solid $color__white;
+// Logo
+.custom-logo-link {
+	text-decoration: none;
+}
+
+// Site title & subtitle.
+.site-title,
+.site-description {
+	line-height: 1.2;
+	margin: 0;
+}
+
+.site-title {
+	@include font-size(1.6);
+	font-weight: 500;
+	text-transform: uppercase;
+
+	a {
+		color: $color__primary;
+		text-decoration: none;
+	}
+
+	span {
+		color: darken($color__accent, 15%);
+	}
+}
+
+.site-description {
+	color: $color__neutral;
+	@include font-size(1.6);
+	font-family: $font__display;
+}
+
+// Mobile only bits.
+@include mobile {
+	.justonetree-logo {
+		display: inline-block;
+		max-height: 75px;
+		vertical-align: middle;
+	}
+
+	.justonetree-title-text {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 81px);
+	}
+}
+
+// We're doing all the tablet and up bits in one block since the whole structure changes!
+@include tablet {
+
+	#masthead {
+		margin: 0 auto;
+		max-width: $size__site-width;
+		position: relative;
+		text-align: center;
+	}
+
+	.justonetree-hero {
+		border: 8px solid lighten($color__white, 2%);
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
 		display: block;
-		max-width: 90%;
-		margin: 2em 5% 0;
+		max-width: 94%;
+		margin: 1em 3% 0;
 		width: 100%;
 		z-index: 1;
 	}
-}
 
-.site-branding {
-	display: none;
-}
-
-.custom-logo-link {
-	display: block;
-	margin: 0 auto;
-	max-width: 200px;
-	position: relative;
-	z-index: 6;
-
-	@include tablet {
+	.site-branding {
+		display: block;
+		margin: 0 auto;
+		max-width: 160px;
+		position: relative;
+		z-index: 6;
 		position: absolute;
-		bottom: -120px;
-		left: 40%;
+		bottom: -100px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+
+	.justonetree-logo {
+		max-width: 100px;
+	}
+
+	.justonetree-title-text {
+		margin-top: -5px;
+	}
+
+	.site-title {
+		@include font-size(1.2);
+	}
+
+	.site-description {
+		@include font-size(1.6);
+		font-family: $font__display;
+	}
+
+	.main-navigation {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: 0;
 	}
 }
 
-.justonetree-logo {
-	.title {
-		@include font-size(3.2);
-		fill: $color__primary;
-		font-weight: 500;
-		text-transform: uppercase;
+@include desktop {
 
-		tspan {
-			fill: darken($color__accent, 15%);
-		}
+	.site-branding {
+		display: block;
+		margin: 0 auto;
+		max-width: 260px;
+		position: relative;
+		z-index: 6;
+		position: absolute;
+		bottom: -140px;
 	}
 
-	.subtitle {
-		fill: $color__neutral;
-		@include font-size(3);
-		font-family: $font__display;
+	.justonetree-logo {
+		max-width: 150px;
+	}
+
+	.site-title {
+		@include font-size(1.8);
+	}
+
+	.site-description {
+		@include font-size(2.1);
 	}
 }

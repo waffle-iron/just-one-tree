@@ -642,31 +642,6 @@ table {
   background: url("assets/images/ribbon.png") repeat-x;
   background-size: 16px;
   min-height: 90px; }
-  @media (max-width: 639px) {
-    .main-navigation {
-      margin-left: -10px;
-      width: 100%;
-      width: calc(100% + 20px); } }
-  @media (min-width: 640px) {
-    .main-navigation {
-      margin: 0 5%;
-      max-width: 90%;
-      position: relative; }
-      .main-navigation::before, .main-navigation::after {
-        display: block;
-        content: '';
-        background: url("assets/images/ribbon-end.png") no-repeat;
-        background-size: 90px;
-        height: 90px;
-        position: absolute;
-        top: 0;
-        width: 90px; }
-      .main-navigation::before {
-        left: -90px; }
-      .main-navigation::after {
-        right: -90px;
-        -ms-transform: scaleX(-1);
-        transform: scaleX(-1); } }
 
 /* Actual menu text */
 .main-navigation ul {
@@ -676,6 +651,7 @@ table {
   padding-left: 0; }
   .main-navigation ul li {
     display: inline-block;
+    margin-bottom: 0;
     position: relative; }
   .main-navigation ul a {
     display: block;
@@ -686,7 +662,7 @@ table {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 3px 11px;
+    padding: 10px 6px;
     text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
@@ -697,20 +673,7 @@ table {
   border-bottom: 2px solid #edd672;
   border-top: 1px solid #edd672;
   font-size: 0.8em;
-  line-height: 1.2;
-  position: absolute;
-  text-align: left;
-  top: 1.75em;
-  left: -999em;
-  z-index: 99999; }
-  .main-navigation ul ul ul {
-    left: -999em;
-    top: 0; }
-  .main-navigation ul ul li {
-    margin-bottom: 0; }
-    .main-navigation ul ul li:hover > ul,
-    .main-navigation ul ul li.focus > ul {
-      left: 100%; }
+  line-height: 1.2; }
   .main-navigation ul ul a {
     border-bottom: 1px solid #edd672;
     display: block;
@@ -722,28 +685,93 @@ table {
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
 
+@media (max-width: 639px) {
+  .main-navigation {
+    margin: 10px -10px;
+    padding: 8px 0;
+    width: 100%;
+    width: calc(100% + 20px); }
+    .main-navigation::after {
+      display: block;
+      content: '';
+      background: url("assets/images/ribbon.png") bottom right repeat-x;
+      background-size: 16px;
+      height: 8px; }
+    .main-navigation ul {
+      background-color: #f0dd89; }
+    .main-navigation li {
+      border-bottom: 1px solid #f9f0cc;
+      width: 100%; }
+    .main-navigation .justonetree-split-nav:last-of-type li:last-of-type {
+      border-bottom: 0; }
+  .main-navigation ul ul {
+    border: 0;
+    height: 0px;
+    overflow: hidden; }
+  .main-navigation ul li.focus > ul {
+    height: auto; } }
+
 @media (min-width: 640px) {
+  .site {
+    overflow-x: hidden; }
+  .main-navigation {
+    margin: 0 4%;
+    max-width: 92%;
+    position: relative; }
+    .main-navigation::before, .main-navigation::after {
+      display: block;
+      content: '';
+      background: url("assets/images/ribbon-end.png") no-repeat;
+      background-size: 90px;
+      height: 90px;
+      position: absolute;
+      top: 0;
+      width: 90px; }
+    .main-navigation::before {
+      left: -90px; }
+    .main-navigation::after {
+      right: -90px;
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  .main-navigation ul ul {
+    position: absolute;
+    text-align: left;
+    top: 1.75em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li {
+      margin-bottom: 0; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+  .main-navigation .nav-menu {
+    margin: 0 -30px; }
   .justonetree-split-nav {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 10px;
     width: 50%; }
     .justonetree-split-nav:first-of-type {
-      padding-right: 80px;
+      padding-right: 50px;
       text-align: right; }
     .justonetree-split-nav:last-of-type {
-      padding-left: 80px;
+      padding-left: 50px;
       text-align: left; } }
 
-#more-menu {
+@media (min-width: 1024px) {
+  .main-navigation ul a {
+    padding: 10px 12px; }
+    .main-navigation ul a .hide {
+      display: inline; }
+  .justonetree-split-nav:first-of-type {
+    padding-right: 80px; }
+  .justonetree-split-nav:last-of-type {
+    padding-left: 80px; } }
+
+.menu-toggle {
   display: none; }
-
-#more-menu.visible {
-  display: inline-block; }
-
-#more-menu .easy-as-svg-icon-more {
-  height: 16px;
-  vertical-align: -3px;
-  width: 16px; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -797,59 +825,103 @@ body {
   background: url("assets/images/background.png") repeat-x center -50px;
   background-size: contain; }
 
-#masthead {
-  margin: 0 auto;
-  max-width: 1040px;
-  position: relative;
-  text-align: center; }
-
-.main-navigation {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0; }
-
 .justonetree-hero {
-  display: none; }
-  @media (min-width: 640px) {
-    .justonetree-hero {
-      border: 8px solid #faf6f1;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
-      display: block;
-      max-width: 90%;
-      margin: 2em 5% 0;
-      width: 100%;
-      z-index: 1; } }
-
-.site-branding {
   display: none; }
 
 .custom-logo-link {
-  display: block;
-  margin: 0 auto;
-  max-width: 200px;
-  position: relative;
-  z-index: 6; }
-  @media (min-width: 640px) {
-    .custom-logo-link {
-      position: absolute;
-      bottom: -120px;
-      left: 40%; } }
+  text-decoration: none; }
 
-.justonetree-logo .title {
-  font-size: 51.2px;
-  font-size: 3.2rem;
-  fill: #729b65;
+.site-title,
+.site-description {
+  line-height: 1.2;
+  margin: 0; }
+
+.site-title {
+  font-size: 25.6px;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase; }
-  .justonetree-logo .title tspan {
-    fill: #e4c22e; }
+  .site-title a {
+    color: #729b65;
+    text-decoration: none; }
+  .site-title span {
+    color: #e4c22e; }
 
-.justonetree-logo .subtitle {
-  fill: #7d735b;
-  font-size: 48px;
-  font-size: 3rem;
+.site-description {
+  color: #7d735b;
+  font-size: 25.6px;
+  font-size: 1.6rem;
   font-family: spumante, sans-serif; }
+
+@media (max-width: 639px) {
+  .justonetree-logo {
+    display: inline-block;
+    max-height: 75px;
+    vertical-align: middle; }
+  .justonetree-title-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 81px); } }
+
+@media (min-width: 640px) {
+  #masthead {
+    margin: 0 auto;
+    max-width: 1040px;
+    position: relative;
+    text-align: center; }
+  .justonetree-hero {
+    border: 8px solid #fdfbf9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
+    display: block;
+    max-width: 94%;
+    margin: 1em 3% 0;
+    width: 100%;
+    z-index: 1; }
+  .site-branding {
+    display: block;
+    margin: 0 auto;
+    max-width: 160px;
+    position: relative;
+    z-index: 6;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  .justonetree-logo {
+    max-width: 100px; }
+  .justonetree-title-text {
+    margin-top: -5px; }
+  .site-title {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+  .site-description {
+    font-size: 25.6px;
+    font-size: 1.6rem;
+    font-family: spumante, sans-serif; }
+  .main-navigation {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0; } }
+
+@media (min-width: 1024px) {
+  .site-branding {
+    display: block;
+    margin: 0 auto;
+    max-width: 260px;
+    position: relative;
+    z-index: 6;
+    position: absolute;
+    bottom: -140px; }
+  .justonetree-logo {
+    max-width: 150px; }
+  .site-title {
+    font-size: 28.8px;
+    font-size: 1.8rem; }
+  .site-description {
+    font-size: 33.6px;
+    font-size: 2.1rem; } }
 
 .site {
   padding: 10px;
@@ -885,7 +957,7 @@ body {
   font-size: 0.9rem;
   padding: 20px 0; }
   .site-footer::before, .site-footer::after {
-    background: url("assets/images/dark-scalloped-edge.png") top center repeat-x;
+    background: url("assets/images/dark-scalloped-edge.png") 0 -1px repeat-x;
     content: '';
     display: block;
     height: 24px; }
