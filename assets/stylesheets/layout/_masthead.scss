@@ -13,14 +13,16 @@
 }
 
 .justonetree-hero {
-	width: 100%;
-	z-index: 1;
+	display: none;
 
 	@include tablet {
 		border: 8px solid $color__white;
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
+		display: block;
 		max-width: 90%;
 		margin: 2em 5% 0;
+		width: 100%;
+		z-index: 1;
 	}
 }
 
