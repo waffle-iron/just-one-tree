@@ -6,7 +6,7 @@
 
 	&::before,
 	&::after {
-		background: url('assets/images/dark-scalloped-edge.png') top center repeat-x;
+		background: url('assets/images/dark-scalloped-edge.png') 0 -1px repeat-x;
 		content: '';
 		display: block;
 		height: 24px;
