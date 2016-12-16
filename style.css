@@ -662,7 +662,7 @@ table {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 12px;
+    padding: 10px 6px;
     text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
@@ -715,8 +715,8 @@ table {
   .site {
     overflow-x: hidden; }
   .main-navigation {
-    margin: 0 5%;
-    max-width: 90%;
+    margin: 0 4%;
+    max-width: 92%;
     position: relative; }
     .main-navigation::before, .main-navigation::after {
       display: block;
@@ -746,19 +746,27 @@ table {
       margin-bottom: 0; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
-        left: 100%; } }
-
-@media (min-width: 640px) {
+        left: 100%; }
   .justonetree-split-nav {
     display: inline-block;
     margin-top: 10px;
     width: 50%; }
     .justonetree-split-nav:first-of-type {
-      padding-right: 80px;
+      padding-right: 65px;
       text-align: right; }
     .justonetree-split-nav:last-of-type {
-      padding-left: 80px;
+      padding-left: 65px;
       text-align: left; } }
+
+@media (min-width: 1024px) {
+  .main-navigation ul a {
+    padding: 10px 12px; }
+    .main-navigation ul a .hide {
+      display: inline; }
+  .justonetree-split-nav:first-of-type {
+    padding-right: 80px; }
+  .justonetree-split-nav:last-of-type {
+    padding-left: 80px; } }
 
 .menu-toggle {
   display: none; }
@@ -870,7 +878,34 @@ body {
   .site-branding {
     display: block;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 160px;
+    position: relative;
+    z-index: 6;
+    position: absolute;
+    bottom: -100px;
+    left: 40%; }
+  .justonetree-logo {
+    max-width: 100px; }
+  .justonetree-title-text {
+    margin-top: -5px; }
+  .site-title {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+  .site-description {
+    font-size: 25.6px;
+    font-size: 1.6rem;
+    font-family: spumante, sans-serif; }
+  .main-navigation {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0; } }
+
+@media (min-width: 1024px) {
+  .site-branding {
+    display: block;
+    margin: 0 auto;
+    max-width: 260px;
     position: relative;
     z-index: 6;
     position: absolute;
@@ -883,13 +918,7 @@ body {
     font-size: 1.8rem; }
   .site-description {
     font-size: 33.6px;
-    font-size: 2.1rem;
-    font-family: spumante, sans-serif; }
-  .main-navigation {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    right: 0; } }
+    font-size: 2.1rem; } }
 
 .site {
   padding: 10px;

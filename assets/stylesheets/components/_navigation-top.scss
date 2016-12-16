@@ -30,7 +30,7 @@
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 10px 12px;
+		padding: 10px 6px;
 		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	}
 
@@ -128,8 +128,8 @@
 	}
 
 	.main-navigation {
-		margin: 0 5%;
-		max-width: 90%;
+		margin: 0 4%;
+		max-width: 92%;
 		position: relative;
 
 		&::before,
@@ -175,28 +175,48 @@
 				left: 100%;
 			}
 		}
-	}
-}
+	} // .main-navigation ul ul
 
-
-
-// Float navs around logo
-@include tablet {
+	// Split navigation into two sections, floated around logo.
 	.justonetree-split-nav {
 		display: inline-block;
 		margin-top: 10px;
 		width: 50%;
 
 		&:first-of-type {
-			padding-right: 80px;
+			padding-right: 65px;
 			text-align: right;
 		}
 
 		&:last-of-type {
-			padding-left: 80px;
+			padding-left: 65px;
 			text-align: left;
 		}
+	} // .justonetree-split-nav
+
+} // tablet styles
+
+// Space things out a bit more for desktops
+@include desktop {
+
+	.main-navigation ul a {
+		padding: 10px 12px;
+
+		.hide {
+			display: inline;
+		}
 	}
+
+	.justonetree-split-nav {
+
+		&:first-of-type {
+			padding-right: 80px;
+		}
+
+		&:last-of-type {
+			padding-left: 80px;
+		}
+	} // .justonetree-split-nav
 }
 
 // Hide menu toggle, at least for now.

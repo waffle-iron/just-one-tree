@@ -74,7 +74,45 @@
 	.site-branding {
 		display: block;
 		margin: 0 auto;
-		max-width: 300px;
+		max-width: 160px;
+		position: relative;
+		z-index: 6;
+		position: absolute;
+		bottom: -100px;
+		left: 40%;
+	}
+
+	.justonetree-logo {
+		max-width: 100px;
+	}
+
+	.justonetree-title-text {
+		margin-top: -5px;
+	}
+
+	.site-title {
+		@include font-size(1.2);
+	}
+
+	.site-description {
+		@include font-size(1.6);
+		font-family: $font__display;
+	}
+
+	.main-navigation {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: 0;
+	}
+}
+
+@include desktop {
+
+	.site-branding {
+		display: block;
+		margin: 0 auto;
+		max-width: 260px;
 		position: relative;
 		z-index: 6;
 		position: absolute;
@@ -92,13 +130,5 @@
 
 	.site-description {
 		@include font-size(2.1);
-		font-family: $font__display;
-	}
-
-	.main-navigation {
-		position: absolute;
-		bottom: -50px;
-		left: 0;
-		right: 0;
 	}
 }
