@@ -818,11 +818,11 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase; }
-  .site-title span {
-    fill: #e4c22e; }
   .site-title a {
     color: #729b65;
     text-decoration: none; }
+  .site-title span {
+    color: #e4c22e; }
 
 .site-description {
   color: #7d735b;
