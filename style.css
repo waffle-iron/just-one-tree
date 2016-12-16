@@ -913,8 +913,7 @@ body {
     position: relative;
     z-index: 6;
     position: absolute;
-    bottom: -140px;
-    left: 40%; }
+    bottom: -140px; }
   .justonetree-logo {
     max-width: 150px; }
   .site-title {
