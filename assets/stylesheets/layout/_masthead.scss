@@ -1,21 +1,65 @@
-#masthead {
-	margin: 0 auto;
-	max-width: $size__site-width;
-	position: relative;
-	text-align: center;
-}
-
-.main-navigation {
-	position: absolute;
-	bottom: -50px;
-	left: 0;
-	right: 0;
-}
-
+// Hide hero image on small screens.
 .justonetree-hero {
 	display: none;
+}
 
-	@include tablet {
+.custom-logo-link {
+	text-decoration: none;
+}
+
+.justonetree-logo {
+	display: inline-block;
+	max-height: 75px;
+	vertical-align: middle;
+}
+// Navigation
+
+
+// Site title & subtitle.
+.site-branding {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 81px);
+}
+
+.site-title {
+	@include font-size(1.6);
+	font-weight: 500;
+	text-transform: uppercase;
+
+	span {
+		fill: darken($color__accent, 15%);
+	}
+
+	a {
+		color: $color__primary;
+		text-decoration: none;
+	}
+}
+
+.site-description {
+	color: $color__neutral;
+	@include font-size(1.6);
+	font-family: $font__display;
+}
+
+.site-title,
+.site-description {
+	line-height: 1.2;
+	margin: 0;
+}
+
+// We're doing all the tablet and up bits in one block since the whole structure changes!
+@include tablet {
+
+	#masthead {
+		margin: 0 auto;
+		max-width: $size__site-width;
+		position: relative;
+		text-align: center;
+	}
+
+	.justonetree-hero {
 		border: 8px solid $color__white;
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
 		display: block;
@@ -24,41 +68,31 @@
 		width: 100%;
 		z-index: 1;
 	}
-}
 
-.site-branding {
-	display: none;
-}
-
-.custom-logo-link {
-	display: block;
-	margin: 0 auto;
-	max-width: 200px;
-	position: relative;
-	z-index: 6;
-
-	@include tablet {
+	.custom-logo-link {
+		display: block;
+		margin: 0 auto;
+		max-width: 200px;
+		position: relative;
+		z-index: 6;
 		position: absolute;
 		bottom: -120px;
 		left: 40%;
 	}
-}
 
-.justonetree-logo {
-	.title {
+	.site-title {
 		@include font-size(3.2);
-		fill: $color__primary;
-		font-weight: 500;
-		text-transform: uppercase;
-
-		tspan {
-			fill: darken($color__accent, 15%);
-		}
 	}
 
-	.subtitle {
-		fill: $color__neutral;
+	.site-description {
 		@include font-size(3);
 		font-family: $font__display;
+	}
+
+	.main-navigation {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: 0;
 	}
 }

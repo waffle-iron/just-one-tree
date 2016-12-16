@@ -29,8 +29,6 @@
 		<?php get_template_part( 'components/features/hero-image/content', 'hero' ); ?>
 
 		<?php
-			get_template_part( 'components/header/site', 'branding' );
-
 			if ( get_custom_logo() ) :
 				// Show the custom logo if one's been uploaded via wp-admin.
 				the_custom_logo();
@@ -40,6 +38,8 @@
 				<a class="custom-logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents( esc_url( get_template_directory_uri() ) . '/assets/svg/just-one-tree.svg' ); ?></a>
 		<?php
 			endif;
+
+			get_template_part( 'components/header/site', 'branding' );
 
 			get_template_part( 'components/navigation/navigation', 'header' );
 		?>
