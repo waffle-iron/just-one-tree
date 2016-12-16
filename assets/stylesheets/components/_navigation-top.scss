@@ -123,6 +123,10 @@
 
 // Tablet up
 @include tablet {
+	.site {
+		overflow-x: hidden; // Prevents horizontal navigation when the ribbon is off-screen.
+	}
+
 	.main-navigation {
 		margin: 0 5%;
 		max-width: 90%;

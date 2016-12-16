@@ -712,6 +712,8 @@ table {
     height: auto; } }
 
 @media (min-width: 640px) {
+  .site {
+    overflow-x: hidden; }
   .main-navigation {
     margin: 0 5%;
     max-width: 90%;
