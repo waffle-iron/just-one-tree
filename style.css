@@ -747,15 +747,17 @@ table {
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
+  .main-navigation .nav-menu {
+    margin: 0 -30px; }
   .justonetree-split-nav {
     display: inline-block;
     margin-top: 10px;
     width: 50%; }
     .justonetree-split-nav:first-of-type {
-      padding-right: 65px;
+      padding-right: 50px;
       text-align: right; }
     .justonetree-split-nav:last-of-type {
-      padding-left: 65px;
+      padding-left: 50px;
       text-align: left; } }
 
 @media (min-width: 1024px) {
@@ -883,7 +885,9 @@ body {
     z-index: 6;
     position: absolute;
     bottom: -100px;
-    left: 40%; }
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
   .justonetree-logo {
     max-width: 100px; }
   .justonetree-title-text {

@@ -178,18 +178,22 @@
 	} // .main-navigation ul ul
 
 	// Split navigation into two sections, floated around logo.
+	.main-navigation .nav-menu {
+		margin: 0 -30px;
+	}
+
 	.justonetree-split-nav {
 		display: inline-block;
 		margin-top: 10px;
 		width: 50%;
 
 		&:first-of-type {
-			padding-right: 65px;
+			padding-right: 50px;
 			text-align: right;
 		}
 
 		&:last-of-type {
-			padding-left: 65px;
+			padding-left: 50px;
 			text-align: left;
 		}
 	} // .justonetree-split-nav
