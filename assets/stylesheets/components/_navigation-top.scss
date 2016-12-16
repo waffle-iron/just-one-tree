@@ -53,25 +53,6 @@
 	border-top: 1px solid $color__accent;
 	font-size: 0.8em;
 	line-height: 1.2;
-	position: absolute;
-	text-align: left;
-	top: 1.75em;
-	left: -999em;
-	z-index: 99999;
-
-	ul {
-		left: -999em;
-		top: 0;
-	}
-
-	li {
-		margin-bottom: 0;
-
-		&:hover > ul,
-		&.focus > ul {
-			left: 100%;
-		}
-	}
 
 	a {
 		border-bottom: 1px solid $color__accent;
@@ -117,14 +98,27 @@
 		}
 
 		li {
-			border-bottom: 1px solid $color__white;
+			border-bottom: 1px solid $color__highlight;
 			width: 100%;
 		}
 
 		.justonetree-split-nav:last-of-type li:last-of-type {
 			border-bottom: 0;
 		}
-	}
+	} // .main-navigation
+
+	// Sub-menus
+	.main-navigation ul {
+		ul {
+			border: 0;
+			height: 0px;
+			overflow: hidden;
+		}
+
+		li.focus > ul {
+			height: auto;
+		}
+	} // .main-navigation ul
 }
 
 // Tablet up
@@ -155,6 +149,29 @@
 			transform: scaleX(-1);
 		}
 	}
+
+	// Sub-menu flyouts
+	.main-navigation ul ul {
+		position: absolute;
+		text-align: left;
+		top: 1.75em;
+		left: -999em;
+		z-index: 99999;
+
+		ul {
+			left: -999em;
+			top: 0;
+		}
+
+		li {
+			margin-bottom: 0;
+
+			&:hover > ul,
+			&.focus > ul {
+				left: 100%;
+			}
+		}
+	}
 }
 
 
@@ -178,17 +195,7 @@
 	}
 }
 
-// More menu (used for priority+ pattern)
-#more-menu {
+// Hide menu toggle, at least for now.
+.menu-toggle {
 	display: none;
-}
-
-#more-menu.visible {
-	display: inline-block;
-}
-
-#more-menu .easy-as-svg-icon-more {
-	height: 16px;
-	vertical-align: -3px;
-	width: 16px;
 }

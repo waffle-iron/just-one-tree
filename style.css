@@ -673,20 +673,7 @@ table {
   border-bottom: 2px solid #edd672;
   border-top: 1px solid #edd672;
   font-size: 0.8em;
-  line-height: 1.2;
-  position: absolute;
-  text-align: left;
-  top: 1.75em;
-  left: -999em;
-  z-index: 99999; }
-  .main-navigation ul ul ul {
-    left: -999em;
-    top: 0; }
-  .main-navigation ul ul li {
-    margin-bottom: 0; }
-    .main-navigation ul ul li:hover > ul,
-    .main-navigation ul ul li.focus > ul {
-      left: 100%; }
+  line-height: 1.2; }
   .main-navigation ul ul a {
     border-bottom: 1px solid #edd672;
     display: block;
@@ -713,10 +700,16 @@ table {
     .main-navigation ul {
       background-color: #f0dd89; }
     .main-navigation li {
-      border-bottom: 1px solid #faf6f1;
+      border-bottom: 1px solid #f9f0cc;
       width: 100%; }
     .main-navigation .justonetree-split-nav:last-of-type li:last-of-type {
-      border-bottom: 0; } }
+      border-bottom: 0; }
+  .main-navigation ul ul {
+    border: 0;
+    height: 0px;
+    overflow: hidden; }
+  .main-navigation ul li.focus > ul {
+    height: auto; } }
 
 @media (min-width: 640px) {
   .main-navigation {
@@ -737,7 +730,21 @@ table {
     .main-navigation::after {
       right: -90px;
       -ms-transform: scaleX(-1);
-      transform: scaleX(-1); } }
+      transform: scaleX(-1); }
+  .main-navigation ul ul {
+    position: absolute;
+    text-align: left;
+    top: 1.75em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li {
+      margin-bottom: 0; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: 100%; } }
 
 @media (min-width: 640px) {
   .justonetree-split-nav {
@@ -751,16 +758,8 @@ table {
       padding-left: 80px;
       text-align: left; } }
 
-#more-menu {
+.menu-toggle {
   display: none; }
-
-#more-menu.visible {
-  display: inline-block; }
-
-#more-menu .easy-as-svg-icon-more {
-  height: 16px;
-  vertical-align: -3px;
-  width: 16px; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main

@@ -1,27 +1,30 @@
 /**
- * navigation.js
+ * File navigation.js.
  *
- * Handles toggling the navigation menu for small screens and enables tab
- * support for dropdown menus.
+ * Handles toggling the navigation menu for small screens and enables TAB key
+ * navigation support for dropdown menus.
  */
-( function( $ ) {
-	var container, moreMenu, menu, button, links, subMenus;
+( function() {
+	var container, button, menu, links, subMenus, i, len;
 
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
 	}
 
-	// Here, we're going to look for the priority plus menu item to determine if we're on a small screen
-	moreMenu = document.getElementById( 'more-menu' );
-	if ( ! moreMenu ) {
+	button = container.getElementsByTagName( 'button' )[0];
+	if ( 'undefined' === typeof button ) {
 		return;
 	}
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
-	// If menu is empty, return early.
+console.log( 'heelo');
+	console.log( menu);
+
+	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
+		button.style.display = 'none';
 		return;
 	}
 
@@ -30,78 +33,86 @@
 		menu.className += ' nav-menu';
 	}
 
+	button.onclick = function() {
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+			container.className = container.className.replace( ' toggled', '' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
+		} else {
+			container.className += ' toggled';
+			button.setAttribute( 'aria-expanded', 'true' );
+			menu.setAttribute( 'aria-expanded', 'true' );
+		}
+	};
+
 	// Get all the link elements within the menu.
 	links    = menu.getElementsByTagName( 'a' );
 	subMenus = menu.getElementsByTagName( 'ul' );
 
+	console.log(links);
+	console.log(subMenus);
+
 	// Set menu items with submenus to aria-haspopup="true".
-	for ( var i = 0, len = subMenus.length; i < len; i++ ) {
+	for ( i = 0, len = subMenus.length; i < len; i++ ) {
 		subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
 	}
 
-	$( document ).ready( function() {
+	// Each time a menu link is focused or blurred, toggle focus.
+	for ( i = 0, len = links.length; i < len; i++ ) {
+		links[i].addEventListener( 'focus', toggleFocus, true );
+		links[i].addEventListener( 'blur', toggleFocus, true );
+	}
 
-		// Open and close our sub-menus when needed
-		$( '#site-navigation .menu-item-has-children > a' ).on( 'click' , function( e ) {
+	/**
+	 * Sets or removes .focus class on an element.
+	 */
+	function toggleFocus() {
+		var self = this;
 
-			// If our sub-menu is already open, we need to figure out what to do if the user clicks the parent item again
-			if ( $( this ).parent( '#site-navigation .menu-item-has-children' ).hasClass( 'focus' ) &&
-				$( this ).parent().attr( 'id' ) === $( e.target ).parent().attr( 'id' ) ) {
+		// Move up through the ancestors of the current link until we hit .nav-menu.
+		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
 
-				// If our parent item links somewhere, let's go there!
-				if ( $( this ).attr( 'href' ).length && '#' !== $( this ).attr( 'href' ) ) {
-					return true;
-
-				// If our link doesn't go anywhere, we're just going to remove the focus class and close the menu
-				} else if ( $( this ).attr( 'href' ).length && '#' === $( this ).attr( 'href' ) ) {
-					$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
-					e.preventDefault();
-					return false;
+			// On li elements toggle the class .focus.
+			if ( 'li' === self.tagName.toLowerCase() ) {
+				if ( -1 !== self.className.indexOf( 'focus' ) ) {
+					self.className = self.className.replace( ' focus', '' );
+				} else {
+					self.className += ' focus';
 				}
 			}
 
-			// If this is a menu item with sub-menus, but it's already inside a sub-menu itself,
-			// let's go to the link (so long as there actually IS a link)
-			if ( $( this ).closest( 'ul' ).hasClass( 'sub-menu' ) &&
-				$( this ).attr( 'href' ).length && '#' !== $( this ).attr( 'href' ) ) {
-				return true;
+			self = self.parentElement;
+		}
+	}
+
+	/**
+	 * Toggles `focus` class to allow submenu access on tablets.
+	 */
+	( function( container ) {
+		var touchStartFn, i,
+			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+
+		if ( 'ontouchstart' in window ) {
+			touchStartFn = function( e ) {
+				var menuItem = this.parentNode, i;
+
+				if ( ! menuItem.classList.contains( 'focus' ) ) {
+					e.preventDefault();
+					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+						if ( menuItem === menuItem.parentNode.children[i] ) {
+							continue;
+						}
+						menuItem.parentNode.children[i].classList.remove( 'focus' );
+					}
+					menuItem.classList.add( 'focus' );
+				} else {
+					menuItem.classList.remove( 'focus' );
+				}
+			};
+
+			for ( i = 0; i < parentLink.length; ++i ) {
+				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
-
-			// Close any other menus that might be open
-			$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
-
-			// Open/close the menu we've clicked on
-			$( this ).parent( '#site-navigation .menu-item-has-children' ).toggleClass( 'focus' );
-
-			// Open our child menus too!
-			$( this ).children( '.menu-item-has-children' ).toggleClass( 'focus' );
-
-			// Block our default link behaviour
-			e.preventDefault();
-		});
-
-		// When clicking on the document, close any open menus
-		$( document ).click(function( e ) {
-			if ( ! $( e.target ).closest( '#site-navigation .menu-item' ).length) {
-				$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
-			}
-		});
-
-		// Get current window width
-		var $windowWidth = $(window).width();
-
-		// When the window is resized, close all menus
-		$( window ).on( 'resize', function() {
-
-			// Check window width has actually changed and it's not just iOS triggering a resize event on scroll
-        	if ( $windowWidth !== $(window).width() ) {
-				$( '#site-navigation-wrapper .menu-item-has-children' ).removeClass( 'focus' );
-
-				// Update the window width for next time
-            	$windowWidth = $( window ).width();
-			}
-		});
-
-	});
-
-} )( jQuery );
+		}
+	}( container ) );
+} )();
