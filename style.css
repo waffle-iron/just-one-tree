@@ -870,11 +870,11 @@ body {
     position: relative;
     text-align: center; }
   .justonetree-hero {
-    border: 8px solid #faf6f1;
+    border: 8px solid #fdfbf9;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
     display: block;
-    max-width: 90%;
-    margin: 2em 5% 0;
+    max-width: 94%;
+    margin: 1em 3% 0;
     width: 100%;
     z-index: 1; }
   .site-branding {
