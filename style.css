@@ -978,6 +978,11 @@ body {
   background: url("assets/images/background.png") repeat-x center -50px;
   background-size: contain; }
 
+.justonetree-lemon-sprig {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .justonetree-hero {
   display: none; }
 
