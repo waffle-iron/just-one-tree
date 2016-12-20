@@ -6,6 +6,15 @@
 	max-width: $size__site-width;
 
 	.sponsor {
-		margin: 10px;
+		flex-basis: 150px;
+		margin: $size__site-gutter $size__site-gutter/2;
+		text-align: center;
+
+		img {
+			height: auto;
+			max-height: 50px;
+			max-width: 100%;
+			width: auto;
+		}
 	}
 }

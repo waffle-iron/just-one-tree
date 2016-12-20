@@ -1011,7 +1011,15 @@ body {
   margin: 20px auto;
   max-width: 1040px; }
   .justonetree-sponsor-logos .sponsor {
-    margin: 10px; }
+    -ms-flex-preferred-size: 150px;
+    flex-basis: 150px;
+    margin: 20px 10px;
+    text-align: center; }
+    .justonetree-sponsor-logos .sponsor img {
+      height: auto;
+      max-height: 50px;
+      max-width: 100%;
+      width: auto; }
 
 .justonetree-treeometer {
   max-width: 300px; }
