@@ -15,7 +15,30 @@
     margin: 0 15%;
     width: 70%;
   }
+}
 
+/* Search form */
+.search-form {
+	position: relative;
+}
+
+.search-submit {
+	background: $color__neutral;
+	border: none;
+	border-radius: 0;
+	bottom: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 42px;
+
+	.easy-as-svg-icon {
+		fill: $color__white;
+		height: 14px;
+		width: 14px;
+	}
 }
 
 /* Lists in widgets (pages, categories, comments, etc) */
