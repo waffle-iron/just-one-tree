@@ -21,7 +21,7 @@ input[type="submit"] {
 	&:hover {
 		background-color: darken($color__accent, 10%);
 		border-color: darken($color__accent, 20%);
-		color: darken($color__accent, 20%);
+		color: $color__text-input;
 		text-shadow: 1px 1px transparentize($color__white, 0.5);
 	}
 

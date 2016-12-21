@@ -554,7 +554,7 @@ input[type="submit"] {
   input[type="submit"]:hover {
     background-color: #e7c945;
     border-color: #ddb91c;
-    color: #ddb91c;
+    color: #332F25;
     text-shadow: 1px 1px rgba(250, 246, 241, 0.5); }
   button:active, button:focus,
   .button:active,
