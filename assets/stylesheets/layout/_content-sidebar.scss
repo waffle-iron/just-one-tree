@@ -5,13 +5,13 @@
 
 @include tablet {
 	.site-content {
-		margin: 6em auto 0;
+		margin: 10em auto 0;
 		max-width: $size__site-width;
 	}
 
 	.site-content .content-area {
 		display: inline-block;
-		padding-right: $size__site-gutter;
+		padding-right: $size__site-gutter*2;
 		vertical-align: top;
 		width: $size__site-main - $size__site-sidebar;
 	}
@@ -19,7 +19,8 @@
 	.site-content .widget-area {
 		display: inline-block;
 		margin-left: -6px;
-		padding-left: $size__site-gutter;
+		margin-top: $size__site-gutter;
+		padding-left: $size__site-gutter*2;
 		vertical-align: top;
 		width: $size__site-sidebar;
 	}
