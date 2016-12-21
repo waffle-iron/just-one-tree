@@ -16,24 +16,41 @@
   display: none !important;
 }
 
-.jetpack-social-navigation a {
-		background: $color__primary;
-		border-radius: 50%;
-		display: inline-block;
-		height: 40px !important;
-		padding: 8px;
-		width: 40px !important;
-
-		svg {
-			fill: $color__white;
-			height: 24px;
-			width: 24px;
-		}
+.jetpack-social-navigation li {
+	margin-right: 5px !important; // Jetpack's fault.
 }
 
-.jetpack-social-navigation {
-	a[href*="wordpress.org"]:before,
-	a[href*="wordpress.com"]:before {
+.menu-social-container {
+	li {
+		display: inline-block;
+	}
+}
+
+.jetpack-social-navigation a,
+.widget .menu-social-container ul a {
+	background: $color__primary;
+	border-radius: 50%;
+	display: inline-block;
+	height: 40px !important;
+	padding: 8px;
+	width: 40px !important;
+
+	svg {
+		fill: $color__white;
+		height: 24px;
+		width: 24px;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+}
+
+.jetpack-social-navigation,
+.widget .menu-social-container ul {
+	a[href*="wordpress.org"],
+	a[href*="wordpress.com"] {
 		background-color: $color__wordpress;
 	}
 

@@ -398,59 +398,86 @@ blockquote, q {
 .jetpack-social-navigation a::before {
   display: none !important; }
 
-.jetpack-social-navigation a {
+.jetpack-social-navigation li {
+  margin-right: 5px !important; }
+
+.menu-social-container li {
+  display: inline-block; }
+
+.jetpack-social-navigation a,
+.widget .menu-social-container ul a {
   background: #729b65;
   border-radius: 50%;
   display: inline-block;
   height: 40px !important;
   padding: 8px;
   width: 40px !important; }
-  .jetpack-social-navigation a svg {
+  .jetpack-social-navigation a svg,
+  .widget .menu-social-container ul a svg {
     fill: #faf6f1;
     height: 24px;
     width: 24px; }
+  .jetpack-social-navigation a:hover,
+  .widget .menu-social-container ul a:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
 
-.jetpack-social-navigation a[href*="wordpress.org"]:before,
-.jetpack-social-navigation a[href*="wordpress.com"]:before {
+.jetpack-social-navigation a[href*="wordpress.org"],
+.jetpack-social-navigation a[href*="wordpress.com"],
+.widget .menu-social-container ul a[href*="wordpress.org"],
+.widget .menu-social-container ul a[href*="wordpress.com"] {
   background-color: #21759b; }
 
-.jetpack-social-navigation a[href*="facebook.com"] {
+.jetpack-social-navigation a[href*="facebook.com"],
+.widget .menu-social-container ul a[href*="facebook.com"] {
   background-color: #3b5998; }
 
-.jetpack-social-navigation a[href*="twitter.com"] {
+.jetpack-social-navigation a[href*="twitter.com"],
+.widget .menu-social-container ul a[href*="twitter.com"] {
   background-color: #55acee; }
 
-.jetpack-social-navigation a[href*="dribbble.com"] {
+.jetpack-social-navigation a[href*="dribbble.com"],
+.widget .menu-social-container ul a[href*="dribbble.com"] {
   background-color: #ea4c89; }
 
-.jetpack-social-navigation a[href*="plus.google.com"] {
+.jetpack-social-navigation a[href*="plus.google.com"],
+.widget .menu-social-container ul a[href*="plus.google.com"] {
   background-color: #dd4b39; }
 
-.jetpack-social-navigation a[href*="pinterest.com"] {
+.jetpack-social-navigation a[href*="pinterest.com"],
+.widget .menu-social-container ul a[href*="pinterest.com"] {
   background-color: #cb2027; }
 
-.jetpack-social-navigation a[href*="github.com"] {
+.jetpack-social-navigation a[href*="github.com"],
+.widget .menu-social-container ul a[href*="github.com"] {
   background-color: #000000; }
 
-.jetpack-social-navigation a[href*="tumblr.com"] {
+.jetpack-social-navigation a[href*="tumblr.com"],
+.widget .menu-social-container ul a[href*="tumblr.com"] {
   background-color: #32506d; }
 
-.jetpack-social-navigation a[href*="youtube.com"] {
+.jetpack-social-navigation a[href*="youtube.com"],
+.widget .menu-social-container ul a[href*="youtube.com"] {
   background-color: #bb0000; }
 
-.jetpack-social-navigation a[href*="flickr.com"] {
+.jetpack-social-navigation a[href*="flickr.com"],
+.widget .menu-social-container ul a[href*="flickr.com"] {
   background-color: #ff0084; }
 
-.jetpack-social-navigation a[href*="vimeo.com"] {
+.jetpack-social-navigation a[href*="vimeo.com"],
+.widget .menu-social-container ul a[href*="vimeo.com"] {
   background-color: #aad450; }
 
-.jetpack-social-navigation a[href*="instagram.com"] {
+.jetpack-social-navigation a[href*="instagram.com"],
+.widget .menu-social-container ul a[href*="instagram.com"] {
   background-color: #e95950; }
 
-.jetpack-social-navigation a[href*="codepen.io"] {
+.jetpack-social-navigation a[href*="codepen.io"],
+.widget .menu-social-container ul a[href*="codepen.io"] {
   background-color: #000000; }
 
-.jetpack-social-navigation a[href*="linkedin.com"] {
+.jetpack-social-navigation a[href*="linkedin.com"],
+.widget .menu-social-container ul a[href*="linkedin.com"] {
   background-color: #007bb5; }
 
 /*--------------------------------------------------------------
