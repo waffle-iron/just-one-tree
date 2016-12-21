@@ -401,8 +401,10 @@ blockquote, q {
 .jetpack-social-navigation li {
   margin-right: 5px !important; }
 
-.menu-social-container li {
-  display: inline-block; }
+.menu-social-container {
+  text-align: center; }
+  .menu-social-container li {
+    display: inline-block; }
 
 .jetpack-social-navigation a,
 .widget .menu-social-container ul a {
@@ -1327,6 +1329,9 @@ progress[value] {
 
 .widget_text {
   font-size: 1.2em; }
+
+.widget .justonetree-treeometer {
+  margin: 0 0 50px 50px; }
 
 .widget_mc4wp_form_widget p {
   margin-bottom: 0; }
