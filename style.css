@@ -1106,8 +1106,14 @@ progress[value] {
 #justonetree-treeometer-text {
   font-size: 0.8em;
   text-align: center;
-  margin: -200px 0 0 10px;
+  margin: -180px 0 0 10px;
   max-width: 230px; }
+
+.justonetree-treeometer h3 {
+  margin: 5px 0; }
+
+.justonetree-treeometer .number {
+  color: #7d735b; }
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar

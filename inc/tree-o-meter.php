@@ -41,9 +41,14 @@ function justonetree_treeometer_shortcode( $attr, $content = '', $shortcode_tag 
 		</progress>
 
 		<div id="justonetree-treeometer-text">
-			<h3><?php esc_html_e( 'Current total:', 'justonetree' ); ?> <?php echo justonetree_treeometer_number( 'registered' ); ?> (<?php echo justonetree_treeometer_number( 'percent' ); ?>%)</h3>
-
-			<p>We need <?php echo justonetree_treeometer_number( 'goal' ); ?> trees! Register yours and be counted.</p>
+			<h3>Goal:
+				<span class="number"><?php echo number_format( justonetree_treeometer_number( 'goal' ) ); ?></span>
+				lemon trees</h3>
+			<h3><?php esc_html_e( 'Current total:', 'justonetree' ); ?>
+				<span class="number"><?php echo number_format( justonetree_treeometer_number( 'registered' ) ); ?></span>
+				(<?php echo justonetree_treeometer_number( 'percent' ); ?>%)</h3>
+				
+			<p>Register yours and be counted.</p>
 
 			<a class="button" href="/register">Register a tree</a>
 		</div>
