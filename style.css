@@ -1224,7 +1224,8 @@ progress[value] {
     margin: 80px 5% 40px;
     max-width: 90%; }
   .hero-text {
-    max-width: 350px; }
+    margin-top: 80px;
+    max-width: 325px; }
   .justonetree-treeometer {
     max-width: 400px; } }
 
