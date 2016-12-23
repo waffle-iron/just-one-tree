@@ -1406,17 +1406,32 @@ object {
   max-width: 100%; }
 
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin: 10px 0;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center; }
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #7d735b;
+  margin: 0;
+  padding: 10px 0;
+  text-align: left; }
+
+/* Ensure center-aligned captions center-align properly. */
+.wp-caption.aligncenter {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Give some padding to floated elements, to prevent them butting up against text. */
+.wp-caption.alignleft {
+  margin-right: 20px; }
+
+.wp-caption.alignright {
+  margin-left: 20px; }
 
 /*--------------------------------------------------------------
 ## Galleries

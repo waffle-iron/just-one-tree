@@ -20,20 +20,36 @@ object {
 }
 
 .wp-caption {
-	margin-bottom: 1.5em;
+	margin: $size__site-gutter/2 0;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {
 		@include center-block;
 	}
-
-	.wp-caption-text {
-		margin: 0.8075em 0;
-	}
 }
 
 .wp-caption-text {
-	text-align: center;
+	@include font-size(0.85);
+	border-bottom: 1px solid $color__neutral;
+	margin: 0;
+	padding: $size__site-gutter/2 0;
+	text-align: left;
+}
+
+
+/* Ensure center-aligned captions center-align properly. */
+.wp-caption.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Give some padding to floated elements, to prevent them butting up against text. */
+.wp-caption.alignleft {
+	margin-right: $size__site-gutter;
+}
+
+.wp-caption.alignright {
+	margin-left: $size__site-gutter;
 }
 
 /*--------------------------------------------------------------
