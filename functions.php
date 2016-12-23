@@ -218,3 +218,8 @@ require get_template_directory() . '/inc/cpt/sponsors.php';
  * Load custom functionality for our tree-o-meter.
  */
 require get_template_directory() . '/inc/tree-o-meter.php';
+
+/**
+ * Load shortcodes.
+ */
+require get_template_directory() . '/inc/shortcodes.php';

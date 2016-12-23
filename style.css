@@ -1159,6 +1159,38 @@ progress[value] {
   clear: both;
   margin: 0 0 1.5em; }
 
+.justonetree-learnmore-toggle {
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .justonetree-learnmore-toggle svg {
+    height: 14px;
+    width: 14px;
+    transition: all 300ms ease-in-out; }
+  .justonetree-learnmore-toggle.expanded svg {
+    -ms-transform: scale(-1);
+    transform: scale(-1);
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+
+.justonetree-learnmore {
+  border: 1px solid #729b65;
+  padding: 20px;
+  transition: height 1s ease-in-out; }
+
+.justonetree-learnmore.hidden {
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
+
 @media (min-width: 640px) {
   .intro {
     display: -ms-flexbox;

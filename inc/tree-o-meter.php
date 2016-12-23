@@ -5,13 +5,6 @@
  *
  * @package Just_One_Tree
  */
-/**
- * Register shortcodes used by theme.
- */
-function justonetree_register_shortcodes() {
-	add_shortcode( 'treeometer', 'justonetree_treeometer_shortcode' );
-}
-add_action( 'init', 'justonetree_register_shortcodes' );
 
 /**
  * Output the tree-o-meter via a shortcode.

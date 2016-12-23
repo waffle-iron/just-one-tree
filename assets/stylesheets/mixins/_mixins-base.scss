@@ -22,3 +22,11 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Small-caps text style.
+@mixin small-caps() {
+	@include font-size(0.85);
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}

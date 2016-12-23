@@ -25,10 +25,7 @@
 	a {
 		display: block;
 		color: $color__text-main;
-		@include font-size(0.85);
-		font-weight: 400;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
+		@include small-caps;
 		text-decoration: none;
 		padding: 10px 6px;
 		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
