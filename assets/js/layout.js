@@ -26,6 +26,7 @@
 		e.preventDefault();
 		$( this ).toggleClass( 'expanded' );
 		$( this ).parent( 'h2' ).next( '.justonetree-learnmore' ).toggleClass( 'hidden' );
+		$( this ).blur();
 	} );
 
 	// Run our functions once the window has loaded fully
