@@ -598,6 +598,9 @@ input[type="submit"] {
     background-color: #edd672;
     border-color: #e7c945; }
 
+.button {
+  display: inline-block; }
+
 button.secondary,
 .button.secondary {
   background-color: #8eaf84;
@@ -1053,7 +1056,16 @@ body {
       width: auto; }
 
 .justonetree-treeometer {
-  max-width: 300px; }
+  position: relative;
+  max-width: 300px;
+  margin-top: 100px; }
+
+.justonetree-treeometer svg {
+  position: absolute;
+  top: -78px;
+  left: -97px;
+  width: 184px;
+  z-index: -1; }
 
 progress,
 progress[value] {
@@ -1062,12 +1074,12 @@ progress[value] {
   appearance: none; }
 
 .progress-bar {
-  background-color: #f9f0cc;
-  border: 2px solid #332F25;
-  border-radius: 15px;
+  background-color: #eeede8;
+  border: 0px solid #7d735b;
+  border-radius: 0;
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  height: 25px;
+  height: 15px;
   width: 200px;
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;
@@ -1075,27 +1087,27 @@ progress[value] {
 
 .progress-bar::-moz-progress-bar {
   background: #edd672;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px; }
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
 
 .progress-bar::-webkit-progress-bar {
-  background: #f9f0cc;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px; }
+  background: #eeede8;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
 
 .progress-bar::-webkit-progress-value {
   background: #edd672;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px; }
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
 
 .progress-bar::-ms-fill {
   background: #edd672;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px; }
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
 
 .fallback-progress-bar {
   margin-top: 0.95em;
-  background-color: #f9f0cc;
+  background-color: #eeede8;
   height: 0.3em; }
 
 .fallback-progress-value {
@@ -1106,7 +1118,7 @@ progress[value] {
 #justonetree-treeometer-text {
   font-size: 0.8em;
   text-align: center;
-  margin: -180px 0 0 10px;
+  margin: -110px 0 0 20px;
   max-width: 230px; }
 
 .justonetree-treeometer h3 {
@@ -1114,6 +1126,12 @@ progress[value] {
 
 .justonetree-treeometer .number {
   color: #7d735b; }
+
+.justonetree-treeometer p {
+  display: none; }
+
+.justonetree-treeometer .button {
+  margin-top: 10px; }
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar

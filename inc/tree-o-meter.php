@@ -34,6 +34,9 @@ function justonetree_treeometer_number( $request ) {
 function justonetree_treeometer_shortcode( $attr, $content = '', $shortcode_tag ) {
 	ob_start(); ?>
 	<div class="justonetree-treeometer">
+
+		<?php echo file_get_contents( esc_url( get_template_directory_uri() ) . '/assets/svg/tree-o-meter.svg' ); ?>
+
 		<progress max="<?php echo justonetree_treeometer_number( 'goal' ); ?>" value="<?php echo justonetree_treeometer_number( 'registered' ); ?>" class="progress-bar" aria-labelledby="justonetree-treeometer-progress">
 			<div class="fallback-progress-bar" role="presentation">
 				<span class="fallback-progress-value" style="width: <?php echo justonetree_treeometer_number( 'percent' ); ?>%;">&nbsp;</span>
@@ -43,11 +46,12 @@ function justonetree_treeometer_shortcode( $attr, $content = '', $shortcode_tag 
 		<div id="justonetree-treeometer-text">
 			<h3>Goal:
 				<span class="number"><?php echo number_format( justonetree_treeometer_number( 'goal' ) ); ?></span>
-				lemon trees</h3>
+				lemon trees
+			</h3>
 			<h3><?php esc_html_e( 'Current total:', 'justonetree' ); ?>
 				<span class="number"><?php echo number_format( justonetree_treeometer_number( 'registered' ) ); ?></span>
-				(<?php echo justonetree_treeometer_number( 'percent' ); ?>%)</h3>
-				
+			</h3>
+
 			<p>Register yours and be counted.</p>
 
 			<a class="button" href="/register">Register a tree</a>

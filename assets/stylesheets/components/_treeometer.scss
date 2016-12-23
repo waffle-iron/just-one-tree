@@ -1,9 +1,19 @@
-$progressBarColour: $color__highlight;
+$progressBarColour: lighten($color__neutral, 50%);
 $progressValueColour: $color__accent;
-$progressBarRadius: 15px;
+$progressBarRadius: 0;
 
 .justonetree-treeometer {
+	position: relative;
 	max-width: 300px;
+	margin-top: 100px;
+}
+
+.justonetree-treeometer svg {
+	position: absolute;
+	top: -78px;
+	left: -97px;
+	width: 184px;
+	z-index: -1;
 }
 
 // Remove default browser styling.
@@ -14,10 +24,10 @@ progress[value] {
 
 .progress-bar {
 	background-color: $progressBarColour;
-	border: 2px solid $color__text;
+	border: 0px solid $color__neutral;
 	border-radius: $progressBarRadius;
 	transform: rotate(-90deg);
-	height: 25px;
+	height: 15px;
 	width: 200px;
 	transform-origin: bottom left;
 	margin-top: 200px;
@@ -62,7 +72,7 @@ progress[value] {
 #justonetree-treeometer-text {
 	font-size: 0.8em;
 	text-align: center;
-	margin: -180px 0 0 10px;
+	margin: -110px 0 0 20px;
 	max-width: 230px;
 }
 
@@ -72,4 +82,12 @@ progress[value] {
 
 .justonetree-treeometer .number {
 	color: $color__neutral;
+}
+
+.justonetree-treeometer p {
+	display: none;
+}
+
+.justonetree-treeometer .button {
+	margin-top: 10px;
 }
