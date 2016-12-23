@@ -19,9 +19,6 @@
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
-console.log( 'heelo');
-	console.log( menu);
-
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
 		button.style.display = 'none';
@@ -48,9 +45,6 @@ console.log( 'heelo');
 	// Get all the link elements within the menu.
 	links    = menu.getElementsByTagName( 'a' );
 	subMenus = menu.getElementsByTagName( 'ul' );
-
-	console.log(links);
-	console.log(subMenus);
 
 	// Set menu items with submenus to aria-haspopup="true".
 	for ( i = 0, len = subMenus.length; i < len; i++ ) {
