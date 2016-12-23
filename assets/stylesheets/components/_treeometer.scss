@@ -11,7 +11,7 @@ $progressBarRadius: 0;
 .justonetree-treeometer svg {
 	position: absolute;
 	top: -78px;
-	left: -97px;
+	left: -57px;
 	width: 184px;
 	z-index: -1;
 }
@@ -30,7 +30,7 @@ progress[value] {
 	height: 15px;
 	width: 200px;
 	transform-origin: bottom left;
-	margin-top: 200px;
+	margin: 200px 0 0 40px;
 }
 
 // Should probably convert this to a mixin.
@@ -72,11 +72,12 @@ progress[value] {
 #justonetree-treeometer-text {
 	font-size: 0.8em;
 	text-align: center;
-	margin: -110px 0 0 20px;
+	margin: -110px 0 0 60px;
 	max-width: 230px;
 }
 
 .justonetree-treeometer h3 {
+	font-size: 0.9em;
 	margin: 5px 0;
 }
 
