@@ -1256,9 +1256,6 @@ progress[value] {
     .take-action h2 .script {
       color: #7d735b;
       display: block; }
-  .take-action svg {
-    height: 200px;
-    width: 200px; }
 
 .action-widget {
   -ms-flex-preferred-size: 100%;
@@ -1269,7 +1266,7 @@ progress[value] {
     font-family: spumante, sans-serif;
     font-size: 200%;
     margin: 0; }
-  .action-widget img {
+  .action-widget svg {
     max-width: 150px; }
   .action-widget p:not(:last-of-type) {
     text-align: left; }
