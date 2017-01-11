@@ -1066,6 +1066,12 @@ body {
   left: -57px;
   width: 184px;
   z-index: -1; }
+  .justonetree-treeometer svg .trunk {
+    fill: #c3b69e; }
+  .justonetree-treeometer svg .leaf {
+    fill: #729b65; }
+  .justonetree-treeometer svg .lemon {
+    fill: #edd673; }
 
 progress,
 progress[value] {
@@ -1250,6 +1256,9 @@ progress[value] {
     .take-action h2 .script {
       color: #7d735b;
       display: block; }
+  .take-action svg {
+    height: 200px;
+    width: 200px; }
 
 .action-widget {
   -ms-flex-preferred-size: 100%;

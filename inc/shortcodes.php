@@ -35,7 +35,8 @@ function justonetree_learnmore_shortcode( $attr, $content = '', $shortcode_tag )
 }
 
 /**
- * Output "learn more" box.
+ * Output the "take action" widgets. These take a number of parameters
+ * and are currently used to display the "take action" section of the homepage.
  */
 function justonetree_takeaction_shortcode( $atts, $content = '', $shortcode_tag ) {
 	ob_start();
@@ -52,7 +53,7 @@ function justonetree_takeaction_shortcode( $atts, $content = '', $shortcode_tag 
 
 	<div class="action-widget <?php echo esc_html( $atts['slug'] ); ?> ">
 
-		<?php easy_as_svg_icon( $atts['slug'] ); ?>
+		<?php echo file_get_contents( esc_url( get_template_directory_uri() ) . '/assets/svg/' . $atts['slug'] . '.svg' ); ?>
 
 		<?php if ( '' !== $atts['title'] ) : ?>
 			<h3><?php echo esc_html( $atts['title'] ); ?></h3>
