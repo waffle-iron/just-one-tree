@@ -686,6 +686,9 @@ table {
     display: inline-block;
     margin-bottom: 0;
     position: relative; }
+    .main-navigation ul li:hover > a,
+    .main-navigation ul li.focus > a {
+      color: #5b7c51; }
   .main-navigation ul a {
     display: block;
     color: #332F25;
@@ -722,6 +725,9 @@ table {
     text-transform: none; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
+  .main-navigation ul ul :hover > a,
+  .main-navigation ul ul .focus > a {
+    background-color: #f9f0cc; }
 
 @media (max-width: 639px) {
   .main-navigation {
