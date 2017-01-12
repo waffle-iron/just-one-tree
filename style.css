@@ -697,6 +697,11 @@ table {
     text-decoration: none;
     padding: 10px 6px;
     text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
+  .main-navigation ul .current_page_item > a,
+  .main-navigation ul .current-menu-item > a,
+  .main-navigation ul .current_page_ancestor > a,
+  .main-navigation ul .current-menu-ancestor > a {
+    color: #7d735b; }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto; }
