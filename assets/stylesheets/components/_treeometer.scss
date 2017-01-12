@@ -4,24 +4,26 @@ $progressBarRadius: 0;
 
 .justonetree-treeometer {
 	position: relative;
-	max-width: 300px;
-	margin-top: 100px;
+	margin: 0 auto;
+	max-width: 185px;
 }
 
 .justonetree-treeometer svg {
 	position: absolute;
-	top: -78px;
-	left: -57px;
 	width: 184px;
 	z-index: -1;
 
 				.trunk {
-					fill:#c3b69e;
+					fill: #c3b69e;
 				}
+
 				.leaf {
-					fill:#729b65;
-					}
-				.lemon{fill:#edd673;}
+					fill: #729b65;
+				}
+
+				.lemon {
+					fill: #edd673;
+				}
 }
 
 // Remove default browser styling.
@@ -38,7 +40,7 @@ progress[value] {
 	height: 15px;
 	width: 200px;
 	transform-origin: bottom left;
-	margin: 200px 0 0 40px;
+	margin: 278px 0 0 97px;
 }
 
 // Should probably convert this to a mixin.
@@ -80,8 +82,8 @@ progress[value] {
 #justonetree-treeometer-text {
 	font-size: 0.8em;
 	text-align: center;
-	margin: -110px 0 0 60px;
-	max-width: 230px;
+	margin-top: $size__site-gutter*2;
+	max-width: 185px;
 }
 
 .justonetree-treeometer h3 {

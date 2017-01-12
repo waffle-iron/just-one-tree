@@ -26,7 +26,7 @@
 	.intro {
 		display: flex;
 		justify-content: space-between;
-		margin: $size__site-gutter*8 $size__site-gutter*2 $size__site-gutter*2;
+		margin: $size__site-gutter*8 0 $size__site-gutter*2;
 	}
 
 	.hero-text {
@@ -35,21 +35,12 @@
 	}
 
 	.justonetree-recent-posts {
-		//padding-top: $size__site-gutter*4;
 		flex: 2;
 	}
 
-	.justonetree-treeometer-div {
+	.home .justonetree-treeometer {
 		margin-left: $size__site-gutter*2;
 		flex: 1;
-
-		svg {
-			display: none;
-		}
-
-		#justonetree-treeometer-text {
-			display: none;
-		}
 	}
 
 }

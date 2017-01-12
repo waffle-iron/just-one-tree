@@ -1057,13 +1057,11 @@ body {
 
 .justonetree-treeometer {
   position: relative;
-  max-width: 300px;
-  margin-top: 100px; }
+  margin: 0 auto;
+  max-width: 185px; }
 
 .justonetree-treeometer svg {
   position: absolute;
-  top: -78px;
-  left: -57px;
   width: 184px;
   z-index: -1; }
   .justonetree-treeometer svg .trunk {
@@ -1089,7 +1087,7 @@ progress[value] {
   width: 200px;
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;
-  margin: 200px 0 0 40px; }
+  margin: 278px 0 0 97px; }
 
 .progress-bar::-moz-progress-bar {
   background: #edd672;
@@ -1124,8 +1122,8 @@ progress[value] {
 #justonetree-treeometer-text {
   font-size: 0.8em;
   text-align: center;
-  margin: -110px 0 0 60px;
-  max-width: 230px; }
+  margin-top: 40px;
+  max-width: 185px; }
 
 .justonetree-treeometer h3 {
   font-size: 0.95em;
@@ -1243,7 +1241,7 @@ progress[value] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 160px 40px 40px; }
+    margin: 160px 0 40px; }
   .hero-text {
     -ms-flex: 3;
     flex: 3;
@@ -1251,14 +1249,10 @@ progress[value] {
   .justonetree-recent-posts {
     -ms-flex: 2;
     flex: 2; }
-  .justonetree-treeometer-div {
+  .home .justonetree-treeometer {
     margin-left: 40px;
     -ms-flex: 1;
-    flex: 1; }
-    .justonetree-treeometer-div svg {
-      display: none; }
-    .justonetree-treeometer-div #justonetree-treeometer-text {
-      display: none; } }
+    flex: 1; } }
 
 /* Take action section */
 .take-action {
