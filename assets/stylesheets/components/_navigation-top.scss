@@ -24,10 +24,11 @@
 	} // li
 
 	a {
-		display: block;
+		background: none;
+		border: none;
 		color: $color__text-main;
+		display: block;
 		@include small-caps;
-		text-decoration: none;
 		padding: 10px 6px;
 		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	}

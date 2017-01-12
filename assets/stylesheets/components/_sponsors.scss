@@ -5,6 +5,14 @@
 	margin: $size__site-gutter auto;
 	max-width: $size__site-width;
 
+	a {
+		border: none;
+
+		&:hover {
+			background: none;
+		}
+	}
+
 	.sponsor {
 		flex-basis: 150px;
 		margin: $size__site-gutter $size__site-gutter/2;
