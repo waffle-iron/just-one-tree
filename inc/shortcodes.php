@@ -64,7 +64,7 @@ function justonetree_takeaction_shortcode( $atts, $content = '', $shortcode_tag 
 		<?php endif; ?>
 
 		<?php if ( '' !== $atts['button-link'] ) : ?>
-			<p><a class="button" href="<?php echo esc_url( $atts['button-link'] ); ?>"><?php echo esc_html( $atts['button-text'] ); ?></a></p>
+			<a class="button" href="<?php echo esc_url( $atts['button-link'] ); ?>"><?php echo esc_html( $atts['button-text'] ); ?></a>
 		<?php endif; ?>
 	</div>
 

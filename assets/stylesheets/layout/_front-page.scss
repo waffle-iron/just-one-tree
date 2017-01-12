@@ -59,7 +59,9 @@
 		max-width: 150px;
 	}
 
-	p:not(:last-of-type) {
+	p {
+		font-size: 0.85em;
+		padding-bottom: $size__site-gutter/2;
 		text-align: left;
 	}
 
@@ -69,16 +71,17 @@
 		margin: 0 auto;
 		position: absolute;
 		right: 0;
-		width: 70%;
+		min-width: 200px;
+		width: 50%;
 	}
 
 	@include tablet {
-		flex-basis: calc(50% - #{$size__site-gutter/2});
+		flex-basis: calc(50% - #{$size__site-gutter});
 		width: 50%;
 	}
 
 	@include desktop {
-		flex-basis: calc(25% - #{$size__site-gutter/2});
+		flex-basis: calc(25% - #{$size__site-gutter});
 		width: 25%;
 	}
 }

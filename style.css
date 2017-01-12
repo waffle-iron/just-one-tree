@@ -1268,7 +1268,9 @@ progress[value] {
     margin: 0; }
   .action-widget svg {
     max-width: 150px; }
-  .action-widget p:not(:last-of-type) {
+  .action-widget p {
+    font-size: 0.85em;
+    padding-bottom: 10px;
     text-align: left; }
   .action-widget .button {
     bottom: 2em;
@@ -1276,16 +1278,17 @@ progress[value] {
     margin: 0 auto;
     position: absolute;
     right: 0;
-    width: 70%; }
+    min-width: 200px;
+    width: 50%; }
   @media (min-width: 640px) {
     .action-widget {
-      -ms-flex-preferred-size: calc(50% - 10px);
-      flex-basis: calc(50% - 10px);
+      -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
       width: 50%; } }
   @media (min-width: 1024px) {
     .action-widget {
-      -ms-flex-preferred-size: calc(25% - 10px);
-      flex-basis: calc(25% - 10px);
+      -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
       width: 25%; } }
 
 /*--------------------------------------------------------------
