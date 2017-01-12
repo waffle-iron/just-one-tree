@@ -1,24 +1,4 @@
-// Arrange hero text and tree-o-meter side-by-side on larger screens.
-@include tablet {
-	.intro {
-		display: flex;
-		justify-content: space-between;
-		margin: $size__site-gutter*4 5% $size__site-gutter*2;
-		max-width: 90%;
-	}
-
-	.hero-text {
-		margin-top: 80px;
-		max-width: 325px;
-	}
-
-	.justonetree-treeometer {
-		max-width: 400px;
-	}
-
-}
-
-// Headline
+// Hero headline
 .hero-text h2 {
 	color: $color__neutral;
 
@@ -39,6 +19,39 @@
 		border-color: $color__neutral;
 		color: $color__neutral;
 	}
+}
+
+/* Arrange hero text and tree-o-meter side-by-side on larger screens. */
+@include tablet {
+	.intro {
+		display: flex;
+		justify-content: space-between;
+		margin: $size__site-gutter*8 $size__site-gutter*2 $size__site-gutter*2;
+	}
+
+	.hero-text {
+		flex: 3;
+		margin-right: $size__site-gutter*2;
+	}
+
+	.justonetree-recent-posts {
+		//padding-top: $size__site-gutter*4;
+		flex: 2;
+	}
+
+	.justonetree-treeometer-div {
+		margin-left: $size__site-gutter*2;
+		flex: 1;
+
+		svg {
+			display: none;
+		}
+
+		#justonetree-treeometer-text {
+			display: none;
+		}
+	}
+
 }
 
 /* Take action section */

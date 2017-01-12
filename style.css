@@ -1222,20 +1222,6 @@ progress[value] {
   padding: 0;
   overflow: hidden; }
 
-@media (min-width: 640px) {
-  .intro {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 80px 5% 40px;
-    max-width: 90%; }
-  .hero-text {
-    margin-top: 80px;
-    max-width: 325px; }
-  .justonetree-treeometer {
-    max-width: 400px; } }
-
 .hero-text h2 {
   color: #7d735b; }
   .hero-text h2 .script {
@@ -1249,6 +1235,30 @@ progress[value] {
   .widget.justonetree-recent-posts ul a {
     border-color: #7d735b;
     color: #7d735b; }
+
+/* Arrange hero text and tree-o-meter side-by-side on larger screens. */
+@media (min-width: 640px) {
+  .intro {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 160px 40px 40px; }
+  .hero-text {
+    -ms-flex: 3;
+    flex: 3;
+    margin-right: 40px; }
+  .justonetree-recent-posts {
+    -ms-flex: 2;
+    flex: 2; }
+  .justonetree-treeometer-div {
+    margin-left: 40px;
+    -ms-flex: 1;
+    flex: 1; }
+    .justonetree-treeometer-div svg {
+      display: none; }
+    .justonetree-treeometer-div #justonetree-treeometer-text {
+      display: none; } }
 
 /* Take action section */
 .take-action {
