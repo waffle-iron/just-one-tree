@@ -21,6 +21,16 @@
 		});
 	}
 
+	// Move the social navigation below our text widget.
+	function moveFooterSocialLinks() {
+		var $socialLinks = $( '#colophon' ).find( '.jetpack-social-navigation' );
+		var $textWidget = $( '#colophon' ).find( '.widget_text' );
+
+		if ( $socialLinks && $textWidget ) {
+			$textWidget.append( $socialLinks );
+		}
+	}
+
 	// Look for any "learn more" toggle boxes and toggle them.
 	$( '.justonetree-learnmore-toggle' ).click( function(e) {
 		e.preventDefault();
@@ -32,6 +42,7 @@
 	// Run our functions once the window has loaded fully
 	$( window ).on( 'load', function() {
 		findSecondWordofTitle();
+		moveFooterSocialLinks();
 	});
 
 } )( jQuery );

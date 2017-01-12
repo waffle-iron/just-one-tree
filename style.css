@@ -1013,27 +1013,31 @@ body {
     margin: 0 auto;
     max-width: 1040px; }
     .site-footer .widget-area .widget {
-      -ms-flex: 2;
-      flex: 2;
-      margin-left: 40px; }
-    .site-footer .widget-area .widget:first-of-type {
       -ms-flex: 3;
       flex: 3;
+      margin-left: 40px; }
+    .site-footer .widget-area .widget:first-of-type {
+      -ms-flex: 4;
+      flex: 4;
       margin-left: 0; } }
+
+.site-footer .widget_text {
+  font-size: 16px;
+  font-size: 1rem; }
+
+.site-footer .jetpack-social-navigation ul a {
+  border-bottom: 0; }
+
+.site-footer .menu-social-container {
+  text-align: left; }
 
 .site-footer .widget-area h2 {
   color: #f9f0cc;
   font-family: spumante, sans-serif; }
 
-@media (min-width: 640px) {
-  .jetpack-social-navigation {
-    margin-top: -100px; } }
-
-#footer-menu ul {
-  display: inline; }
-
-#footer-menu li {
-  display: inline-block; }
+/* Final made-up widget */
+.justonetree-site-info .site-info {
+  margin: 20px 0; }
 
 .justonetree-sponsor-logos {
   -ms-flex-align: center;

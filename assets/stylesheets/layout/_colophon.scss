@@ -35,14 +35,27 @@
 		max-width: $size__site-width;
 
 		.widget {
-			flex: 2;
+			flex: 3;
 			margin-left: $size__site-gutter*2;
 		}
+
 		.widget:first-of-type {
-			flex: 3;
+			flex: 4;
 			margin-left: 0;
 		}
 	}
+}
+
+.site-footer .widget_text {
+	@include font-size(1);
+}
+
+.site-footer .jetpack-social-navigation ul a {
+	border-bottom: 0;
+}
+
+.site-footer .menu-social-container {
+	text-align: left;
 }
 
 .site-footer .widget-area h2 {
@@ -50,20 +63,10 @@
 	font-family: $font__display;
 }
 
-// Pull extra
-@include tablet {
-	.jetpack-social-navigation {
-		margin-top: -100px;
-	}
-}
+/* Final made-up widget */
+.justonetree-site-info {
 
-// Footer menu
-#footer-menu {
-	ul {
-		display: inline;
-	}
-
-	li {
-		display: inline-block;
+	.site-info {
+		margin: $size__site-gutter 0;
 	}
 }
