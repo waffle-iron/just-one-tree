@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem 0 0.25rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #729b65;
-    text-decoration: none; }
+    border: none; }
 
 h1 {
   font-size: 2.1rem; }
@@ -686,17 +686,26 @@ table {
     display: inline-block;
     margin-bottom: 0;
     position: relative; }
+    .main-navigation ul li:hover > a,
+    .main-navigation ul li.focus > a {
+      color: #5b7c51; }
   .main-navigation ul a {
-    display: block;
+    background: none;
+    border: none;
     color: #332F25;
+    display: block;
     font-size: 13.6px;
     font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    text-decoration: none;
     padding: 10px 6px;
     text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
+  .main-navigation ul .current_page_item > a,
+  .main-navigation ul .current-menu-item > a,
+  .main-navigation ul .current_page_ancestor > a,
+  .main-navigation ul .current-menu-ancestor > a {
+    color: #7d735b; }
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto; }
@@ -717,6 +726,9 @@ table {
     text-transform: none; }
   .main-navigation ul ul li:last-of-type a {
     border-bottom: 0; }
+  .main-navigation ul ul :hover > a,
+  .main-navigation ul ul .focus > a {
+    background-color: #f9f0cc; }
 
 @media (max-width: 639px) {
   .main-navigation {
@@ -767,11 +779,13 @@ table {
       -ms-transform: scaleX(-1);
       transform: scaleX(-1); }
   .main-navigation ul ul {
+    border-top: 0.5px solid #332F25;
     position: absolute;
     text-align: left;
-    top: 1.75em;
+    top: 2.75em;
     left: -999em;
-    z-index: 99999; }
+    z-index: 99999;
+    /* This is just here to make it easier to scroll down to the drop-down without losing focus */ }
     .main-navigation ul ul ul {
       left: -999em;
       top: 0; }
@@ -780,6 +794,14 @@ table {
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
+    .main-navigation ul ul::after {
+      content: '';
+      display: block;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%; }
   .main-navigation .nav-menu {
     margin: 0 -30px; }
   .justonetree-split-nav {
@@ -829,11 +851,16 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: #729b65; }
+  color: #729b65;
+  text-decoration: none;
+  border-bottom: 2px solid #729b65;
+  transition: background 200ms ease-in-out; }
   a:visited {
     color: #5b7c51; }
   a:hover, a:focus, a:active {
-    color: #edd672; }
+    background: #f9f0cc;
+    border-color: #edd672;
+    color: #332F25; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -862,7 +889,9 @@ body {
   display: none; }
 
 .custom-logo-link {
-  text-decoration: none; }
+  border: none; }
+  .custom-logo-link:hover {
+    background: none; }
 
 .site-title,
 .site-description {
@@ -876,7 +905,7 @@ body {
   text-transform: uppercase; }
   .site-title a {
     color: #729b65;
-    text-decoration: none; }
+    border: none; }
   .site-title span {
     color: #e4c22e; }
 
@@ -1048,6 +1077,10 @@ body {
   justify-content: space-between;
   margin: 20px auto;
   max-width: 1040px; }
+  .justonetree-sponsor-logos a {
+    border: none; }
+    .justonetree-sponsor-logos a:hover {
+      background: none; }
   .justonetree-sponsor-logos .sponsor {
     -ms-flex-preferred-size: 150px;
     flex-basis: 150px;
@@ -1180,7 +1213,12 @@ progress[value] {
   font-weight: 500;
   font-size: 0.9rem;
   padding-bottom: 5px;
-  text-decoration: none; }
+  border: none; }
+
+.post-thumbnail a {
+  border: none; }
+  .post-thumbnail a:hover {
+    background: none; }
 
 .entry-title {
   margin-top: 10px; }
@@ -1361,8 +1399,7 @@ progress[value] {
   .widget ul a {
     border-bottom: 1px solid rgba(125, 115, 91, 0.25);
     display: block;
-    padding: 10px 0;
-    text-decoration: none; }
+    padding: 10px 0; }
     .widget ul a:hover {
       background-color: rgba(125, 115, 91, 0.1); }
   .widget ul .sub-menu {

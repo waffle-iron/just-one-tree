@@ -25,10 +25,18 @@
 		font-weight: 500;
 		font-size: 0.9rem;
 		padding-bottom: $size__site-gutter/4;
-		text-decoration: none;
+		border: none;
   }
 }
 
+.post-thumbnail a {
+	border: none;
+
+	&:hover {
+		background: none;
+	}
+}
+
 .entry-title {
-  margin-top: $size__site-gutter/2;
+	margin-top: $size__site-gutter/2;
 }
