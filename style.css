@@ -1241,6 +1241,15 @@ progress[value] {
   .hero-text h2 .script {
     color: #8eaf84; }
 
+/* Recent posts widget */
+.widget.justonetree-recent-posts {
+  font-size: 0.9rem; }
+  .widget.justonetree-recent-posts h2 {
+    font-family: spumante, sans-serif; }
+  .widget.justonetree-recent-posts ul a {
+    border-color: #7d735b;
+    color: #7d735b; }
+
 /* Take action section */
 .take-action {
   display: -ms-flexbox;
