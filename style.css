@@ -1235,7 +1235,6 @@ progress[value] {
   .widget.justonetree-recent-posts h2 {
     font-family: spumante, sans-serif; }
   .widget.justonetree-recent-posts ul a {
-    border-color: #7d735b;
     color: #7d735b; }
 
 /* Arrange hero text and tree-o-meter side-by-side on larger screens. */
@@ -1360,13 +1359,12 @@ progress[value] {
   .widget ul li {
     margin: 0; }
   .widget ul a {
-    border-bottom: 1px solid #f9f0cc;
+    border-bottom: 1px solid rgba(125, 115, 91, 0.25);
     display: block;
     padding: 10px 0;
     text-decoration: none; }
     .widget ul a:hover {
-      background-color: #f9f0cc;
-      color: #332F25; }
+      background-color: rgba(125, 115, 91, 0.1); }
   .widget ul .sub-menu {
     margin-left: 1em;
     padding: 0; }

@@ -52,14 +52,13 @@
 		}
 
 		a {
-			border-bottom: 1px solid $color__highlight;
+			border-bottom: 1px solid transparentize($color__neutral, 0.75);
 			display: block;
 			padding: 10px 0;
 			text-decoration: none;
 
 			&:hover {
-				background-color: $color__highlight;
-				color: $color__text;
+				background-color: transparentize($color__neutral, 0.9);
 			}
 		}
 
