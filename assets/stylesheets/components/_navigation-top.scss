@@ -156,9 +156,10 @@
 
 	// Sub-menu flyouts
 	.main-navigation ul ul {
+		border-top: 0.5px solid $color__text-main;
 		position: absolute;
 		text-align: left;
-		top: 1.75em;
+		top: 2.75em;
 		left: -999em;
 		z-index: 99999;
 
@@ -174,6 +175,17 @@
 			&.focus > ul {
 				left: 100%;
 			}
+		}
+
+		/* This is just here to make it easier to scroll down to the drop-down without losing focus */
+		&::after {
+			content: '';
+			display: block;
+			height: 20px;
+			position: absolute;
+				top: -10px;
+				left: 0;
+			width: 100%;
 		}
 	} // .main-navigation ul ul
 
