@@ -913,7 +913,19 @@ body {
   color: #7d735b;
   font-size: 25.6px;
   font-size: 1.6rem;
-  font-family: spumante, sans-serif; }
+  font-family: spumante, sans-serif;
+  position: relative; }
+  .site-description .easy-as-svg-icon-fleuron {
+    height: 50px;
+    position: absolute;
+    top: -8px;
+    width: 50px; }
+  .site-description .easy-as-svg-icon-fleuron:nth-of-type(1) {
+    left: -30px; }
+  .site-description .easy-as-svg-icon-fleuron:nth-of-type(2) {
+    right: -30px;
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1); }
 
 @media (max-width: 639px) {
   .justonetree-logo {
