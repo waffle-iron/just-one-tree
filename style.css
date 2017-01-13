@@ -1018,6 +1018,7 @@ body {
   color: #faf6f1;
   font-size: 14.4px;
   font-size: 0.9rem;
+  margin-top: 40px;
   padding: 20px 0; }
   .site-footer::before, .site-footer::after {
     background: url("assets/images/dark-scalloped-edge.png") 0 -1px repeat-x;
@@ -1282,7 +1283,7 @@ progress[value] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 160px 0 40px; }
+    margin: 160px 0 0; }
   .hero-text {
     -ms-flex: 3;
     flex: 3;
@@ -1314,6 +1315,7 @@ progress[value] {
 .action-widget {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  padding-top: 40px;
   padding-bottom: 3em;
   position: relative; }
   .action-widget h3 {
@@ -1324,6 +1326,7 @@ progress[value] {
     max-width: 150px; }
   .action-widget p {
     font-size: 0.85em;
+    margin-top: 0;
     padding-bottom: 10px;
     text-align: left; }
   .action-widget .button {

@@ -2,6 +2,7 @@
 	background: $color__text;
 	color: $color__white;
 	@include font-size(0.9);
+	margin-top: $size__site-gutter*2;
 	padding: $size__site-gutter 0;
 
 	&::before,
