@@ -12,10 +12,10 @@ input[type="submit"] {
 	@include font-size(1);
 	font-family: $font__headings;
 	font-weight: 400;
-	line-height: 1;
-	padding: 0.7rem 2rem;
+	line-height: 1.2;
+	padding: 0.7rem 2rem 0.6rem;
 	text-decoration: none;
-	text-shadow: 1px 1px darken($color__highlight, 0%);
+	text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	transition: all ease-in-out 50ms;
 
 	&:hover {
