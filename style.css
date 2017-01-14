@@ -855,8 +855,6 @@ a {
   text-decoration: none;
   border-bottom: 2px solid #729b65;
   transition: background 200ms ease-in-out; }
-  a:visited {
-    color: #5b7c51; }
   a:hover, a:focus, a:active {
     background: #f9f0cc;
     border-color: #edd672;

@@ -4,10 +4,6 @@ a {
 	border-bottom: 2px solid $color__link;
 	transition: background 200ms ease-in-out;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-
 	&:hover,
 	&:focus,
 	&:active {
