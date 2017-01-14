@@ -832,21 +832,94 @@ table {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0;
   overflow: hidden; }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
+.comment-navigation .easy-as-svg-icon-caret,
+.posts-navigation .easy-as-svg-icon-caret,
+.post-navigation .easy-as-svg-icon-caret {
+  display: none; }
 
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a,
+.posts-navigation .nav-previous a,
+.posts-navigation .nav-next a,
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+  border-bottom: none;
+  display: block;
+  line-height: 1.2;
+  padding: 10px 0; }
+  .comment-navigation .nav-previous a span,
+  .comment-navigation .nav-next a span,
+  .posts-navigation .nav-previous a span,
+  .posts-navigation .nav-next a span,
+  .post-navigation .nav-previous a span,
+  .post-navigation .nav-next a span {
+    color: #8eaf84;
+    display: block;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; }
+
+@media (max-width: 639px) {
+  .comment-navigation .nav-previous + .nav-next,
+  .posts-navigation .nav-previous + .nav-next,
+  .post-navigation .nav-previous + .nav-next {
+    border-top: 2px solid #729b65; } }
+
+@media (min-width: 640px) {
+  .comment-navigation .easy-as-svg-icon-caret,
+  .posts-navigation .easy-as-svg-icon-caret,
+  .post-navigation .easy-as-svg-icon-caret {
+    display: inline-block;
+    fill: #8eaf84;
+    height: 40px;
+    margin: 0;
+    width: 40px; }
+  .comment-navigation .nav-previous,
+  .posts-navigation .nav-previous,
+  .post-navigation .nav-previous {
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+    width: 50%; }
+    .comment-navigation .nav-previous .easy-as-svg-icon-caret,
+    .posts-navigation .nav-previous .easy-as-svg-icon-caret,
+    .post-navigation .nav-previous .easy-as-svg-icon-caret {
+      float: left;
+      margin-left: -5px;
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .comment-navigation .nav-previous .justonetree-nav-label,
+    .posts-navigation .nav-previous .justonetree-nav-label,
+    .post-navigation .nav-previous .justonetree-nav-label {
+      margin-left: 40px; }
+  .comment-navigation .nav-next,
+  .posts-navigation .nav-next,
+  .post-navigation .nav-next {
+    float: right;
+    padding-left: 10px;
+    text-align: right;
+    width: 50%; }
+    .comment-navigation .nav-next .easy-as-svg-icon-caret,
+    .posts-navigation .nav-next .easy-as-svg-icon-caret,
+    .post-navigation .nav-next .easy-as-svg-icon-caret {
+      float: right;
+      margin-right: -5px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
+    .comment-navigation .nav-next .justonetree-nav-label,
+    .posts-navigation .nav-next .justonetree-nav-label,
+    .post-navigation .nav-next .justonetree-nav-label {
+      margin-right: 40px; } }
+
+.posts-navigation .easy-as-svg-icon-caret {
+  height: 20px;
+  margin: -2px 0;
+  width: 20px; }
 
 /*--------------------------------------------------------------
 # Links
@@ -1216,7 +1289,7 @@ progress[value] {
   display: block; }
 
 .hentry {
-  margin: 0 0 80px; }
+  margin: 0; }
 
 .byline,
 .updated:not(.published) {

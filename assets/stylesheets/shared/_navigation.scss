@@ -5,18 +5,86 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
+		margin: 0;
 		overflow: hidden;
 	}
 
-	.nav-previous {
-		float: left;
-		width: 50%;
+	.easy-as-svg-icon-caret {
+		display: none;
 	}
 
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
+	.nav-previous a,
+	.nav-next a {
+		border-bottom: none;
+		display: block;
+		line-height: 1.2;
+		padding: $size__site-gutter/2 0;
+
+		span {
+			color: $color__secondary;
+			display: block;
+			@include small-caps;
+		}
+	}
+
+	// Separate using a line on mobile
+	@include mobile {
+		.nav-previous + .nav-next {
+			border-top: 2px solid $color__link;
+		}
+	}
+
+	// On tablets and larger, sit navigation side by side
+	@include tablet {
+
+		.easy-as-svg-icon-caret {
+			display: inline-block;
+			fill: $color__secondary;
+			height: 40px;
+			margin: 0;
+			width: 40px;
+		}
+
+		& .nav-previous {
+			float: left;
+			padding-right: $size__site-gutter/2;
+			text-align: left;
+			width: 50%;
+
+			.easy-as-svg-icon-caret {
+				float: left;
+				margin-left: -5px;
+				transform: rotate(90deg);
+			}
+
+			.justonetree-nav-label {
+				margin-left: 40px;
+			}
+		}
+
+		& .nav-next {
+			float: right;
+			padding-left: $size__site-gutter/2;
+			text-align: right;
+			width: 50%;
+
+			.easy-as-svg-icon-caret {
+				float: right;
+				margin-right: -5px;
+				transform: rotate(-90deg);
+			}
+
+			.justonetree-nav-label {
+				margin-right: 40px;
+			}
+		}
+	} // tablet
+}
+
+.posts-navigation {
+	.easy-as-svg-icon-caret {
+		height: 20px;
+		margin: -2px 0;
+		width: 20px;
 	}
 }

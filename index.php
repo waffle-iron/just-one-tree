@@ -38,7 +38,10 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation( array(
+						'prev_text' => easy_as_svg_get_icon( 'caret' ) . '<span>' . esc_html__( 'Previous', 'justonetree' ) . '</span>',
+						'next_text' => easy_as_svg_get_icon( 'caret' ) . '<span>' . esc_html__( 'Next', 'justonetree' ) . '</span>',
+			) );
 
 		else :
 
