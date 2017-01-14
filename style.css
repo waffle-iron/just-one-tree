@@ -318,9 +318,9 @@ textarea {
   line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #729b65;
+  color: #7d735b;
   font-family: museo-sans-rounded, "Museo Sans Rounded", sans-serif;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 1.2;
   margin: 2rem 0 0.25rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1227,13 +1227,23 @@ progress[value] {
   margin: 0 0; }
 
 /* Header */
-.entry-meta a {
-  border-bottom: 2px solid #5b7c51;
-  color: #5b7c51;
-  font-weight: 500;
-  font-size: 0.9rem;
-  padding-bottom: 5px;
-  border: none; }
+.entry-meta {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2; }
+  .entry-meta a {
+    color: #5b7c51;
+    border: none; }
+    .entry-meta a:hover {
+      color: #729b65;
+      background: none; }
+  .entry-meta span::after {
+    content: '\ \00B7\ ';
+    display: inline; }
+  .entry-meta span:last-of-type::after {
+    display: none; }
 
 .post-thumbnail a {
   border: none; }
@@ -1241,7 +1251,7 @@ progress[value] {
     background: none; }
 
 .entry-title {
-  margin-top: 10px; }
+  margin-top: 0; }
 
 /*--------------------------------------------------------------
 ## Pages

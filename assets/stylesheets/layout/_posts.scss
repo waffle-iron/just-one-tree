@@ -19,14 +19,30 @@
 
 /* Header */
 .entry-meta {
+	font-weight: 600;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+
 	a {
-		border-bottom: 2px solid $color__tertiary;
 		color: $color__tertiary;
-		font-weight: 500;
-		font-size: 0.9rem;
-		padding-bottom: $size__site-gutter/4;
 		border: none;
-  }
+
+		&:hover {
+			color: $color__primary;
+			background: none;
+		}
+	}
+
+	span::after {
+		content: '\ \00B7\ ';
+		display: inline;
+	}
+
+	span:last-of-type::after {
+		display: none;
+	}
 }
 
 .post-thumbnail a {
@@ -38,5 +54,5 @@
 }
 
 .entry-title {
-	margin-top: $size__site-gutter/2;
+	margin-top: 0;
 }
