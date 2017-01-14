@@ -23,9 +23,7 @@
 .site-title {
 	@include font-size(1.4);
 	font-weight: 500;
-	margin-left: -10%;
 	text-transform: uppercase;
-	width: 120%;
 
 	a {
 		color: $color__primary;
@@ -111,6 +109,11 @@
 
 	.justonetree-title-text {
 		margin-top: -5px;
+	}
+
+	.site-title {
+		margin-left: -10%;
+		width: 120%;
 	}
 
 	.main-navigation {
