@@ -3,13 +3,13 @@
 	display: none;
 }
 
+.site-branding a:hover {
+	background: none;
+}
+
 // Logo
 .custom-logo-link {
 	border: none;
-
-	&:hover {
-		background: none;
-	}
 }
 
 // Site title & subtitle.

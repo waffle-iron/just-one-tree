@@ -7,11 +7,11 @@
  * @package Just_One_Tree
  */
 
-if ( ! function_exists( 'justonetree_posted_on' ) ) :
+if ( ! function_exists( 'justonetree_date_posted' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function justonetree_posted_on() {
+function justonetree_date_posted() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -39,23 +39,23 @@ function justonetree_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'justonetree_entry_footer' ) ) :
+if ( ! function_exists( 'justonetree_categories' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function justonetree_entry_footer() {
+function justonetree_categories() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'justonetree' ) );
 		if ( $categories_list && justonetree_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'justonetree' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( '%1$s', 'justonetree' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'justonetree' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'justonetree' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( '%1$s', 'justonetree' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
@@ -64,7 +64,14 @@ function justonetree_entry_footer() {
 		comments_popup_link( esc_html__( 'Leave a comment', 'justonetree' ), esc_html__( '1 Comment', 'justonetree' ), esc_html__( '% Comments', 'justonetree' ) );
 		echo '</span>';
 	}
+}
+endif;
 
+if ( ! function_exists( 'justonetree_edit_link' ) ) :
+/**
+ * Prints the edit link.
+ */
+function justonetree_edit_link() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */

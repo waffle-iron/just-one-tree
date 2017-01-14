@@ -17,7 +17,10 @@ get_header(); ?>
 
 			get_template_part( 'components/post/content', get_post_format() );
 
-			the_post_navigation();
+			the_post_navigation( array(
+						'prev_text' => easy_as_svg_get_icon( 'caret' ) . '<div class="justonetree-nav-label"><span>' . esc_html__( 'Previous', 'justonetree' ) . '</span> %title</div>',
+						'next_text' => easy_as_svg_get_icon( 'caret' ) . '<div class="justonetree-nav-label"><span>' . esc_html__( 'Next', 'justonetree' ) . '</span> %title</div>',
+			) );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

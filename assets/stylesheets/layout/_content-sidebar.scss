@@ -3,6 +3,12 @@
 	margin: 0 auto;
 }
 
+@include mobile {
+	.site-content .widget-area {
+		margin-top: $size__site-gutter*2;
+	}
+}
+
 @include tablet {
 	.site-content {
 		margin: 10em auto 0;

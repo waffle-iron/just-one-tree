@@ -6,7 +6,14 @@
  */
 ?>
 
-<?php if ( has_post_thumbnail() ) : ?>
+<?php // Determine width of featured image to ensure it's large enough.
+	if ( has_post_thumbnail() ) {
+		$image_width = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[1];
+	}
+?>
+
+<?php if ( has_post_thumbnail() && $image_width > 1000 ) : ?>
+
 	<div class="justonetree-hero">
 		<?php the_post_thumbnail( 'justonetree-hero' ); ?>
 	</div>
