@@ -179,8 +179,8 @@ add_shortcode( 'svg', 'easy_as_svg_svg_shortcode' );
  */
 function easy_as_svg_svg_icon_shortcode( $atts, $content = null ) {
 	$a = shortcode_atts( array(
-    'name' => '',
-	 'id'   => '',
+		'name' => '',
+		'id'   => '',
 	), $atts );
 	return easy_as_svg_get_icon( $a['name'], $a['id'] );
 }
