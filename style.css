@@ -1076,6 +1076,10 @@ body {
   padding: 10px;
   margin: 0 auto; }
 
+@media (max-width: 639px) {
+  .site-content .widget-area {
+    margin-top: 40px; } }
+
 @media (min-width: 640px) {
   .site-content {
     margin: 10em auto 0;
@@ -1257,7 +1261,9 @@ progress[value] {
   max-width: 185px; }
 
 .justonetree-treeometer h3 {
+  color: #5b7c51;
   font-size: 0.95em;
+  font-weight: 600;
   margin: 5px 0; }
 
 .justonetree-treeometer .number {
