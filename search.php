@@ -16,7 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'justonetree' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><span class="search-results-for"><?php printf( esc_html__( 'Search Results %s', 'justonetree' ), '</span><span class="search-query">' . get_search_query() . '</span>' ); ?></h1>
 			</header>
 			<?php
 			/* Start the Loop */

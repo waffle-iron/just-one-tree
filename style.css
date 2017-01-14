@@ -1262,16 +1262,19 @@ progress[value] {
   clear: both;
   margin: 0 0 1.5em; }
 
-.archive .page-header {
+.archive .page-header,
+.search .page-header {
   border-bottom: 2px solid #7d735b;
   margin-bottom: 40px; }
 
-.archive article {
+.archive article,
+.search article {
   border-bottom: 1px solid rgba(125, 115, 91, 0.5);
   padding: 40px 0;
   margin: 0; }
 
-.nix-prefix {
+.nix-prefix,
+.search-results-for {
   font-size: 13.6px;
   font-size: 0.85rem;
   font-weight: 600;

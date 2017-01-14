@@ -3,18 +3,21 @@
 	margin: 0 0 1.5em;
 }
 
-.archive .page-header {
+.archive .page-header,
+.search .page-header {
 	border-bottom: 2px solid $color__neutral;
 	margin-bottom: $size__site-gutter*2;
 }
 
-.archive article {
+.archive article,
+.search article {
 	border-bottom: 1px solid transparentize($color__neutral, 0.5);
 	padding: $size__site-gutter*2 0;
 	margin: 0;
 }
 
-.nix-prefix {
+.nix-prefix,
+.search-results-for {
 	@include small-caps;
 	display: block;
 }
