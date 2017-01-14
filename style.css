@@ -1411,8 +1411,7 @@ progress[value] {
   .widget input {
     width: 100%; }
   .widget input[type=submit] {
-    margin: 0 15%;
-    width: 70%; }
+    width: auto; }
 
 /* Search form */
 .search-form {
