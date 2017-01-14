@@ -960,10 +960,11 @@ body {
 .justonetree-hero {
   display: none; }
 
+.site-branding a:hover {
+  background: none; }
+
 .custom-logo-link {
   border: none; }
-  .custom-logo-link:hover {
-    background: none; }
 
 .site-title,
 .site-description {
