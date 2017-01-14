@@ -903,9 +903,7 @@ body {
   font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 500;
-  margin-left: -10%;
-  text-transform: uppercase;
-  width: 120%; }
+  text-transform: uppercase; }
   .site-title a {
     color: #729b65;
     border: none; }
@@ -967,6 +965,9 @@ body {
     max-width: 100px; }
   .justonetree-title-text {
     margin-top: -5px; }
+  .site-title {
+    margin-left: -10%;
+    width: 120%; }
   .main-navigation {
     position: absolute;
     bottom: -50px;
@@ -1048,6 +1049,11 @@ body {
   .site-footer a {
     color: #faf6f1; }
 
+@media (max-width: 639px) {
+  .site-footer .widget-area {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 @media (min-width: 640px) {
   .site-footer .widget-area {
     display: -ms-flexbox;
@@ -1110,7 +1116,8 @@ body {
 .justonetree-treeometer {
   position: relative;
   margin: 0 auto;
-  max-width: 185px; }
+  max-width: 185px;
+  overflow-x: hidden; }
 
 .justonetree-treeometer svg {
   position: absolute;
@@ -1404,8 +1411,7 @@ progress[value] {
   .widget input {
     width: 100%; }
   .widget input[type=submit] {
-    margin: 0 15%;
-    width: 70%; }
+    width: auto; }
 
 /* Search form */
 .search-form {

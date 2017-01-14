@@ -28,6 +28,12 @@
 }
 
 // Footer widgets
+@include mobile {
+	.site-footer .widget-area {
+		padding-left: $size__site-gutter;
+		padding-right: $size__site-gutter;
+	}
+}
 @include tablet {
 	.site-footer .widget-area {
 		display: flex;
