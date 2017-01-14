@@ -896,13 +896,16 @@ body {
 .site-title,
 .site-description {
   line-height: 1.2;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .site-title {
-  font-size: 25.6px;
-  font-size: 1.6rem;
+  font-size: 22.4px;
+  font-size: 1.4rem;
   font-weight: 500;
-  text-transform: uppercase; }
+  margin-left: -10%;
+  text-transform: uppercase;
+  width: 120%; }
   .site-title a {
     color: #729b65;
     border: none; }
@@ -911,19 +914,29 @@ body {
 
 .site-description {
   color: #7d735b;
+  display: inline-block;
   font-size: 25.6px;
   font-size: 1.6rem;
-  font-family: spumante, sans-serif; }
+  font-family: spumante, sans-serif;
+  position: relative; }
+  .site-description .easy-as-svg-icon-fleuron {
+    fill: #7d735b;
+    height: 45px;
+    position: absolute;
+    top: -8px;
+    width: 45px; }
+  .site-description .easy-as-svg-icon-fleuron:nth-of-type(1) {
+    left: -52px; }
+  .site-description .easy-as-svg-icon-fleuron:nth-of-type(2) {
+    right: -50px;
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1); }
 
 @media (max-width: 639px) {
+  .site-branding {
+    text-align: center; }
   .justonetree-logo {
-    display: inline-block;
-    max-height: 75px;
-    vertical-align: middle; }
-  .justonetree-title-text {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 81px); } }
+    max-height: 75px; } }
 
 @media (min-width: 640px) {
   #masthead {
@@ -954,13 +967,6 @@ body {
     max-width: 100px; }
   .justonetree-title-text {
     margin-top: -5px; }
-  .site-title {
-    font-size: 19.2px;
-    font-size: 1.2rem; }
-  .site-description {
-    font-size: 25.6px;
-    font-size: 1.6rem;
-    font-family: spumante, sans-serif; }
   .main-navigation {
     position: absolute;
     bottom: -50px;
@@ -983,7 +989,15 @@ body {
     font-size: 1.8rem; }
   .site-description {
     font-size: 33.6px;
-    font-size: 2.1rem; } }
+    font-size: 2.1rem; }
+    .site-description .easy-as-svg-icon-fleuron {
+      height: 60px;
+      top: -10px;
+      width: 50px; }
+    .site-description .easy-as-svg-icon-fleuron:nth-of-type(1) {
+      left: -57px; }
+    .site-description .easy-as-svg-icon-fleuron:nth-of-type(2) {
+      right: -55px; } }
 
 .site {
   padding: 10px;
@@ -1308,9 +1322,30 @@ progress[value] {
   .take-action h2 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
-    .take-action h2 .script {
+    .take-action h2 .main {
       color: #7d735b;
-      display: block; }
+      font-size: 19.2px;
+      font-size: 1.2rem;
+      font-weight: normal;
+      letter-spacing: 1px;
+      position: relative;
+      text-transform: uppercase; }
+    .take-action h2 .easy-as-svg-icon-fleuron {
+      fill: #7d735b;
+      height: 50px;
+      position: absolute;
+      top: -13px;
+      width: 50px; }
+    .take-action h2 .easy-as-svg-icon-fleuron:nth-of-type(1) {
+      left: -55px; }
+    .take-action h2 .easy-as-svg-icon-fleuron:nth-of-type(2) {
+      right: -55px;
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1); }
+    .take-action h2 .script {
+      color: #8eaf84;
+      display: block;
+      margin-top: 5px; }
 
 .action-widget {
   -ms-flex-preferred-size: 100%;

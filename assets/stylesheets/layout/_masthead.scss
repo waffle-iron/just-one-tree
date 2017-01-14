@@ -17,12 +17,15 @@
 .site-description {
 	line-height: 1.2;
 	margin: 0;
+	text-align: center;
 }
 
 .site-title {
-	@include font-size(1.6);
+	@include font-size(1.4);
 	font-weight: 500;
+	margin-left: -10%;
 	text-transform: uppercase;
+	width: 120%;
 
 	a {
 		color: $color__primary;
@@ -36,22 +39,37 @@
 
 .site-description {
 	color: $color__neutral;
+	display: inline-block;
 	@include font-size(1.6);
 	font-family: $font__display;
+	position: relative;
+
+	.easy-as-svg-icon-fleuron {
+		fill: $color__neutral;
+		height: 45px;
+		position: absolute;
+		top: -8px;
+		width: 45px;
+	}
+
+	.easy-as-svg-icon-fleuron:nth-of-type(1) {
+		left: -52px;
+	}
+
+	.easy-as-svg-icon-fleuron:nth-of-type(2) {
+		right: -50px;
+		transform: scaleX(-1);
+	}
 }
 
 // Mobile only bits.
 @include mobile {
-	.justonetree-logo {
-		display: inline-block;
-		max-height: 75px;
-		vertical-align: middle;
+	.site-branding {
+		text-align: center;
 	}
 
-	.justonetree-title-text {
-		display: inline-block;
-		vertical-align: middle;
-		width: calc(100% - 81px);
+	.justonetree-logo {
+		max-height: 75px;
 	}
 }
 
@@ -95,15 +113,6 @@
 		margin-top: -5px;
 	}
 
-	.site-title {
-		@include font-size(1.2);
-	}
-
-	.site-description {
-		@include font-size(1.6);
-		font-family: $font__display;
-	}
-
 	.main-navigation {
 		position: absolute;
 		bottom: -50px;
@@ -134,5 +143,19 @@
 
 	.site-description {
 		@include font-size(2.1);
+
+		.easy-as-svg-icon-fleuron {
+			height: 60px;
+			top: -10px;
+			width: 50px;
+		}
+
+		.easy-as-svg-icon-fleuron:nth-of-type(1) {
+			left: -57px;
+		}
+
+		.easy-as-svg-icon-fleuron:nth-of-type(2) {
+			right: -55px;
+		}
 	}
 }

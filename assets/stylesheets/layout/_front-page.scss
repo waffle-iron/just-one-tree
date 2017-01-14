@@ -54,9 +54,36 @@
 	h2 {
 		flex-basis: 100%;
 
-		.script {
+		.main {
 			color: $color__neutral;
+			@include font-size(1.2);
+			font-weight: normal;
+			letter-spacing: 1px;
+			position: relative;
+			text-transform: uppercase;
+		}
+
+		.easy-as-svg-icon-fleuron {
+			fill: $color__neutral;
+			height: 50px;
+			position: absolute;
+			top: -13px;
+			width: 50px;
+		}
+
+		.easy-as-svg-icon-fleuron:nth-of-type(1) {
+			left: -55px;
+		}
+
+		.easy-as-svg-icon-fleuron:nth-of-type(2) {
+			right: -55px;
+			transform: scaleX(-1);
+		}
+
+		.script {
+			color: $color__secondary;
 			display: block;
+			margin-top: 5px;
 		}
 	}
 }
