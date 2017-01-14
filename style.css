@@ -920,6 +920,7 @@ body {
   font-family: spumante, sans-serif;
   position: relative; }
   .site-description .easy-as-svg-icon-fleuron {
+    fill: #7d735b;
     height: 45px;
     position: absolute;
     top: -8px;
