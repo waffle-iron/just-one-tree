@@ -55,7 +55,7 @@ function justonetree_categories() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'justonetree' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'justonetree' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( '%1$s', 'justonetree' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 

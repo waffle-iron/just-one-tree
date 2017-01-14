@@ -696,9 +696,10 @@ table {
     display: block;
     font-size: 13.6px;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    font-weight: 400;
     padding: 10px 6px;
     text-shadow: 1px 1px rgba(249, 240, 204, 0.5); }
   .main-navigation ul .current_page_item > a,
@@ -1215,7 +1216,7 @@ progress[value] {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 80px; }
 
 .byline,
 .updated:not(.published) {
@@ -1228,10 +1229,11 @@ progress[value] {
 
 /* Header */
 .entry-meta {
-  font-weight: 600;
+  font-size: 13.6px;
   font-size: 0.85rem;
-  text-transform: uppercase;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
   line-height: 1.2; }
   .entry-meta a {
     color: #5b7c51;
@@ -1260,12 +1262,29 @@ progress[value] {
   clear: both;
   margin: 0 0 1.5em; }
 
+.archive .page-header {
+  border-bottom: 2px solid #7d735b;
+  margin-bottom: 40px; }
+
+.archive article {
+  border-bottom: 1px solid rgba(125, 115, 91, 0.5);
+  padding: 40px 0;
+  margin: 0; }
+
+.nix-prefix {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: block; }
+
 .justonetree-learnmore-toggle {
   -ms-flex-align: end;
   align-items: flex-end;
   font-size: 13.6px;
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   display: -ms-flexbox;

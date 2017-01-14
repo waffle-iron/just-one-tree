@@ -29,6 +29,7 @@
 		color: $color__text-main;
 		display: block;
 		@include small-caps;
+		font-weight: 400;
 		padding: 10px 6px;
 		text-shadow: 1px 1px transparentize($color__highlight, 0.5);
 	}
