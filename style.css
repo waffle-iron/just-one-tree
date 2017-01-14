@@ -1048,6 +1048,11 @@ body {
   .site-footer a {
     color: #faf6f1; }
 
+@media (max-width: 639px) {
+  .site-footer .widget-area {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 @media (min-width: 640px) {
   .site-footer .widget-area {
     display: -ms-flexbox;
