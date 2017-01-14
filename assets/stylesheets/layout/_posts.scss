@@ -11,6 +11,11 @@
 	display: none;
 }
 
+.entry-header,
+.page-header {
+	margin-bottom: $size__site-gutter;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -20,7 +25,7 @@
 /* Header */
 .entry-meta {
 	@include small-caps;
-	//font-weight: 600;
+	margin-top: $size__site-gutter;
 	line-height: 1.2;
 
 	a {

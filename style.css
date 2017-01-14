@@ -1222,6 +1222,10 @@ progress[value] {
 .updated:not(.published) {
   display: none; }
 
+.entry-header,
+.page-header {
+  margin-bottom: 20px; }
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -1234,6 +1238,7 @@ progress[value] {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  margin-top: 20px;
   line-height: 1.2; }
   .entry-meta a {
     color: #5b7c51;
@@ -1264,8 +1269,7 @@ progress[value] {
 
 .archive .page-header,
 .search .page-header {
-  border-bottom: 2px solid #7d735b;
-  margin-bottom: 40px; }
+  border-bottom: 2px solid #7d735b; }
 
 .archive article,
 .search article {
