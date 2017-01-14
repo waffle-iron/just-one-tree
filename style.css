@@ -896,13 +896,16 @@ body {
 .site-title,
 .site-description {
   line-height: 1.2;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .site-title {
-  font-size: 25.6px;
-  font-size: 1.6rem;
+  font-size: 22.4px;
+  font-size: 1.4rem;
   font-weight: 500;
-  text-transform: uppercase; }
+  margin-left: -10%;
+  text-transform: uppercase;
+  width: 120%; }
   .site-title a {
     color: #729b65;
     border: none; }
@@ -911,6 +914,7 @@ body {
 
 .site-description {
   color: #7d735b;
+  display: inline-block;
   font-size: 25.6px;
   font-size: 1.6rem;
   font-family: spumante, sans-serif;
@@ -918,24 +922,20 @@ body {
   .site-description .easy-as-svg-icon-fleuron {
     height: 50px;
     position: absolute;
-    top: -8px;
+    top: -12px;
     width: 50px; }
   .site-description .easy-as-svg-icon-fleuron:nth-of-type(1) {
-    left: -30px; }
+    left: -55px; }
   .site-description .easy-as-svg-icon-fleuron:nth-of-type(2) {
-    right: -30px;
+    right: -55px;
     -ms-transform: scaleX(-1);
     transform: scaleX(-1); }
 
 @media (max-width: 639px) {
+  .site-branding {
+    text-align: center; }
   .justonetree-logo {
-    display: inline-block;
-    max-height: 75px;
-    vertical-align: middle; }
-  .justonetree-title-text {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 81px); } }
+    max-height: 75px; } }
 
 @media (min-width: 640px) {
   #masthead {
@@ -966,13 +966,6 @@ body {
     max-width: 100px; }
   .justonetree-title-text {
     margin-top: -5px; }
-  .site-title {
-    font-size: 19.2px;
-    font-size: 1.2rem; }
-  .site-description {
-    font-size: 25.6px;
-    font-size: 1.6rem;
-    font-family: spumante, sans-serif; }
   .main-navigation {
     position: absolute;
     bottom: -50px;
