@@ -1442,7 +1442,11 @@ progress[value] {
 
 /* Search form */
 .search-form {
+  max-width: 400px;
   position: relative; }
+
+.search-field {
+  width: 100%; }
 
 .search-submit {
   background: #7d735b;
@@ -1455,6 +1459,8 @@ progress[value] {
   right: 0;
   top: 0;
   width: 42px; }
+  .search-submit:hover {
+    background-color: #729b65; }
   .search-submit .easy-as-svg-icon {
     fill: #faf6f1;
     height: 14px;

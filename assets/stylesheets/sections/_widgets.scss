@@ -18,7 +18,12 @@
 
 /* Search form */
 .search-form {
+	max-width: 400px; // No need to go full-width if our screen is big.
 	position: relative;
+}
+
+.search-field {
+	width: 100%;
 }
 
 .search-submit {
@@ -32,6 +37,10 @@
 	right: 0;
 	top: 0;
 	width: 42px;
+
+	&:hover {
+		background-color: $color__primary;
+	}
 
 	.easy-as-svg-icon {
 		fill: $color__white;
