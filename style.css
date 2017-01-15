@@ -1480,6 +1480,7 @@ progress[value] {
   padding-bottom: 3em;
   position: relative; }
   .action-widget h3 {
+    color: #8eaf84;
     font-family: spumante, sans-serif;
     font-size: 200%;
     margin: 0; }

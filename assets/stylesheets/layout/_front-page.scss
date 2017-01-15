@@ -5,7 +5,7 @@
 	margin: 0;
 
 	.script {
-		color: $color__secondary
+		color: $color__secondary;
 	}
 }
 
@@ -99,6 +99,7 @@
 	position: relative;
 
 	h3 {
+		color: $color__secondary;
 		font-family: $font__display;
 		font-size: 200%;
 		margin: 0;
