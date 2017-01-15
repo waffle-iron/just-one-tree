@@ -212,8 +212,8 @@ require get_template_directory() . '/inc/svg-icons.php';
 /**
  * Load custom post type setup.
  */
-require get_template_directory() . '/inc/cpt/sponsors.php';
-require get_template_directory() . '/inc/cpt-tree.php';
+require get_template_directory() . '/inc/cpt/sponsors/sponsor-cpt.php';
+require get_template_directory() . '/inc/cpt/trees/tree-cpt.php';
 
 /**
  * Load custom functionality for our tree-o-meter.
