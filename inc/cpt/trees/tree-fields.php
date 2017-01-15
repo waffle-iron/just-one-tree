@@ -55,8 +55,14 @@ class JustOneTree_Tree_Fields {
 						'organization' => esc_html( 'Organization', 'justonetree' ),
 					),
 				) ),
-				'email' => new Fieldmanager_Textfield( esc_html( 'Email', 'justonetree' ) ),
-				'mobile' => new Fieldmanager_Textfield( esc_html( 'Mobile', 'justonetree' ) ),
+				'email' => new Fieldmanager_Textfield( array(
+					'label' => esc_html( 'Email', 'justonetree' ),
+					'input_type' => 'email',
+				) ),
+				'mobile' => new Fieldmanager_Textfield( array(
+					'label' => esc_html( 'Mobile', 'justonetree' ),
+					'input_type' => 'tel',
+				) ),
 				'newsletter-opt-in' => new Fieldmanager_Checkbox( array(
 					'label' => esc_html( 'Yes, subscribe me to campaign updates.', 'justonetree' ),
 					'checked_value' => 'yes',
@@ -69,7 +75,10 @@ class JustOneTree_Tree_Fields {
 			'name' => 'tree_info',
 			'serialize_data' => false,
 			'children' => array(
-				'number' => new Fieldmanager_Textfield( esc_html( 'Number of trees', 'justonetree' ) ),
+				'number' => new Fieldmanager_Textfield( array(
+					'label' => esc_html( 'Number of trees', 'justonetree' ),
+					'input_type' => 'number',
+				) ),
 				'address' => new Fieldmanager_Textarea( esc_html( 'Address', 'justonetree' ) ),
 			),
 		) );
