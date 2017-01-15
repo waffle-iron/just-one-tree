@@ -25,7 +25,7 @@
 /* Header */
 .entry-meta {
 	@include small-caps;
-	margin-top: $size__site-gutter;
+	margin: $size__site-gutter 0 $size__site-gutter/4;
 	line-height: 1.2;
 
 	a {
