@@ -1399,7 +1399,9 @@ progress[value] {
   overflow: hidden; }
 
 .hero-text h2 {
-  color: #7d735b; }
+  color: #7d735b;
+  font-weight: 500;
+  margin: 0; }
   .hero-text h2 .script {
     color: #8eaf84; }
 
@@ -1407,9 +1409,12 @@ progress[value] {
 .widget.justonetree-recent-posts {
   font-size: 0.9rem; }
   .widget.justonetree-recent-posts h2 {
-    font-family: spumante, sans-serif; }
-  .widget.justonetree-recent-posts ul a {
-    color: #7d735b; }
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 10px; }
 
 /* Arrange hero text and tree-o-meter side-by-side on larger screens. */
 @media (min-width: 640px) {
@@ -1418,7 +1423,7 @@ progress[value] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 160px 0 0; }
+    margin: 200px 0 0; }
   .hero-text {
     -ms-flex: 3;
     flex: 3;
@@ -1428,8 +1433,8 @@ progress[value] {
     flex: 2; }
   .home .justonetree-treeometer {
     margin-left: 40px;
-    -ms-flex: 1;
-    flex: 1; } }
+    -ms-flex: 2;
+    flex: 2; } }
 
 /* Take action section */
 .take-action {
@@ -1705,5 +1710,11 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+## Jetpack videos
+--------------------------------------------------------------*/
+.jetpack-video-wrapper {
+  margin-bottom: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

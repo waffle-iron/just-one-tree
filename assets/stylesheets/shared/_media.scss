@@ -56,3 +56,10 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 @import "galleries";
+
+/*--------------------------------------------------------------
+## Jetpack videos
+--------------------------------------------------------------*/
+.jetpack-video-wrapper {
+	margin-bottom: $size__site-gutter !important; // I hate you, Jetpack.
+}

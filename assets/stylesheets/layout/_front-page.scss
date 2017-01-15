@@ -1,6 +1,8 @@
 // Hero headline
 .hero-text h2 {
 	color: $color__neutral;
+	font-weight: 500;
+	margin: 0;
 
 	.script {
 		color: $color__secondary
@@ -12,11 +14,13 @@
 	font-size: 0.9rem;
 
 	h2 {
-		font-family: $font__display;
+		@include small-caps;
+		margin: 0 0 $size__site-gutter/2;
+		//font-family: $font__display;
 	}
 
 	ul a {
-		color: $color__neutral;
+		//color: $color__neutral;
 	}
 }
 
@@ -25,7 +29,7 @@
 	.intro {
 		display: flex;
 		justify-content: space-between;
-		margin: $size__site-gutter*8 0 0;
+		margin: $size__site-gutter*10 0 0;
 	}
 
 	.hero-text {
@@ -39,7 +43,7 @@
 
 	.home .justonetree-treeometer {
 		margin-left: $size__site-gutter*2;
-		flex: 1;
+		flex: 2;
 	}
 
 }
