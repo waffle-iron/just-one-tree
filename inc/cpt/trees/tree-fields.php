@@ -39,12 +39,13 @@ class JustOneTree_Tree_Fields {
 	/**
 	 * Add custom fields for tree post type
 	 *
-	 * @action fm_post_project
+	 * @action fm_post_tree
 	 * @return null
 	 */
 	public function add_tree_fields() {
 		$contact_fields = new Fieldmanager_Group( array(
 			'name' => 'contact_info',
+			'serialize_data' => false,
 			'children' => array(
 				'name' => new Fieldmanager_Textfield( esc_html( 'Name', 'justonetree' ) ),
 				'registration-type' => new Fieldmanager_Radios( array(
@@ -66,6 +67,7 @@ class JustOneTree_Tree_Fields {
 
 		$tree_fields = new Fieldmanager_Group( array(
 			'name' => 'tree_info',
+			'serialize_data' => false,
 			'children' => array(
 				'number' => new Fieldmanager_Textfield( esc_html( 'Number of trees', 'justonetree' ) ),
 				'address' => new Fieldmanager_Textarea( esc_html( 'Address', 'justonetree' ) ),
