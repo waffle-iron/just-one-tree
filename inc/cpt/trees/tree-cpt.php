@@ -2,6 +2,7 @@
 /**
  * Lemon Trees CPT
  *
+ * @package Just_One_Tree
  */
 class JustOneTree_Tree {
 	/**
@@ -11,7 +12,7 @@ class JustOneTree_Tree {
 	/**
 	 * Class variables
 	 */
-	private $cpt = 'trees';
+	private $cpt = 'tree';
 	/**
 	 * Instantiate the singleton
 	 */
