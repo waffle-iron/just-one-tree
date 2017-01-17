@@ -225,3 +225,5 @@ require get_template_directory() . '/inc/tree-o-meter.php';
  * Load shortcodes.
  */
 require get_template_directory() . '/inc/shortcodes.php';
+
+require get_template_directory() . '/inc/gravity-forms.php';
