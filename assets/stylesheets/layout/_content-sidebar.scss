@@ -44,25 +44,49 @@
 	}
 }
 
-.justonetree-lemon-sprig {
+/* Lemon sprigs in the background. */
+.justonetree-lemon-sprigs {
+	max-width: 100%;
+	overflow-x: hidden;
 	position: absolute;
-	z-index: -1;
-	width: 360px;
-}
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 200px;
 
-.left-sprig {
-	top: -50px;
-	left: -30px;
-}
+	@include desktop {
+		height: 400px;
+		max-width: auto;
+	}
 
-.centre-sprig {
-	top: -362px;
-	left: 44%;
-	transform: rotate(-56deg) translate(-50%, 0);
-}
+	img {
+		position: absolute;
+		width: 160px;
+		z-index: -1;
 
-.right-sprig {
-	right: -30px;
-	transform: rotate(-285deg);
-	top: -40px;
+		@include tablet {
+			width: 220px;
+		}
+
+		@include desktop {
+			width: 260px;
+		}
+	}
+
+	.left-sprig {
+		top: -50px;
+		left: -30px;
+	}
+
+	.centre-sprig {
+		top: -362px;
+		left: 44%;
+		transform: rotate(-56deg) translate(-50%, 0);
+	}
+
+	.right-sprig {
+		right: -30px;
+		transform: rotate(-285deg);
+		top: -40px;
+	}
 }
