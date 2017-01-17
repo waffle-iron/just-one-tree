@@ -1093,8 +1093,7 @@ body {
 .site {
   padding: 10px;
   position: relative;
-  margin: 0 auto;
-  max-width: 1240px; }
+  margin: 0 auto; }
 
 @media (max-width: 639px) {
   .site-content .widget-area {
@@ -1126,40 +1125,51 @@ body {
 
 /* Lemon sprigs in the background. */
 .justonetree-lemon-sprigs {
+  height: 200px;
+  left: 0;
+  margin: 0 auto;
   max-width: 100%;
   overflow-x: hidden;
   position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
-  height: 200px; }
+  top: 0; }
   @media (min-width: 1024px) {
     .justonetree-lemon-sprigs {
       height: 400px;
-      max-width: auto; } }
+      max-width: 1290px; } }
   .justonetree-lemon-sprigs img {
     position: absolute;
     width: 160px;
     z-index: -1; }
     @media (min-width: 640px) {
       .justonetree-lemon-sprigs img {
-        width: 220px; } }
+        width: 260px; } }
     @media (min-width: 1024px) {
       .justonetree-lemon-sprigs img {
-        width: 260px; } }
+        width: 300px; } }
   .justonetree-lemon-sprigs .left-sprig {
     top: -50px;
     left: -30px; }
+    @media (min-width: 1290px) {
+      .justonetree-lemon-sprigs .left-sprig {
+        left: 0; } }
   .justonetree-lemon-sprigs .centre-sprig {
-    top: -362px;
-    left: 44%;
-    -ms-transform: rotate(-56deg) translate(-50%, 0);
-    transform: rotate(-56deg) translate(-50%, 0); }
+    display: none; }
+    @media (min-width: 1024px) {
+      .justonetree-lemon-sprigs .centre-sprig {
+        display: block;
+        top: -210px;
+        left: 44%;
+        -ms-transform: rotate(-32deg) translate(-50%, 0);
+        transform: rotate(-32deg) translate(-50%, 0); } }
   .justonetree-lemon-sprigs .right-sprig {
     right: -30px;
     -ms-transform: rotate(-285deg);
     transform: rotate(-285deg);
     top: -40px; }
+    @media (min-width: 1290px) {
+      .justonetree-lemon-sprigs .right-sprig {
+        right: 0; } }
 
 .site-footer {
   background: #332F25;

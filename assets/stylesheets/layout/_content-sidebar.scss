@@ -2,7 +2,6 @@
 	padding: $size__site-gutter/2;
 	position: relative;
 	margin: 0 auto;
-	max-width: $size__site-width + 200;
 }
 
 @include mobile {
@@ -46,17 +45,18 @@
 
 /* Lemon sprigs in the background. */
 .justonetree-lemon-sprigs {
+	height: 200px;
+	left: 0;
+	margin: 0 auto;
 	max-width: 100%;
 	overflow-x: hidden;
 	position: absolute;
-	top: 0;
-	left: 0;
 	right: 0;
-	height: 200px;
+	top: 0;
 
 	@include desktop {
 		height: 400px;
-		max-width: auto;
+		max-width: $size__site-width + 250;
 	}
 
 	img {
@@ -65,28 +65,41 @@
 		z-index: -1;
 
 		@include tablet {
-			width: 220px;
+			width: 260px;
 		}
 
 		@include desktop {
-			width: 260px;
+			width: 300px;
 		}
 	}
 
 	.left-sprig {
 		top: -50px;
 		left: -30px;
+
+		@media (min-width: #{$size__site-width + 250}) {
+			left: 0;
+		}
 	}
 
 	.centre-sprig {
-		top: -362px;
-		left: 44%;
-		transform: rotate(-56deg) translate(-50%, 0);
+		display: none;
+
+		@include desktop {
+			display: block;
+			top: -210px;
+			left: 44%;
+			transform: rotate(-32deg) translate(-50%, 0);
+		}
 	}
 
 	.right-sprig {
 		right: -30px;
 		transform: rotate(-285deg);
 		top: -40px;
+
+		@media (min-width: #{$size__site-width + 250}) {
+			right: 0;
+		}
 	}
 }
