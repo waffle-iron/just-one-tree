@@ -158,6 +158,7 @@
 
 	// Sub-menu flyouts
 	.main-navigation ul ul {
+		@include box-shadow();
 		border-top: 0.5px solid $color__text-main;
 		position: absolute;
 		text-align: left;

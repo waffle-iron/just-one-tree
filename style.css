@@ -780,6 +780,7 @@ table {
       -ms-transform: scaleX(-1);
       transform: scaleX(-1); }
   .main-navigation ul ul {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
     border-top: 0.5px solid #332F25;
     position: absolute;
     text-align: left;
@@ -1016,8 +1017,8 @@ body {
     position: relative;
     text-align: center; }
   .justonetree-hero {
-    border: 8px solid #fdfbf9;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
+    border: 8px solid #fdfbf9;
     display: block;
     max-width: 94%;
     margin: 1em 3% 0;
