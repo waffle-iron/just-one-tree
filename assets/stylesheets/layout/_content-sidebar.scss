@@ -1,6 +1,8 @@
 .site {
 	padding: $size__site-gutter/2;
+	position: relative;
 	margin: 0 auto;
+	max-width: $size__site-width + 200;
 }
 
 @include mobile {
@@ -40,4 +42,27 @@
 		margin: 0 auto;
 		max-width: $size__site-width;
 	}
+}
+
+.justonetree-lemon-sprig {
+	position: absolute;
+	z-index: -1;
+	width: 360px;
+}
+
+.left-sprig {
+	top: -50px;
+	left: -30px;
+}
+
+.centre-sprig {
+	top: -362px;
+	left: 44%;
+	transform: rotate(-56deg) translate(-50%, 0);
+}
+
+.right-sprig {
+	right: -30px;
+	transform: rotate(-285deg);
+	top: -40px;
 }

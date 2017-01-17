@@ -978,11 +978,6 @@ body {
   background: url("assets/images/background.png") repeat-x center -50px;
   background-size: contain; }
 
-.justonetree-lemon-sprig {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
 .justonetree-hero {
   display: none; }
 
@@ -1101,7 +1096,9 @@ body {
 
 .site {
   padding: 10px;
-  margin: 0 auto; }
+  position: relative;
+  margin: 0 auto;
+  max-width: 1240px; }
 
 @media (max-width: 639px) {
   .site-content .widget-area {
@@ -1130,6 +1127,27 @@ body {
   .site-footer div {
     margin: 0 auto;
     max-width: 1040px; }
+
+.justonetree-lemon-sprig {
+  position: absolute;
+  z-index: -1;
+  width: 360px; }
+
+.left-sprig {
+  top: -50px;
+  left: -30px; }
+
+.centre-sprig {
+  top: -362px;
+  left: 44%;
+  -ms-transform: rotate(-56deg) translate(-50%, 0);
+  transform: rotate(-56deg) translate(-50%, 0); }
+
+.right-sprig {
+  right: -30px;
+  -ms-transform: rotate(-285deg);
+  transform: rotate(-285deg);
+  top: -40px; }
 
 .site-footer {
   background: #332F25;
