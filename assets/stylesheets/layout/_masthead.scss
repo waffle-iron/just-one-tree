@@ -82,7 +82,7 @@
 	}
 
 	.justonetree-hero {
-		@include box-shadow();
+		@include box-shadow(5px);
 		border: 8px solid lighten($color__white, 2%);
 		display: block;
 		max-width: 94%;

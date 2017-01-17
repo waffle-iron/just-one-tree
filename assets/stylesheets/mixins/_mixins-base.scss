@@ -31,6 +31,6 @@
 	text-transform: uppercase;
 }
 
-@mixin box-shadow() {
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.125);
+@mixin box-shadow($blur: 2px) {
+	box-shadow: 1px 1px $blur rgba(0,0,0,0.05);
 }
