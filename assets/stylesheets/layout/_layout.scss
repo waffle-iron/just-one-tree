@@ -8,13 +8,8 @@ html {
 	box-sizing: inherit;
 }
 
-html {
-  background: $color__background-body url('assets/images/tile-me.png');
-}
-
 body {
-	background: url('assets/images/background.png') repeat-x center -50px;
-	background-size: contain;
+	background: $color__background-body url('assets/images/background-texture.png');
 }
 
 @import "masthead";

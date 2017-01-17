@@ -24,6 +24,14 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justonetree' ); ?></a>
 
+	<div class="justonetree-lemon-sprigs">
+		<img class="left-sprig" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/lemon-sprig.png" alt="" />
+
+		<img class="centre-sprig" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/lemon-sprig.png" alt="" />
+
+		<img class="right-sprig" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/lemon-sprig.png" alt="" />
+	</div>
+
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php get_template_part( 'components/features/hero-image/content', 'hero' ); ?>

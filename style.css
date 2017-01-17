@@ -971,12 +971,8 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
-html {
-  background: #faf6f1 url("assets/images/tile-me.png"); }
-
 body {
-  background: url("assets/images/background.png") repeat-x center -50px;
-  background-size: contain; }
+  background: #faf6f1 url("assets/images/background-texture.png"); }
 
 .justonetree-hero {
   display: none; }
@@ -1096,6 +1092,7 @@ body {
 
 .site {
   padding: 10px;
+  position: relative;
   margin: 0 auto; }
 
 @media (max-width: 639px) {
@@ -1125,6 +1122,54 @@ body {
   .site-footer div {
     margin: 0 auto;
     max-width: 1040px; }
+
+/* Lemon sprigs in the background. */
+.justonetree-lemon-sprigs {
+  height: 200px;
+  left: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  @media (min-width: 1024px) {
+    .justonetree-lemon-sprigs {
+      height: 400px;
+      max-width: 1290px; } }
+  .justonetree-lemon-sprigs img {
+    position: absolute;
+    width: 160px;
+    z-index: -1; }
+    @media (min-width: 640px) {
+      .justonetree-lemon-sprigs img {
+        width: 260px; } }
+    @media (min-width: 1024px) {
+      .justonetree-lemon-sprigs img {
+        width: 300px; } }
+  .justonetree-lemon-sprigs .left-sprig {
+    top: -50px;
+    left: -30px; }
+    @media (min-width: 1290px) {
+      .justonetree-lemon-sprigs .left-sprig {
+        left: 0; } }
+  .justonetree-lemon-sprigs .centre-sprig {
+    display: none; }
+    @media (min-width: 1024px) {
+      .justonetree-lemon-sprigs .centre-sprig {
+        display: block;
+        top: -210px;
+        left: 44%;
+        -ms-transform: rotate(-32deg) translate(-50%, 0);
+        transform: rotate(-32deg) translate(-50%, 0); } }
+  .justonetree-lemon-sprigs .right-sprig {
+    right: -30px;
+    -ms-transform: rotate(-285deg);
+    transform: rotate(-285deg);
+    top: -40px; }
+    @media (min-width: 1290px) {
+      .justonetree-lemon-sprigs .right-sprig {
+        right: 0; } }
 
 .site-footer {
   background: #332F25;
