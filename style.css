@@ -718,6 +718,7 @@ table {
   font-size: 0.8em;
   line-height: 1.2; }
   .main-navigation ul ul a {
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #edd672;
     display: block;
     letter-spacing: 0;
@@ -729,7 +730,11 @@ table {
     border-bottom: 0; }
   .main-navigation ul ul :hover > a,
   .main-navigation ul ul .focus > a {
-    background-color: #f9f0cc; }
+    background-color: #f9f0cc;
+    color: #332F25; }
+  .main-navigation ul ul li:first-of-type:hover > a,
+  .main-navigation ul ul li:first-of-type.focus > a {
+    border-top: 1px solid #edd672; }
 
 @media (max-width: 639px) {
   .main-navigation {
@@ -779,12 +784,27 @@ table {
       right: -90px;
       -ms-transform: scaleX(-1);
       transform: scaleX(-1); }
+  .main-navigation ul li.menu-item-has-children:hover::before,
+  .main-navigation ul li.menu-item-has-children.focus::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #faf6f1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 999999; }
   .main-navigation ul ul {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
-    border-top: 0.5px solid #332F25;
+    border-top: 1px solid #edd672;
     position: absolute;
     text-align: left;
-    top: 2.75em;
+    top: 2.6em;
     left: -999em;
     z-index: 99999;
     /* This is just here to make it easier to scroll down to the drop-down without losing focus */ }
