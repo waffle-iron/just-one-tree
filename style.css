@@ -1511,6 +1511,14 @@ progress[value] {
   text-align: center;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .take-action .illustration-badge {
+    fill: #7d735b; }
+  .take-action a:not(.button) {
+    border-bottom: none; }
+    .take-action a:not(.button):hover, .take-action a:not(.button):active, .take-action a:not(.button):focus {
+      background: none; }
+      .take-action a:not(.button):hover .illustration-badge, .take-action a:not(.button):active .illustration-badge, .take-action a:not(.button):focus .illustration-badge {
+        fill: #5f5845; }
   .take-action h2 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }

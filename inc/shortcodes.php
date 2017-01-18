@@ -53,10 +53,19 @@ function justonetree_takeaction_shortcode( $atts, $content = '', $shortcode_tag 
 
 	<div class="action-widget <?php echo esc_html( $atts['slug'] ); ?> ">
 
+		<?php if ( '' !== $atts['button-link'] ) : ?>
+			<a href="<?php echo esc_url( $atts['button-link'] ); ?>">
+		<?php endif; ?>
+
 		<?php echo file_get_contents( esc_url( get_template_directory_uri() ) . '/assets/svg/' . $atts['slug'] . '.svg' ); ?>
 
 		<?php if ( '' !== $atts['title'] ) : ?>
 			<h3><?php echo esc_html( $atts['title'] ); ?></h3>
+		<?php endif; ?>
+
+
+		<?php if ( '' !== $atts['button-link'] ) : ?>
+			</a>
 		<?php endif; ?>
 
 		<?php if ( '' !== $atts['text'] ) : ?>

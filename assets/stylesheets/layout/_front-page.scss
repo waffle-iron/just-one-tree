@@ -55,6 +55,24 @@
 	text-align: center;
 	justify-content: space-between;
 
+	.illustration-badge {
+		fill: $color__neutral;
+	}
+
+	a:not(.button) {
+		border-bottom: none;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: none;
+
+			.illustration-badge {
+				fill: darken($color__neutral, 10%);
+			}
+		}
+	}
+
 	h2 {
 		flex-basis: 100%;
 
