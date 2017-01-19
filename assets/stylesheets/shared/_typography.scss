@@ -13,7 +13,6 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	color: $color__neutral;
 	font-family: $font__headings;
-	font-weight: 200;
 	line-height: $font__line-height-headings;
 	margin: 2rem 0 0.25rem;
 
@@ -25,10 +24,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 2.1rem;
+	font-weight: 200;
 }
 
 h2 {
-	font-size: 1.9rem;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+h5 {
+	@include small-caps;
+	font-size: 1rem;
+}
+
+h6 {
+	@include small-caps;
 }
 
 .script {
@@ -37,7 +57,7 @@ h2 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin: $size__site-gutter 0;
 }
 
 dfn, cite, em, i {
