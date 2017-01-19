@@ -425,10 +425,8 @@ blockquote, q {
 .jetpack-social-navigation li {
   margin-right: 5px !important; }
 
-.menu-social-container {
-  text-align: center; }
-  .menu-social-container li {
-    display: inline-block; }
+.menu-social-container li {
+  display: inline-block; }
 
 .jetpack-social-navigation a,
 .widget .menu-social-container ul a {
@@ -1618,7 +1616,7 @@ progress[value] {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 20px;
   /* Make sure select elements fit in widgets. */
   /* And make inputs span the full width. */ }
   .widget select {
@@ -1627,6 +1625,20 @@ progress[value] {
     width: 100%; }
   .widget input[type=submit] {
     width: auto; }
+
+.site-content .widget {
+  margin-bottom: 40px; }
+
+.site-content .widget-area .widget-title {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 2px solid;
+  margin: 0 0 20px;
+  padding-bottom: 10px; }
 
 /* Search form */
 .search-form {
