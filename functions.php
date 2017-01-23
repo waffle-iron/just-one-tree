@@ -85,6 +85,14 @@ function justonetree_setup() {
 		'quote',
 		'link',
 	) );
+
+	/**
+	 * Apply theme's stylesheet to the visual editor.
+	 *
+	 * @uses add_editor_style() Links a stylesheet to visual editor
+	 * @uses get_stylesheet_uri() Returns URI of theme stylesheet
+	 */
+	add_editor_style( array( 'assets/css/editor-style.css' ) );
 }
 endif;
 add_action( 'after_setup_theme', 'justonetree_setup' );

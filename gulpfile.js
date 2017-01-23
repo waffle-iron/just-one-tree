@@ -69,14 +69,24 @@ gulp.task( 'style-guide', function() {
 		.pipe( gulp.dest( 'assets/style-guide' ) )
 });
 
+// Generate editor style.
+gulp.task( 'editor-style', function() {
+	return gulp.src( 'assets/stylesheets/editor-style.scss' )
+		.pipe( sass( { style: 'expanded' } ).on( 'error', sass.logError ) )
+		.on( 'error', function ( err ) {
+			console.error( 'Error!', err.message );
+		} )
+		.pipe( gulp.dest( 'assets/css' ) )
+});
+
 // Watch files for changes
 gulp.task( 'watch', function() {
 	livereload.listen();
-	gulp.watch( 'assets/stylesheets/**/*.scss', ['styles'] );
+	gulp.watch( 'assets/stylesheets/**/*.scss', ['styles', 'editor-style'] );
 	gulp.watch( 'assets/js/**/*.js', ['scripts'] );
 	gulp.watch( 'assets/svg/icons/*', ['icons'] );
 	gulp.watch( 'assets/style-guide/**/*.scss', ['style-guide'] );
 });
 
 // Default Task
-gulp.task( 'default', ['styles', 'scripts', 'icons', 'style-guide', 'watch'] );
+gulp.task( 'default', ['styles', 'scripts', 'icons', 'style-guide', 'editor-style', 'watch'] );
