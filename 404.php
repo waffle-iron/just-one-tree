@@ -14,14 +14,12 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'justonetree' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Page not found', 'justonetree' ); ?></h1>
 				</header>
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'justonetree' ); ?></p>
+					<p><?php esc_html_e( 'Oops! We couldn&rsquo;t find the page you were looking for. Please try a search and contact us if you can&rsquo;t find what you&rsquo;re after.', 'justonetree' ); ?></p>
 
 					<?php
-						get_search_form();
-
 						the_widget( 'WP_Widget_Recent_Posts' );
 
 						// Only show the widget if site has multiple categories.
@@ -45,10 +43,6 @@ get_header(); ?>
 					<?php
 						endif;
 
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'justonetree' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
 						the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
 
@@ -57,4 +51,5 @@ get_header(); ?>
 		</main>
 	</div>
 <?php
+get_sidebar();
 get_footer();

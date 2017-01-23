@@ -20,12 +20,19 @@
 	margin-bottom: $size__site-gutter*2;
 }
 
-.site-content .widget-area .widget-title {
+.site-content .widget-area .widget-title,
+.error404 .page-content .widget-title,
+.error404 .page-content .widgettitle {
 	@include small-caps;
 	text-align: left;
 	border-bottom: 2px solid;
-	margin: 0 0 $size__site-gutter;
+	margin: $size__site-gutter 0;
 	padding-bottom: $size__site-gutter/2;
+}
+
+.error404 .page-content .widget-title,
+.error404 .page-content .widgettitle {
+	margin-top: $size__site-gutter*4;
 }
 
 /* Search form */
@@ -128,7 +135,23 @@
 
 // Mailchimp widget
 .widget_mc4wp_form_widget {
-  p {
-    margin-bottom: 0;
-  }
+	p {
+		margin-bottom: 0;
+	}
+}
+
+/* Tag cloud widget */
+.widget_tag_cloud .tagcloud {
+	a {
+		@include small-caps;
+		border: 2px solid;
+		background: $color__primary;
+		color: $color__white;
+		font-size: 12px !important; // Inline styling needs to be overriden.
+		padding: 5px 10px;
+
+		&:hover {
+			background: $color__tertiary;
+		}
+	}
 }

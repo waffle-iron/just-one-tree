@@ -1632,7 +1632,9 @@ progress[value] {
 .site-content .widget {
   margin-bottom: 40px; }
 
-.site-content .widget-area .widget-title {
+.site-content .widget-area .widget-title,
+.error404 .page-content .widget-title,
+.error404 .page-content .widgettitle {
   font-size: 13.6px;
   font-size: 0.85rem;
   font-weight: 600;
@@ -1640,8 +1642,12 @@ progress[value] {
   text-transform: uppercase;
   text-align: left;
   border-bottom: 2px solid;
-  margin: 0 0 20px;
+  margin: 20px 0;
   padding-bottom: 10px; }
+
+.error404 .page-content .widget-title,
+.error404 .page-content .widgettitle {
+  margin-top: 80px; }
 
 /* Search form */
 .search-form {
@@ -1729,6 +1735,21 @@ progress[value] {
 
 .widget_mc4wp_form_widget p {
   margin-bottom: 0; }
+
+/* Tag cloud widget */
+.widget_tag_cloud .tagcloud a {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid;
+  background: #729b65;
+  color: #faf6f1;
+  font-size: 12px !important;
+  padding: 5px 10px; }
+  .widget_tag_cloud .tagcloud a:hover {
+    background: #5b7c51; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
