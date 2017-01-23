@@ -116,7 +116,7 @@
 	.main-navigation ul {
 		ul {
 			border: 0;
-			height: 0px;
+			height: 0;
 			overflow: hidden;
 		}
 
@@ -160,7 +160,7 @@
 		}
 	}
 
-	// Pointy arrow for sub-menu flyouts
+	// Pointy arrow for sub-menu flyouts.
 	.main-navigation ul li.menu-item-has-children:hover::before ,
 	.main-navigation ul li.menu-item-has-children.focus::before  {
 		content: '';
@@ -175,6 +175,23 @@
 			left: 50%;
 			transform: translate(-50%, 0);
 		z-index: 999999;
+	}
+
+	// Adjust for third-level menus.
+	.main-navigation ul ul li.menu-item-has-children:hover::before ,
+	.main-navigation ul ul li.menu-item-has-children.focus::before  {
+		border-left: 8px solid $color__highlight;
+		border-right: none;
+		border-bottom: 8px solid transparent;
+		border-top: 8px solid transparent;
+		right: -11px;
+		left: auto;
+		top: 11px;
+	}
+
+	.main-navigation ul ul ul li:first-of-type:hover > a,
+	.main-navigation ul ul ul li.focus:first-of-type > a {
+		border-top-color: transparent;
 	}
 
 	// Sub-menu flyouts
@@ -198,6 +215,7 @@
 			&:hover > ul,
 			&.focus > ul {
 				left: 100%;
+				left: calc(100% + 8px);
 			}
 		}
 
