@@ -1,6 +1,7 @@
 label {
 	@include small-caps;
 	color: $color__neutral;
+	display: block;
 }
 
 // Don't use small caps for radio or checkbox labels.
@@ -8,6 +9,7 @@ input[type="checkbox"] + label,
 label.checkbox,
 input[type="radio"] + label,
 label.radio {
+	display: inline-block;
 	text-transform: none;
 	letter-spacing: 0;
 	@include font-size(1);
@@ -105,4 +107,19 @@ body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_conta
 body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container,
 .gfield_visibility_hidden {
 	display: none;
+}
+
+/* Jetpack/Grunion forms specific */
+.contact-form input,
+.contact-form textarea {
+	margin-bottom: $size__site-gutter;
+}
+
+.grunion-field-label.checkbox input {
+	margin-bottom: 0;
+}
+
+// "Required" text
+.grunion-field-label span {
+	margin-left: 5px;
 }

@@ -513,12 +513,14 @@ label {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #7d735b; }
+  color: #7d735b;
+  display: block; }
 
 input[type="checkbox"] + label,
 label.checkbox,
 input[type="radio"] + label,
 label.radio {
+  display: inline-block;
   text-transform: none;
   letter-spacing: 0;
   font-size: 16px;
@@ -618,6 +620,17 @@ body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_conta
 body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container,
 .gfield_visibility_hidden {
   display: none; }
+
+/* Jetpack/Grunion forms specific */
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px; }
+
+.grunion-field-label.checkbox input {
+  margin-bottom: 0; }
+
+.grunion-field-label span {
+  margin-left: 5px; }
 
 /*--------------------------------------------------------------
 # Buttons
