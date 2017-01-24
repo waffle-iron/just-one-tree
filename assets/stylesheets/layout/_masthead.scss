@@ -13,6 +13,11 @@
 }
 
 // Site title & subtitle.
+.site-branding {
+	position: relative;
+	z-index: 2;
+}
+
 .site-title,
 .site-description {
 	line-height: 1.2;
