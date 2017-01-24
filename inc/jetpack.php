@@ -61,3 +61,17 @@ function justonetree_social_menu() {
 		<?php endif;
 	endif;
 }
+
+
+
+/**
+ * Unload Jetpack styles that conflict with ours.
+ */
+// First, make sure Jetpack doesn't concatenate all its CSS
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
+// Then remove the files we don't need or want.
+function justonetree_nix_jetpack_css() {
+	wp_deregister_style( 'grunion.css' ); // Grunion contact form
+}
+add_action('wp_print_styles', 'justonetree_nix_jetpack_css' );
