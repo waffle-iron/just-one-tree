@@ -1,8 +1,15 @@
 label {
-	font-size: 0.9em;
+	@include small-caps;
+	color: $color__neutral;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	text-transform: none;
+	letter-spacing: 0;
+	@include font-size(1);
 	font-weight: 400;
-	letter-spacing: .5px;
-	text-transform: uppercase;
+	color: $color__text-main;
 }
 
 input[type="text"],
@@ -25,6 +32,8 @@ textarea {
 	border: 1px solid $color__border-input;
 	border-radius: 0;
 	font-size: 1em;
+	width: 100%;
+	max-width: 500px;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -34,6 +43,9 @@ textarea {
 
 select {
 	border: 1px solid $color__text-input;
+	padding: 8px;
+	width: 100%;
+	max-width: 500px;
 }
 
 input[type="text"],
@@ -55,6 +67,38 @@ input[type="color"] {
 }
 
 textarea {
-	padding-left: 10px;
+	padding: 8px;
 	width: 100%;
+}
+
+/* Styling specific to Gravity Forms */
+.gform_body {
+	ul {
+		margin: 0;
+	}
+
+	li {
+		margin: 0;
+	}
+
+	li::before {
+		display: none;
+	}
+}
+
+.gfield {
+	padding: $size__site-gutter/2 0;
+}
+
+input[type="radio"] + label {
+	margin-left: 5px;
+}
+
+.gform_validation_container,
+.gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container,
+.gfield_visibility_hidden {
+	display: none;
 }

@@ -452,10 +452,21 @@ blockquote, q {
 # Forms
 --------------------------------------------------------------*/
 label {
-  font-size: 0.9em;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #7d735b; }
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase; }
+  color: #332F25; }
 
 input[type="text"],
 input[type="email"],
@@ -476,7 +487,9 @@ textarea {
   color: #7d735b;
   border: 1px solid #7d735b;
   border-radius: 0;
-  font-size: 1em; }
+  font-size: 1em;
+  width: 100%;
+  max-width: 500px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -497,7 +510,10 @@ textarea {
     border-color: #729b65; }
 
 select {
-  border: 1px solid #332F25; }
+  border: 1px solid #332F25;
+  padding: 8px;
+  width: 100%;
+  max-width: 500px; }
 
 input[type="text"],
 input[type="email"],
@@ -517,8 +533,32 @@ input[type="color"] {
   padding: 8px; }
 
 textarea {
-  padding-left: 10px;
+  padding: 8px;
   width: 100%; }
+
+/* Styling specific to Gravity Forms */
+.gform_body ul {
+  margin: 0; }
+
+.gform_body li {
+  margin: 0; }
+
+.gform_body li::before {
+  display: none; }
+
+.gfield {
+  padding: 10px 0; }
+
+input[type="radio"] + label {
+  margin-left: 5px; }
+
+.gform_validation_container,
+.gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container,
+.gfield_visibility_hidden {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Buttons
