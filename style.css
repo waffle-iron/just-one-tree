@@ -516,7 +516,9 @@ label {
   color: #7d735b; }
 
 input[type="checkbox"] + label,
-input[type="radio"] + label {
+label.checkbox,
+input[type="radio"] + label,
+label.radio {
   text-transform: none;
   letter-spacing: 0;
   font-size: 16px;

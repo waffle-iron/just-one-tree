@@ -3,8 +3,11 @@ label {
 	color: $color__neutral;
 }
 
+// Don't use small caps for radio or checkbox labels.
 input[type="checkbox"] + label,
-input[type="radio"] + label {
+label.checkbox,
+input[type="radio"] + label,
+label.radio {
 	text-transform: none;
 	letter-spacing: 0;
 	@include font-size(1);
