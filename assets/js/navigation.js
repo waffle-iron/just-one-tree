@@ -105,7 +105,7 @@
 			};
 
 			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'click', touchStartFn, false );
+				parentLink[i].addEventListener( 'touchend', touchStartFn, false );
 			}
 		}
 	}( container ) );
