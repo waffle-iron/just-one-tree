@@ -22,8 +22,13 @@
 		transform: rotate(180deg);
 	}
 
-	a {
+	a,
+	label {
 		color: $color__white;
+	}
+
+	label {
+		font-weight: 400;
 	}
 }
 

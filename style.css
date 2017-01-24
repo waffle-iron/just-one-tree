@@ -1275,8 +1275,11 @@ body {
     margin-bottom: -40px;
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
-  .site-footer a {
+  .site-footer a,
+  .site-footer label {
     color: #faf6f1; }
+  .site-footer label {
+    font-weight: 400; }
 
 @media (max-width: 639px) {
   .site-footer .widget-area {
