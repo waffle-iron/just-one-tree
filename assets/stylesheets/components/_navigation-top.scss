@@ -100,6 +100,10 @@
 
 		ul {
 			background-color: lighten($color__accent, 5%);
+
+			a {
+				padding: 13px 10px;
+			}
 		}
 
 		li {
@@ -116,11 +120,13 @@
 	.main-navigation ul {
 		ul {
 			border: 0;
+			display: none;
 			height: 0;
 			overflow: hidden;
 		}
 
 		li.focus > ul {
+			display: block;
 			height: auto;
 		}
 	} // .main-navigation ul

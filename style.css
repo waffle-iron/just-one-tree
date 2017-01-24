@@ -772,6 +772,8 @@ table {
       height: 8px; }
     .main-navigation ul {
       background-color: #f0dd89; }
+      .main-navigation ul a {
+        padding: 13px 10px; }
     .main-navigation li {
       border-bottom: 1px solid #f9f0cc;
       width: 100%; }
@@ -779,9 +781,11 @@ table {
       border-bottom: 0; }
   .main-navigation ul ul {
     border: 0;
+    display: none;
     height: 0;
     overflow: hidden; }
   .main-navigation ul li.focus > ul {
+    display: block;
     height: auto; } }
 
 @media (min-width: 640px) {
