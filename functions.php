@@ -1,6 +1,6 @@
 <?php
 /**
- * components functions and definitions.
+ * Functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -220,7 +220,9 @@ require get_template_directory() . '/inc/svg-icons.php';
 /**
  * Load custom post type setup.
  */
-require get_template_directory() . '/inc/cpt/sponsors.php';
+require get_template_directory() . '/inc/cpt/sponsors/sponsor-cpt.php';
+require get_template_directory() . '/inc/cpt/trees/tree-cpt.php';
+require get_template_directory() . '/inc/cpt/trees/tree-fields.php';
 
 /**
  * Load custom functionality for our tree-o-meter.
@@ -231,3 +233,5 @@ require get_template_directory() . '/inc/tree-o-meter.php';
  * Load shortcodes.
  */
 require get_template_directory() . '/inc/shortcodes.php';
+
+require get_template_directory() . '/inc/gravity-forms.php';
