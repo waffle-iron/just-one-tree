@@ -20,19 +20,6 @@ function justonetree_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Custom Options', 'justonetree' ),
 		'description'     => __( 'Custom options for your site.', 'justonetree' ),
 	) );
-	$wp_customize->add_setting( 'justonetree_trees_registered', array(
-		'type' => 'theme_mod', // or 'option'
-		'capability' => 'edit_theme_options',
-		'default' => '',
-		'transport' => 'refresh', // or postMessage
-		'sanitize_callback' => 'justonetree_sanitize_numeric_value',
-	) );
-	$wp_customize->add_control( 'justonetree_trees_registered', array(
-		'label'   => esc_html__( 'Total number of trees registered', 'justonetree' ),
-		'section'   => 'justonetree_general_settings',
-		'type'    => 'number',
-	) );
-
 	$wp_customize->add_setting( 'justonetree_tree_goal', array(
 		'type' => 'theme_mod', // or 'option'
 		'capability' => 'edit_theme_options',
