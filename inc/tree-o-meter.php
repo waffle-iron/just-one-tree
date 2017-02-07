@@ -11,36 +11,54 @@
  */
 function justonetree_get_registered_trees() {
 
-	// Our tree count starts at zero.
-	$tree_count = 0;
+	// First of all, let's check to see if we have a transient set already.
+	$transient = get_transient( 'justonetree_registered_tree_count' );
 
-	// Query all published tree CPT posts.
-	$the_query = new WP_Query( array(
-		'post_type'      => 'tree',
-		'posts_per_page' => 1000000
-	) );
+	if( ! empty( $transient ) ) :
+		// Return the transient and exit the function.
+		return $transient;
 
-	if ( $the_query->have_posts() ) :
+	else:
+		// We'll need to count our registered trees.
 
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-			// Get the number of registered trees.
-			$trees = get_post_meta( get_the_ID(), 'tree_info_number' );
-			if ( $trees ):
-				$tree_count = $tree_count + $trees[0];
-			endif;
-		endwhile;
+		// Our tree count starts at zero.
+		$tree_count = 0;
 
-		// Reset post data.
-		wp_reset_postdata();
+		// Query all published tree CPT posts.
+		$the_query = new WP_Query( array(
+			'post_type'      => 'tree',
+			'posts_per_page' => 1000000
+		) );
+
+		if ( $the_query->have_posts() ) :
+
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+				// Get the number of registered trees.
+				$trees = get_post_meta( get_the_ID(), 'tree_info_number' );
+				if ( $trees ):
+					$tree_count = $tree_count + $trees[0];
+				endif;
+			endwhile;
+
+			// Reset post data.
+			wp_reset_postdata();
+
+		endif;
+
+		// Save our result in a transient for one hour.
+		set_transient( 'justonetree_registered_tree_count', $tree_count, HOUR_IN_SECONDS );
+
+		// Return our count.
+		return $tree_count;
 
 	endif;
-
-	return $tree_count;
 }
 
 
 /**
- * Output the tree-o-meter via a shortcode.
+ * Get the numbers are tree-o-meter wants.
+ * This function just gets us some numbers used by the tree-o-meter,
+ * either by querying posts, getting a theme mod, or doing some maths.
  */
 function justonetree_treeometer_number( $request ) {
 	$goal = get_theme_mod( 'justonetree_tree_goal' );
